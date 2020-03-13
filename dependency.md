@@ -13,14 +13,19 @@
 ## Coverage Reporting 
 -  npm test -- --coverage --watchAll=false
 
-
-
 ## Express 
 - npm install express
 
 ## Nodemon 
 - npm install nodemon
 - "start": "./node_modules/.bin/nodemon -L <server_file_name.js> " 
+
+## PSQL 
+- CREATE USER librarian;
+- ALTER USER librarian WITH SUPERUSER;
+- ALTER USER librarian WITH Create Role;
+- ALTER USER librarian WITH Create DB;
+
 
 
 
