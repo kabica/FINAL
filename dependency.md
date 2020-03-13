@@ -26,6 +26,9 @@
 - ALTER USER <name> WITH Create Role;
 - ALTER USER <name> WITH Create DB;
 
+- vagrant [final-api]> psql -U nixx -d api
+- \i migrations/schema.sql
+
 
 ## Mocha + Chai 
 ```js
