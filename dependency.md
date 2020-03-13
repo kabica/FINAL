@@ -29,6 +29,9 @@
 - vagrant [final-api]> psql -U nixx -d api
 - \i migrations/schema.sql
 
+## Remove file from GITHUB but NOT local 
+- git rm -r --cached myFolder
+
 
 ## Mocha + Chai 
 ```js
