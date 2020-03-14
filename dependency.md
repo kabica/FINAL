@@ -21,17 +21,16 @@
 - "start": "./node_modules/.bin/nodemon -L <server_file_name.js> " 
 
 ## PSQL 
-- CREATE USER librarian;
-- ALTER USER librarian WITH SUPERUSER;
-- ALTER USER librarian WITH Create Role;
-- ALTER USER librarian WITH Create DB;
+- CREATE USER <name>;
+- ALTER USER <name> WITH SUPERUSER;
+- ALTER USER <name> WITH Create Role;
+- ALTER USER <name> WITH Create DB;
 
+- vagrant [final-api]> psql -U nixx -d api
+- \i migrations/schema.sql
 
-
-
-
-
-
+## Remove file from GITHUB but NOT local 
+- git rm -r --cached myFolder
 
 
 ## Mocha + Chai 
