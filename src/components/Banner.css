@@ -1,0 +1,43 @@
+.container-banner {
+  /* background-color: grey; */
+  background-image: url('./public/images/halo.jpg');
+  background-size: 100%;
+  text-align: center;
+  border-style: hidden;
+  border-radius: 15px;
+  font-family: monospace;
+  float: right;
+  width: 87%;
+}
+
+.container-banner span {
+  color: white;
+}
+.container-banner h1 {
+  color: white;
+  float: left;
+  margin-top: 10%;
+  font-size: 50px;
+  padding-bottom: 9%;
+  z-index: 1000;
+}
+
+#profilePic {
+  border-radius: 90px;
+  margin: 7%;
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.logo {
+  padding-right: 2%;
+  width: 30px;
+  height: 30px;
+}
+
+.container-banner ul {
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: static;
+}
