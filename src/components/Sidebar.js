@@ -3,11 +3,8 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 
-function shoot() {
-  alert("Great Shot!");
-}
 
-function Sidebar({ items }) {
+function Sidebar() {
   return (
     <div className="sidebar">
       <List disablePadding dense>
