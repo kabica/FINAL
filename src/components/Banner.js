@@ -1,6 +1,5 @@
 import React from 'react'
 import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import avatar from '../components/public/images/chief.jpg'
 import battlenet from '../components/public/images/battlenet.png'
