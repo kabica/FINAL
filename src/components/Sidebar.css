@@ -4,6 +4,7 @@
   background-color: #373a47;
   color: white;
   min-height: 100vh;
+  position: fixed;
 }
   
 .sidebar span {
@@ -17,7 +18,7 @@ a {
 }
 a:visited {color:#00FF00;} /* Visited link    */
 a:hover {color:#FF00FF;}   /* Mouse over link */
-a:active {color:#0000FF;}  /* Selected link   */
+/* a:active {color:#0000FF;}  Selected link   */
 
 .sidebar .MuiListItem-button:hover {
   background-color:rgb(red);
@@ -27,4 +28,5 @@ a:active {color:#0000FF;}  /* Selected link   */
   font-family: 'Bungee Hairline', cursive;
   font-weight: 600;
   font-size: 35px;
+  border-bottom: solid 1px white;
 }

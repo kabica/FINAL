@@ -5,42 +5,42 @@ import Sidebar from './components/Sidebar'
 import './App.css'
 import './components/Banner.css'
 
-const movies = [
+const games = [
   {
     id: 1,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: '1983'
+    title: 'Overwatch'
   },
   {
     id: 2,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: 'Russian doll'
+    title: 'Rainbow 6'
   },
   {
     id: 3,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: 'The rain',
+    title: 'Total War',
   },
   {
     id: 4,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: 'Sex education'
+    title: 'Dota 2'
   },
   {
     id: 5,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: 'Elite'
+    title: 'Counter Strike'
   },
   {
     id: 6,
     image: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
     imageBg: 'https://images-na.ssl-images-amazon.com/images/I/51M0IBliDDL._AC_.jpg',
-    title: 'Black mirror'
+    title: 'Borderlands 3'
   }
 ];
 
@@ -48,13 +48,13 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <Sidebar/>
         <Banner/>
         <Slider>
-          {movies.map(movie => (
-            <Slider.Item movie={movie} key={movie.id}>item1</Slider.Item>
+          {games.map(game => (
+            <Slider.Item game={game} key={game.id}>item1</Slider.Item>
           ))}
         </Slider>
-        <Sidebar/>
       </div>
     );
   }

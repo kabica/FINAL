@@ -1,6 +1,6 @@
 .mark {
   box-sizing: border-box;
-  border: solid 4px red;
+  border: solid 4px lime;
   position: absolute;
   top: 0;
   left: 0;
@@ -29,6 +29,6 @@
 
   &:after {
     margin-top: 4px;
-    border-color: red transparent transparent transparent;
+    border-color: lime transparent transparent transparent;
   }
 }

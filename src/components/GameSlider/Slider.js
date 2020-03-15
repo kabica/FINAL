@@ -20,8 +20,8 @@ const Slider = ({ children, activeSlide }) => {
     hasPrev
   } = useSliding(width, React.Children.count(children));
 
-  const handleSelect = movie => {
-    setCurrentSlide(movie);
+  const handleSelect = game => {
+    setCurrentSlide(game);
   };
 
   const handleClose = () => {
@@ -46,7 +46,7 @@ const Slider = ({ children, activeSlide }) => {
         {hasPrev && <SlideButton onClick={handlePrev} type="prev" />}
         {hasNext && <SlideButton onClick={handleNext} type="next" />}
       </SliderWrapper>
-      {currentSlide && <Content movie={currentSlide} onClose={handleClose} />}
+      {currentSlide && <Content game={currentSlide} onClose={handleClose} />}
     </SliderContext.Provider>
   );
 };
