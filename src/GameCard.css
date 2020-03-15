@@ -1,4 +1,7 @@
-img {
-  width: 280px;
-  height: 280px;
+#ow {
+  min-width: 260px;
+  max-width: 260px;
+  min-height: 270px;
+  max-height: 270px;
 }
+

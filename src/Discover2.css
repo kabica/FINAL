@@ -1,0 +1,50 @@
+
+nav {
+  grid-area: nav;
+}
+#A {
+  grid-area: A;
+}
+#B {
+  grid-area: B;
+}
+#C {
+  grid-area: C;
+}
+#D {
+  grid-area: D;
+}
+#E {
+  grid-area: E;
+}
+#F {
+  grid-area: F;
+}
+#G {
+  grid-area: G;
+}
+#H {
+  grid-area: H;
+}
+#I {
+  grid-area: I;
+}
+#J {
+  grid-area: J;
+}
+#K {
+  grid-area: K;
+}
+#L {
+  grid-area: L;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 240px 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav A B C D "
+  "nav E F G H"
+  "nav I J K L";
+}
