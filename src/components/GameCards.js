@@ -10,13 +10,6 @@ function GameCards() {
       <div class="item"><img src='https://i.pinimg.com/originals/25/ce/55/25ce55dc0c0415ed4d02871b1f27b270.jpg' alt='pic'/></div>
       <div class="item"><img src='https://static-cdn.jtvnw.net/ttv-boxart/Total%20War%3A%20Warhammer%20II.jpg' alt='pic'/></div>
     </div>
-    {/* <div class="content">
-    <div class="background">
-      <div class="left">left</div>
-      <div class="right">right</div>
-    </div>
-    <div class="content-container">content here...</div>
-  </div> */}
   </div>
   )
 
