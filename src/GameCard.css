@@ -1,7 +1,36 @@
 #ow {
-  min-width: 260px;
-  max-width: 260px;
-  min-height: 270px;
-  max-height: 270px;
+  min-width: 16.25em;
+  max-width: 16.25em;
+  min-height: 16.875em;
+  max-height: 16.875em;
+}
+
+.title_card {
+  margin-right: 24px;
+}
+
+.show {
+  height: 6.875em;
+  max-width: 72.5%;
+  border: 2px solid yellow;
+  font-family: 'Bungee Hairline';
+  color: white;
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+@font-face {
+  font-family: 'Star Trek';
+  src:  url('./img/star.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+#overview {
+  font-family: 'Star Trek';
+  color: white;
+  font-size: 45px;
+  margin: 0px;
+}
+
+#desc {
+  margin: 0px;
 }
 
