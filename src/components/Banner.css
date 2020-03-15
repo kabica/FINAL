@@ -20,6 +20,7 @@
   font-size: 50px;
   padding-bottom: 9%;
   z-index: 1000;
+  margin-right: 150px;
 }
 
 #profilePic {
@@ -40,4 +41,5 @@
   margin-top: 5%;
   background-color: rgba(0, 0, 0, 0.5);
   position: static;
+  text-align: left;
 }
