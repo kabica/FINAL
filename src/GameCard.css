@@ -9,11 +9,33 @@
   margin-right: 12px;
   margin-left: 12px;
 }
-
+#more {
+  border-radius: 8px;
+  font-family: 'Star Trek';
+  color: turquoise;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+  border: 1px solid white;
+  width: 2.5em;
+  height: 100%;
+  background-image: linear-gradient(rgb(107, 1, 107), rgba(231, 7, 55, 0.856));
+  /* background-color: rgba(170, 1, 1, 0.808); */
+}
+#text {
+  display: flex;
+  flex-direction: column;
+}
 .show {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 6.875em;
   width: 18.25em;
-  border: 2px solid yellow;
+  border: 2px solid white;
   font-family: 'Bungee Hairline';
   color: white;
   font-size: 30px;

@@ -38,7 +38,9 @@ function Discover() {
     if(row === 'row1') setMode({...mode, row1: text[ID]})
     if(row === 'row2') setMode({...mode, row2: text[ID]})
     if(row === 'row3') setMode({...mode, row3: text[ID]})
-    if(row === 'row4') setMode({...mode, row4: text[ID]})
+    if(row === 'row4') {
+      setMode({...mode, row4: text[ID]})
+    }
   };
   const hideVisual = function(row) {
     if(row === 'row1') setMode({...mode, row1: 'hide_R1'})
@@ -93,3 +95,6 @@ function Discover() {
 }
 
 export default Discover;
+
+
+
