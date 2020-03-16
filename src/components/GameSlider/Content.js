@@ -1,6 +1,7 @@
 import React from 'react';
 import IconCross from '../public/images/close.png';
 import './Content.scss';
+import Grid from '@material-ui/core/Grid';
 
 const Content = ({ game, onClose }) => (
   <div className="content">
@@ -14,6 +15,12 @@ const Content = ({ game, onClose }) => (
     <div className="content__area">
       <div className="content__area__container">
         <div className="content__title">{game.title}</div>
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+        >hi</Grid>
         <div className="content__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           et euismod ligula. Morbi mattis pretium eros, ut mollis leo tempus
