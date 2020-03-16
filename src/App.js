@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment, useEffect, useRef, useState } from 'react';
 import Slider from './components/GameSlider'
 import Banner from './components/Banner'
 import Sidebar from './components/Sidebar'
+import Welcome from "./components/Header/Welcome"
+import Navbar from "./components/Header/Navbar"
 import './App.css'
 import './components/Banner.css'
 
@@ -44,12 +46,49 @@ const games = [
   }
 ];
 
-class App extends Component {
-  render() {
+// class App extends Component {
+  function App() {
+  useEffect(() => {
+    return () => {
+      window.removeEventListener("scroll", () => handleScroll)
+    }
+  }, [])
+
+  const [isSticky, setSticky] = useState(false)
+
+  const stickyRef = useRef(null)
+  const handleScroll = () => {
+    window.pageYOffset > stickyRef.current.getBoundingClientRect().bottom
+      ? setSticky(true)
+      : setSticky(false)
+  }
+
+  const debounce = (func, wait = 20, immediate = true) => {
+    let timeOut
+    return () => {
+      let context = this,
+        args = arguments
+      const later = () => {
+        timeOut = null
+        if (!immediate) func.apply(context, args)
+      }
+      const callNow = immediate && !timeOut
+      clearTimeout(timeOut)
+      timeOut = setTimeout(later, wait)
+      if (callNow) func.apply(context, args)
+    }
+  }
+
+  window.addEventListener("scroll", debounce(handleScroll))
+  // render() {
     return (
       <div className="app">
-        <Sidebar/>
-        <Banner/>
+        <Fragment>
+          <Navbar sticky={isSticky} />
+          {/* <Welcome stickyRef={stickyRef} /> */}
+        </Fragment>
+        {/* <Sidebar/> */}
+        <Banner stickyRef={stickyRef}/>
         <Slider>
           {games.map(game => (
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
@@ -58,6 +97,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;

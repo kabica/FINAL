@@ -9,9 +9,9 @@ import origin from '../components/public/images/origin.png'
 import steam from '../components/public/images/steam.png'
 import uplay from '../components/public/images/uplay.png'
 
-function Banner() {
+function Banner( {stickyRef}) {
   return (
-    <div className="container-banner">
+    <div className="container-banner" ref={stickyRef}>
       <img id="profilePic" src={avatar} alt="avatar"/>
       <h1>MasterChef</h1>
       <List>
