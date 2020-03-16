@@ -19,7 +19,7 @@
 
     &__shadow {
       left: 0;
-      background: #000;
+      // background: #000;
       width: 30%;
       z-index: 2;
 
@@ -27,7 +27,8 @@
         content: '';
         position: absolute;
         z-index: 10;
-        background-image: linear-gradient(to right,#000,transparent);
+        // background-image: linear-gradient(to right,#000,transparent);
+        // background-image: linear-gradient(transparent, #9198e5, transparent);
         top: 0;
         bottom: 0;
         left: 100%;
@@ -37,7 +38,7 @@
 
     &__image {
       right: 0;
-      width: 70%;
+      width: 100%;
       height: 100%;
       background-position: center 10%;
       background-size: cover;
