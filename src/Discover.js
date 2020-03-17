@@ -33,25 +33,30 @@ function Discover() {
     row2: 'hide_R2',
     row3: 'hide_R3',
     row4: 'hide_R4',
-    desc1: 'hide'
+    desc1: 'hide',
+    desc2: 'hide',
+    desc3: 'hide',
+    desc4: 'hide'
   }
   const [mode, setMode] = useState(initial);
   const setVisual = function(row, ID) {
-    if(row === 'row1') setMode({...mode, row1: ID})
-    if(row === 'row2') setMode({...mode, row2: ID})
-    if(row === 'row3') setMode({...mode, row3: ID})
-    if(row === 'row4') setMode({...mode, row4: ID})
+    if(row === 'row1') setMode(mode => ({...mode, row1: ID}));
+    if(row === 'row2') setMode(mode => ({...mode, row2: ID}));
+    if(row === 'row3') setMode(mode => ({...mode, row3: ID}));
+    if(row === 'row4') setMode(mode => ({...mode, row4: ID}));
   };
   const hideVisual = function(row) {
-    if(row === 'row1') setMode({...mode, row1: 'hide_R1', desc1: 'hide'})
-    if(row === 'row2') setMode({...mode, row2: 'hide_R2'})
-    if(row === 'row3') setMode({...mode, row3: 'hide_R3'})
-    if(row === 'row4') setMode({...mode, row4: 'hide_R4'})
+    if(row === 'row1') setMode(mode => ({...mode, row1: 'hide_R1', desc1: 'hide'}));
+    if(row === 'row2') setMode(mode => ({...mode, row2: 'hide_R2', desc2: 'hide'}));
+    if(row === 'row3') setMode(mode => ({...mode, row3: 'hide_R3', desc3: 'hide'}));
+    if(row === 'row4') setMode(mode => ({...mode, row4: 'hide_R4', desc4: 'hide'}));
   }
-  const hideView = function() {
-    if(mode['desc1'] === 'hide') setMode({...mode, desc1: 'show'})
-    if(mode['desc1'] === 'show') setMode({...mode, desc1: 'hide'})
-  }
+  const hideView = function(key) {
+    if(key === 'desc1') (mode[key] === 'hide') ? setMode(mode => ({...mode, desc1: 'show'})) : setMode(mode => ({...mode, desc1: 'hide'}));
+    if(key === 'desc2') (mode[key] === 'hide') ? setMode(mode => ({...mode, desc2: 'show'})) : setMode(mode => ({...mode, desc2: 'hide'}));
+    if(key === 'desc3') (mode[key] === 'hide') ? setMode(mode => ({...mode, desc3: 'show'})) : setMode(mode => ({...mode, desc3: 'hide'}));
+    if(key === 'desc4') (mode[key] === 'hide') ? setMode(mode => ({...mode, desc4: 'show'})) : setMode(mode => ({...mode, desc4: 'hide'}));
+  };
 
   return (
     <main class='container'>
@@ -68,7 +73,7 @@ function Discover() {
           {<GameCard logo={DST2} onClick={() => setVisual('row1','DEST_2')}/>}
           {<GameCard logo={fort} onClick={() => setVisual('row1','FORT')}/>}
         </div>
-        {mode['row1'] !== 'hide_R1' && (<Show name={text[mode['row1']]} onClick={() => hideVisual('row1')} drop={hideView}/>)}
+        {mode['row1'] !== 'hide_R1' && (<Show name={text[mode['row1']]} onClick={() => hideVisual('row1')} drop={() => hideView('desc1')}/>)}
         {mode['desc1'] === 'show' && (<Overview game={mode['row1']} />)}
 
         <div id='row2'>
@@ -77,7 +82,8 @@ function Discover() {
           {<GameCard logo={dota} onClick={() => setVisual('row2','DOTA')}/>}
           {<GameCard logo={BL3} onClick={() => setVisual('row2','BL3')}/>}
         </div>
-        {mode['row2'] !== 'hide_R2' && (<Show name={mode['row2']} onClick={() => hideVisual('row2')} />)}
+        {mode['row2'] !== 'hide_R2' && (<Show name={text[mode['row2']]} onClick={() => hideVisual('row2')} drop={() => hideView('desc2')}/>)}
+        {mode['desc2'] === 'show' && (<Overview game={mode['row2']} />)}
 
         <div id='row3'>
           {<GameCard logo={R6_D} onClick={() => setVisual('row3','R6')}/>}
@@ -85,7 +91,8 @@ function Discover() {
           {<GameCard logo={BF1} onClick={() => setVisual('row3','BF1')}/>}
           {<GameCard logo={R6_D} onClick={() => setVisual('row3','R6')}/>}
         </div>
-        {mode['row3'] !== 'hide_R3' && (<Show name={mode['row3']} onClick={() => hideVisual('row3')}/>)}
+        {mode['row3'] !== 'hide_R3' && (<Show name={text[mode['row3']]} onClick={() => hideVisual('row3')} drop={() => hideView('desc3')}/>)}
+        {mode['desc3'] === 'show' && (<Overview game={mode['row3']} />)}
 
         <div id='row4'>
           {<GameCard logo={OW} onClick={() => setVisual('row4','OW')}/>}
@@ -93,7 +100,8 @@ function Discover() {
           {<GameCard logo={R6} onClick={() => setVisual('row4','R6')}/>}
           {<GameCard logo={OW} onClick={() => setVisual('row4','OW')}/>}
         </div>
-        {mode['row4'] !== 'hide_R4' && (<Show name={mode['row4']} onClick={() => hideVisual('row4')}/>)}
+        {mode['row4'] !== 'hide_R4' && (<Show name={text[mode['row4']]} onClick={() => hideVisual('row4')} drop={() => hideView('desc4')}/>)}
+        {mode['desc4'] === 'show' && (<Overview game={mode['row4']} />)}
       </body>
     </main>
   );
