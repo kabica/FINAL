@@ -55,6 +55,14 @@
   font-size: 20px;
 }
 
+.navbar--link-item a {
+  color: aqua;         /* Unvisited link  */
+  text-decoration: none;
+  display: block;
+}
+.navbar--link-item a:visited {color: aqua;} /* Visited link    */
+.navbar--link-item a:hover {color:#FF00FF;}   /* Mouse over link */
+
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);

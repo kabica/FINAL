@@ -10,9 +10,9 @@ const Navbar = ({ sticky }) => (
       <h1> GameTrax</h1>
     </div>
     <ul className="navbar--link">
-      <li className="navbar--link-item">Username</li>
-      <li className="navbar--link-item">Discover</li>
-      <li className="navbar--link-item">Friends</li>
+      <li className="navbar--link-item"><a href='#profile'>Username</a></li>
+      <li className="navbar--link-item"><a href='#discover'>Discover</a></li>
+      <li className="navbar--link-item"><a href='#friends'>Friends</a></li>
     </ul>
   </nav>
 )
