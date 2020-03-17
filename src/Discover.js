@@ -13,6 +13,8 @@ import BF1 from './img/BF1.png'
 import R6_D from './img/r6dark.jpg'
 import DST2 from './img/destiny2.png'
 import Show from './Show'
+import FORT_S from './img/FORT_S.png'
+import ROCKET from './img/rocket.png'
 import { useState } from "react";
 import { v } from './constants';
 import { text } from './text'
@@ -60,7 +62,7 @@ function Discover() {
       </nav>
       <body>
         <div id='row1'>
-          {<GameCard logo={fort} onClick={() => setVisual(v.ROW1,'FORT')}/>}
+          {<GameCard logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>}
           {<GameCard logo={pubg} onClick={() => setVisual(v.ROW1,'PUBG')}/>}
           {<GameCard logo={DST2} onClick={() => setVisual(v.ROW1,'DEST_2')}/>}
           {<GameCard logo={fort} onClick={() => setVisual(v.ROW1,'FORT')}/>}
@@ -73,7 +75,7 @@ function Discover() {
           {<GameCard logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
           {<GameCard logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>}
           {<GameCard logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>}
-          {<GameCard logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
+          {<GameCard logo={ROCKET} onClick={() => setVisual(v.ROW2,'ROCKET')}/>}
         </div>
         {mode[v.ROW2] !== v.HIDE_R2 && (
         <Show name={text[mode[v.ROW2]]} onClick={() => hideVisual(v.ROW2)} drop={() => hideView(v.DESC2)}/>)}

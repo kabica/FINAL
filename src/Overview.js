@@ -7,8 +7,14 @@ import PatchNote from './PatchNote'
 import R6 from './img/R6B.png'
 import DEST_2 from './img/DEST_2.png'
 import PUBG from './img/PUBG_banner.png'
+import APEX_W from './img/APEX_W.png'
+import FORT_W from './img/FORT_W2.png'
+import ROCKET_W from './img/ROCKET_W.png'
+import DOTA_W from './img/DOTA_W.png'
 import { useState } from "react";
+import {overview} from './notes.js'
 const axios = require('axios');
+
 
 
 const attack = 'ATTACKER DRONE SPAWN';
@@ -18,18 +24,19 @@ const note = <p>One of the more impactful changes to note this season is how we 
 
 const images = {
   PUBG: PUBG,
-  FORT: R6_INV,
+  FORT: FORT_W,
   R6: R6,
-  DEST_2: DEST_2
+  DEST_2: DEST_2,
+  APEX: APEX_W,
+  ROCKET: ROCKET_W,
+  DOTA: DOTA_W
 }
 const func = function() {
   axios.get('http://localhost:8000/')
   .then(response => console.log(response.data))
   .catch(error => console.log(error))
 }
-const overview = {
-  OW: "\nOverwatch is a colorful team-based shooter game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat. When you enter a game of Overwatch, you'll need to choose a hero to play. Maybe a cannon-toting ape from the moon appeals to you. Perhaps you prefer a time-traveling freedom fighter. Or is a beat-dropping battlefield DJ more your style? Whoever you want to be, there's an Overwatch hero for you."
-}
+
 
 function Overview(props) {
   
