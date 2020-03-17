@@ -26,7 +26,7 @@ class StatsApi extends Component {
     })   
       .then(response => response.json())
       .then((responseData) => {
-        this.setState({ isLoaded: true,  items: responseData['data']['segments']['0']['stats'], field: responseData['data']['segments']['0']['stats'], stats: Object.values(responseData['data']['segments']['0']['stats'])});
+        this.setState({ isLoaded: true, stats: Object.values(responseData['data']['segments']['0']['stats'])});
         // console.log(responseData['data']['segments']['0']['stats'])
         // console.log(Object.keys(responseData['data']['segments']['0']['stats']))
         // console.log(Object.values(responseData['data']['segments']['0']['stats']))
@@ -35,7 +35,7 @@ class StatsApi extends Component {
   }
 
   render() {
-    const { isLoaded, items, field, stats } = this.state;
+    const { isLoaded, stats } = this.state;
 
     if(!isLoaded) {
       return (
@@ -44,28 +44,27 @@ class StatsApi extends Component {
       </div>)
     } else {
       return(
-        <ul>
-          {stats.map(item => (
-                        <Grid item>
-                        <Card>
-                            <CardContent>
-                              <Typography gutterBottom variant="h4" component="h2">
-                                <StatsApi/>
-                                {item.displayValue}
-                              </Typography>
-                              <Typography variant="body1" color="textSecondary" component="p">
-                               {item.displayName}
-                              </Typography>
-                            </CardContent>
-                        </Card>
-                      </Grid>
-            // <li>
-            //   {item.displayName}: {item.displayValue}
-            // </li>
-          ))}
-          {/* {items.timePlayed.displayValue} */}
-          {/* {field.timePlayed.displayName} */}
-        </ul>
+        
+        <Grid container spacing={2} flexGrow={1} marginTop={30}>
+          <Grid item xs={12}>
+            <Grid container justify="center" spacing={3}>
+            {stats.map(item => (
+              <Grid item>
+                <Card flexGrow={1} marginTop={30}>
+                  <CardContent height={150} width={220}>
+                    <Typography gutterBottom variant="h4" component="h2" marginTop={50}>
+                      {item.displayValue}
+                    </Typography>
+                    <Typography variant="body1" color="textSecondary" component="p">
+                      {item.displayName}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+            </Grid>
+          </Grid>
+        </Grid>
       )
     }
   }

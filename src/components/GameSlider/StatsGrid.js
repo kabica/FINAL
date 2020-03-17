@@ -41,162 +41,37 @@ const stats = [
     stat: '3,040',
     field: 'DEATHS'
   },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '51 HRS',
-    field: 'TIME PLAYED'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
-  {
-    stat: '177',
-    field: 'GAMES WON'
-  },
-  {
-    stat: '1,605,254',
-    field: 'ALL DAMAGE DONE'
-  },
-  {
-    stat: '3,040',
-    field: 'DEATHS'
-  },
-  {
-    stat: '4,395',
-    field: 'ELIMINATIONS'
-  },
+
+
+
+
 ];
 
 
 export default function StatsGrid(props) {
   const classes = useStyles();
 
-  // const statsAPI = props.stats.map((stat) => {
-  //   return (
-  //     <StatListItem
-  //       name={stat.displayName}
-  //       value={stat.displayValue}
-  //     />
-  //   );
-  // })
-
-  return (
-    <Grid container className={classes.root} spacing={2}>
-      <Grid item xs={12}>
-        <Grid container justify="center" spacing={3}>
-          {stats.map(value => (
-            <Grid key={value} item>
-              <Card className={classes.root}>
-                  <CardContent className={classes.card}>
-                    <Typography className={classes.pos} gutterBottom variant="h4" component="h2">
-                      <StatsApi/>
-                      {/* {value.stat} */}
-                    </Typography>
-                    <Typography variant="body1" color="textSecondary" component="p">
-                     {value.field}
-                    </Typography>
-                  </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Grid>
-    </Grid>
-  );
+  // return (
+  //   <Grid container className={classes.root} spacing={2}>
+  //     <Grid item xs={12}>
+  //       <Grid container justify="center" spacing={3}>
+  //         {/* {stats.map(value => ( */}
+  //           <Grid item>
+  //             <Card className={classes.root}>
+  //                 <CardContent className={classes.card}>
+  //                   <Typography className={classes.pos} gutterBottom variant="h4" component="h2">
+  //                     <StatsApi/>
+  //                     {/* {value.stat} */}
+  //                   </Typography>
+  //                   <Typography variant="body1" color="textSecondary" component="p">
+  //                    {/* {value.field} */}
+  //                   </Typography>
+  //                 </CardContent>
+  //             </Card>
+  //           </Grid>
+  //         {/* ))} */}
+  //       </Grid>
+  //     </Grid>
+  //   </Grid>
+  // );
 }
