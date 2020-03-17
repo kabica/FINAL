@@ -20,7 +20,9 @@ const text = {
 
   TOTAL_WAR: "Total War: WARHAMMER II is a strategy game of titanic proportions. Choose from four unique, varied factions and wage war your way – mounting a campaign of conquest to save or destroy a vast and vivid fantasy world. This is a game of two halves – one a turn-based open-world campaign, and the other intense, tactical real-time battles across the fantastical landscapes of the New World.",
 
-  ROCKET: "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Rocket League includes casual and competitive Online Matches, a fully-featured offline Season Mode, special “Mutators” that let you change the rules entirely, and more!"
+  ROCKET: "Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem with easy-to-understand controls and fluid, physics-driven competition. Rocket League includes casual and competitive Online Matches, a fully-featured offline Season Mode, special “Mutators” that let you change the rules entirely, and more!",
+
+  LoL: "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes."
 }
 
 module.exports = { text }

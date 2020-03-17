@@ -11,6 +11,9 @@ import APEX_W from './img/APEX_W.png'
 import FORT_W from './img/FORT_W2.png'
 import ROCKET_W from './img/ROCKET_W.png'
 import DOTA_W from './img/DOTA_W.png'
+import BF1_W from './img/BF1_W.png'
+import OW_W from './img/ow_wide.png'
+import LoL_W from './img/LoL_W.png'
 import { useState } from "react";
 import {overview} from './notes.js'
 const axios = require('axios');
@@ -29,7 +32,10 @@ const images = {
   DEST_2: DEST_2,
   APEX: APEX_W,
   ROCKET: ROCKET_W,
-  DOTA: DOTA_W
+  DOTA: DOTA_W,
+  BF1: BF1_W,
+  OW: OW_W,
+  LoL: LoL_W
 }
 const func = function() {
   axios.get('http://localhost:8000/')
