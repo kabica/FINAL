@@ -45,11 +45,136 @@ const stats = [
     stat: '4,395',
     field: 'ELIMINATIONS'
   },
+  {
+    stat: '51 HRS',
+    field: 'TIME PLAYED'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
+  {
+    stat: '177',
+    field: 'GAMES WON'
+  },
+  {
+    stat: '1,605,254',
+    field: 'ALL DAMAGE DONE'
+  },
+  {
+    stat: '3,040',
+    field: 'DEATHS'
+  },
+  {
+    stat: '4,395',
+    field: 'ELIMINATIONS'
+  },
 ];
 
 
-export default function StatsGrid() {
+export default function StatsGrid(props) {
   const classes = useStyles();
+
+  // const statsAPI = props.stats.map((stat) => {
+  //   return (
+  //     <StatListItem
+  //       name={stat.displayName}
+  //       value={stat.displayValue}
+  //     />
+  //   );
+  // })
 
   return (
     <Grid container className={classes.root} spacing={2}>

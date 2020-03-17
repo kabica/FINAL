@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import Slider from './components/GameSlider'
 import Banner from './components/Banner'
 import Navbar from "./components/Header/Navbar"

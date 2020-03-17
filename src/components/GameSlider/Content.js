@@ -9,7 +9,7 @@ const Content = ({ game, onClose }) => (
       <div className="content__background__shadow" />
       <div
         className="content__background__image"
-        style={{ 'background-image': `url(${game.imageBg})` }}
+        style={{ 'backgroundImage': `url(${game.imageBg})` }}
       />
     </div>
     <div className="content__area">
