@@ -1,0 +1,21 @@
+#patch_note {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#content {
+  word-break: break-word;
+  width: 1000px;
+  color: white;
+  font-size: 1.4em;
+  font-family: 'Bungee Hairline';
+  text-align: justify;
+}
+
+#note {
+  font-family: 'Bungee';
+  color: white;
+  font-size: 54px;
+  margin: 24px 0px 24px 0px;
+}
