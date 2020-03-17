@@ -51,6 +51,7 @@
   height: 240px !important;
   display: flex;
   align-items: flex-start;
+  background-color: rgb(24, 23, 23);
 }
 
 @font-face {

@@ -23,7 +23,8 @@ nav {
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(37, 36, 36);
+  /* background-color: rgb(24, 23, 23); */
+  background-color: rgb(12, 12, 12);
   align-items:center;
   width: 100%;
 }

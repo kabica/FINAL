@@ -16,6 +16,9 @@ import Show from './Show'
 import FORT_S from './img/FORT_S.png'
 import ROCKET from './img/rocket.png'
 import LoL from './img/LoL.png'
+import COD from './img/COD.png'
+import FALL from './img/FALLOUT.png'
+import MINE from './img/MINE.png'
 import { useState } from "react";
 import { v } from './constants';
 import { text } from './text'
@@ -94,9 +97,9 @@ function Discover() {
 
         <div id='row4'>
           {<GameCard logo={OW} onClick={() => setVisual(v.ROW4,'OW')}/>}
-          {<GameCard logo={R6} onClick={() => setVisual(v.ROW4,'R6')}/>}
-          {<GameCard logo={R6} onClick={() => setVisual(v.ROW4,'R6')}/>}
-          {<GameCard logo={OW} onClick={() => setVisual(v.ROW4,'OW')}/>}
+          {<GameCard logo={COD} onClick={() => setVisual(v.ROW4,'COD')}/>}
+          {<GameCard logo={FALL} onClick={() => setVisual(v.ROW4,'FALL')}/>}
+          {<GameCard logo={MINE} onClick={() => setVisual(v.ROW4,'MINE')}/>}
         </div>
         {mode[v.ROW4] !== v.HIDE_R4 && (
         <Show name={text[mode[v.ROW4]]} onClick={() => hideVisual(v.ROW4)} drop={() => hideView(v.DESC4)}/>)}
