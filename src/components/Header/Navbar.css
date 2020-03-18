@@ -10,7 +10,7 @@
 }
 
 #name {
-  height: 80px;
+  height: 60px;
 }
 
 .navbar-sticky {
@@ -30,10 +30,9 @@
 }
 
 .navbar--logo {
-  height: 4rem;
-  width: 2.5rem;
+  height: 60px;
   margin-right: 0.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   animation: rotate 0.7s ease-in-out 0.5s;
   border-radius: 30px;
 }

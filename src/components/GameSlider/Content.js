@@ -1,12 +1,11 @@
 import React from 'react';
-import IconCross from '../public/images/close.png';
+import IconCross from '../public/images/close-cross.png';
 import './Content.scss';
 import StatsAPI from './StatsApi'
 
 const Content = ({ game, onClose }) => (
   <div className="content">
     <div className="content__background">
-      <div className="content__background__shadow" />
       <div
         className="content__background__image"
         style={{ 'backgroundImage': `url(${game.imageBg})` }}

@@ -158,6 +158,10 @@ class StatsApi extends Component {
             </Grid>
           </Grid>
         )
+      } else {
+        return (
+          <h2>No stats to display</h2>
+        )
       }
     }
 }
