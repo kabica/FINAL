@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import './StatsApi.scss'
 
 class StatsApi extends Component {
 
@@ -12,47 +13,69 @@ class StatsApi extends Component {
     this.state = {
       items:[],
       isLoaded: false,
+      selection: null
     }
   }
-
+  
   componentDidMount() {
-    fetch("https://public-api.tracker.gg/v2/overwatch/standard/profile/battlenet/MirroR%2311669", {
-      method: 'GET',
-      headers: {  
-        'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
-        'Accept': 'application/json',
-        'Accept-Encoding': 'gzip',
-      }
-    })   
-      .then(response => response.json())
-      .then((responseData) => {
-        this.setState({ isLoaded: true, stats: Object.values(responseData['data']['segments']['0']['stats'])});
-        // console.log(responseData['data']['segments']['0']['stats'])
-        // console.log(Object.keys(responseData['data']['segments']['0']['stats']))
-        // console.log(Object.values(responseData['data']['segments']['0']['stats']))
+    Promise.all([
+      fetch("https://public-api.tracker.gg/v2/overwatch/standard/profile/battlenet/MirroR%2311669", {
+        method: 'GET',
+        headers: {  
+          'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
+          'Accept': 'application/json',
+          'Accept-Encoding': 'gzip',
+        }
+      }),
+      fetch("https://public-api.tracker.gg/v2/division-2/standard/profile/uplay/Solivictus", {
+        method: 'GET',
+        headers: {  
+          'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
+          'Accept': 'application/json',
+          'Accept-Encoding': 'gzip',
+        }
+      }),
+      fetch("https://public-api.tracker.gg/v2/csgo/standard/profile/steam/76561198008049283", {
+        method: 'GET',
+        headers: {  
+          'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
+          'Accept': 'application/json',
+          'Accept-Encoding': 'gzip',
+        }
+      }),
+      fetch("https://public-api.tracker.gg/v2/splitgate/standard/profile/steam/76561198085274423", {
+        method: 'GET',
+        headers: {  
+          'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
+          'Accept': 'application/json',
+          'Accept-Encoding': 'gzip',
+        }
+      }),
+    ])
+      .then(([res1, res2, res3, res4]) => Promise.all([res1.json(), res2.json(), res3.json(), res4.json()]))
+      .then(([data1, data2, data3, data4]) => {
+        this.setState({ isLoaded: true, selection: this.props.gameSelect, Overwatch: Object.values(data1['data']['segments']['0']['stats']), Division2: Object.values(data2['data']['segments']['0']['stats']), CounterStrike: Object.values(data3['data']['segments']['0']['stats']), Splitgate: Object.values(data4['data']['segments']['0']['stats'])});
       })
       .catch(error => console.log(error));
   }
-
   render() {
-    const { isLoaded, stats } = this.state;
+    const { isLoaded, Overwatch, Division2, CounterStrike, Splitgate } = this.state;
 
     if(!isLoaded) {
       return (
-      <div >
-        <CircularProgress color="secondary" />
+      <div className="loading">
+        <CircularProgress color="secondary"/>
       </div>)
-    } else {
-      return(
-        
-        <Grid container spacing={2} flexGrow={1} marginTop={30}>
+    } else if (this.props.gameSelect  === 'Overwatch') {
+        return (
+          <Grid container spacing={2}>
           <Grid item xs={12}>
             <Grid container justify="center" spacing={3}>
-            {stats.map(item => (
+            {Overwatch.map(item => (
               <Grid item>
-                <Card flexGrow={1} marginTop={30}>
+                <Card>
                   <CardContent height={150} width={220}>
-                    <Typography gutterBottom variant="h4" component="h2" marginTop={50}>
+                    <Typography gutterBottom variant="h4" component="h2">
                       {item.displayValue}
                     </Typography>
                     <Typography variant="body1" color="textSecondary" component="p">
@@ -65,9 +88,79 @@ class StatsApi extends Component {
             </Grid>
           </Grid>
         </Grid>
-      )
+        )
+      } else if (this.props.gameSelect  === 'Division 2') {
+        return(
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Grid container justify="center" spacing={3}>
+              {Division2.map(item => (
+                <Grid item>
+                  <Card>
+                    <CardContent height={150} width={220}>
+                      <Typography gutterBottom variant="h4" component="h2">
+                        {item.displayValue}
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary" component="p">
+                        {item.displayName}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        )
+      } else if (this.props.gameSelect  === 'Counter Strike') {
+        return(
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Grid container justify="center" spacing={3}>
+              {CounterStrike.map(item => (
+                <Grid item>
+                  <Card>
+                    <CardContent height={150} width={220}>
+                      <Typography gutterBottom variant="h4" component="h2">
+                        {item.displayValue}
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary" component="p">
+                        {item.displayName}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        )
+      } else if (this.props.gameSelect  === 'Splitgate') {
+        return(
+          <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <Grid container justify="center" spacing={3}>
+              {Splitgate.map(item => (
+                <Grid item>
+                  <Card>
+                    <CardContent height={150} width={220}>
+                      <Typography gutterBottom variant="h4" component="h2">
+                        {item.displayValue}
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary" component="p">
+                        {item.displayName}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        )
+      }
     }
-  }
 }
+
 
 export default StatsApi

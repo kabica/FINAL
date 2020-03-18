@@ -14,27 +14,27 @@ const games = [
   },
   {
     id: 2,
-    image: 'https://overworldleague.com/wp-content/uploads/2019/05/rainbow-six-siege-cover-400x533.jpg',
+    image: 'https://static3.srcdn.com/wordpress/wp-content/uploads/2019/01/The-Division-2-Cover-Art.jpg',
     imageBg: 'https://i.pinimg.com/originals/a6/63/ef/a663efcd360fb281ab27e19628e00b99.jpg',
-    title: 'Rainbow 6'
+    title: 'Division 2'
   },
   {
     id: 3,
-    image: 'https://cdn-products.eneba.com/resized-products/ymfwt5jst8fdwunnkk9m_390x400_1x-0.jpg',
+    image: 'https://s3-cdn.mogul.gg/gameasset/a756651c-13ec-4515-b61a-34a94fe367f6.jpg',
     imageBg: 'https://i.pinimg.com/originals/a6/63/ef/a663efcd360fb281ab27e19628e00b99.jpg',
-    title: 'Total War',
+    title: 'Splitgate',
   },
   {
     id: 4,
-    image: 'https://haste.net/wp-content/uploads/2017/11/Haste-Dota2-Cover.jpg',
-    imageBg: 'https://i.pinimg.com/originals/a6/63/ef/a663efcd360fb281ab27e19628e00b99.jpg',
-    title: 'Dota 2'
-  },
-  {
-    id: 5,
     image: 'https://i.pinimg.com/originals/03/cc/7c/03cc7cc933ae62ceceea8880fa860d25.jpg',
     imageBg: 'https://i.pinimg.com/originals/a6/63/ef/a663efcd360fb281ab27e19628e00b99.jpg',
     title: 'Counter Strike'
+  },
+  {
+    id: 5,
+    image: 'https://ecs7.tokopedia.net/img/cache/700/product-1/2019/4/8/48913809/48913809_519d33e5-74e6-47c0-b02d-81d185252d03_810_1080.jpg',
+    imageBg: 'https://i.pinimg.com/originals/a6/63/ef/a663efcd360fb281ab27e19628e00b99.jpg',
+    title: 'Apex Legends'
   },
   {
     id: 6,
