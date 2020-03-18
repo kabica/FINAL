@@ -76,20 +76,20 @@ function Discover() {
         {mode[v.DESC1] === 'show' && (<Overview game={mode[v.ROW1]} />)}
 
         <div id='row2'>
-          {<GameCard logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
-          {<GameCard logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>}
-          {<GameCard logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>}
-          {<GameCard logo={ROCKET} onClick={() => setVisual(v.ROW2,'ROCKET')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'BL3'} logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'APEX'} logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'DOTA'} logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'ROCKET'} logo={ROCKET} onClick={() => setVisual(v.ROW2,'ROCKET')}/>}
         </div>
         {mode[v.ROW2] !== v.HIDE_R2 && (
         <Show name={text[mode[v.ROW2]]} onClick={() => hideVisual(v.ROW2)} drop={() => hideView(v.DESC2)}/>)}
         {mode[v.DESC2] === 'show' && (<Overview game={mode[v.ROW2]} />)}
 
         <div id='row3'>
-          {<GameCard logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>}
-          {<GameCard logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>}
-          {<GameCard logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>}
-          {<GameCard logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>}
+          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>}
         </div>
         {mode[v.ROW3] !== v.HIDE_R3 && (
         <Show name={text[mode[v.ROW3]]} onClick={() => hideVisual(v.ROW3)} drop={() => hideView(v.DESC3)}/>)}
