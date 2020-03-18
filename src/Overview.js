@@ -21,7 +21,10 @@ import MINE_W from './img/MINE_W.png'
 import { useState } from "react";
 import notes  from './notes'
 import Platforms from './Platforms'
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 const axios = require('axios');
+
 
 
 
@@ -51,14 +54,29 @@ const func = function() {
   .catch(error => console.log(error))
 }
 
+const postMessage = function(text) {
+  axios.post('http://localhost:8000/alex', {
+    author: 'alex',
+    user: 1,
+    text: text
+  })
+  .then(alert('done'))
+  .catch(err => console.log(err))
+}
+
+const post = function() {
+  
+}
+
 
 function Overview(props) {
+  const [mode, setMode] = useState('');
   
   return (
     <div id='game'>
       <div id='banner'>
         <img id='wide'src={images[props.game]} alt="logo" onClick={func}/>
-        {<Platforms/>}
+        {<Platforms game={props.game}/>}
       </div>
       <div id='notes' >
         <div id='section'>OVERVIEW: {props.game}</div>
@@ -66,6 +84,16 @@ function Overview(props) {
         <div id='section'>PATCH NOTES: {props.game}</div>
           {<PatchNote title={'BARRICADE DEBRIS CONSISTENCY'} text={note}/>}
           {<PatchNote title={attack} text={notes.FORT.PATCH}/>}
+      </div>
+      <div id='scroll'>
+        <div id='chatInput'>
+            <form noValidate autoComplete="off">
+              <TextField value={mode} id="outlined-secondary"label="Outlined secondary"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
+            </form>
+            <Button id='button'variant="outlined" color="primary" onClick={() => postMessage(mode)}>
+              Primary
+            </Button>
+        </div>
       </div>
     </div>
   );

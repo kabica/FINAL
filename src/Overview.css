@@ -10,7 +10,8 @@
   font-size: 54px;
   width: 1238px;
   margin-top: 24px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid grey;
 }
 
 #notes {
@@ -22,4 +23,29 @@
 #wide {
   width: 1238px;
   height: 600px;
+}
+
+#scroll {
+  font-family: 'Bungee';
+  color: white;
+  font-size: 30px;;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border: 1px solid white;
+  height: 200px;
+  flex: 0 0 auto;
+  /* justify-content: flex-end; */
+}
+#chatInput {
+  display: flex;
+  flex-direction: row;
+}
+#outlined-secondary{
+  width: 870px;
+  background-color: rgb(88, 88, 88);
+}
+#button {
+  width: 130px;
 }
