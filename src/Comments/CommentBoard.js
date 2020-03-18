@@ -32,13 +32,13 @@ function CommentBoard(props) {
   useEffect(() => {
     getComment()
     .then(comms => {
-      setState(state => ({...state, comments: comms.data}))
+      setState(state => ({...state, comments: comms ? comms.data : ['no']}))
     })
   },[])
 
   return (
     <div id='container'>
-      <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={'11:26am'}text={post.text}/>)}</div>
+      <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={'11:26am'}text={post.text || 'no'}/>)}</div>
       <div id='chatInput'>
         <form noValidate autoComplete="off">
           <TextField value={mode} id="outlined-secondary"label="Let the world know!"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
