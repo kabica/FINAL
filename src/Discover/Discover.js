@@ -76,30 +76,30 @@ function Discover() {
         {mode[v.DESC1] === 'show' && (<Overview game={mode[v.ROW1]} />)}
 
         <div id='row2'>
-          {<GameCard sel={mode[v.ROW1] === 'BL3'} logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'APEX'} logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'DOTA'} logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'ROCKET'} logo={ROCKET} onClick={() => setVisual(v.ROW2,'ROCKET')}/>}
+          {<GameCard sel={mode[v.ROW2] === 'BL3'} logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>}
+          {<GameCard sel={mode[v.ROW2] === 'APEX'} logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>}
+          {<GameCard sel={mode[v.ROW2] === 'DOTA'} logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>}
+          {<GameCard sel={mode[v.ROW2] === 'ROCKET'} logo={ROCKET} onClick={() => setVisual(v.ROW2,'ROCKET')}/>}
         </div>
         {mode[v.ROW2] !== v.HIDE_R2 && (
         <Show name={text[mode[v.ROW2]]} onClick={() => hideVisual(v.ROW2)} drop={() => hideView(v.DESC2)}/>)}
         {mode[v.DESC2] === 'show' && (<Overview game={mode[v.ROW2]} />)}
 
         <div id='row3'>
-          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>}
-          {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>}
+          {<GameCard sel={mode[v.ROW3] === 'R6'} logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>}
+          {<GameCard sel={mode[v.ROW3] === 'OW'} logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>}
+          {<GameCard sel={mode[v.ROW3] === 'BF1'} logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>}
+          {<GameCard sel={mode[v.ROW3] === 'LoL'} logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>}
         </div>
         {mode[v.ROW3] !== v.HIDE_R3 && (
         <Show name={text[mode[v.ROW3]]} onClick={() => hideVisual(v.ROW3)} drop={() => hideView(v.DESC3)}/>)}
         {mode[v.DESC3] === 'show' && (<Overview game={mode[v.ROW3]} />)}
 
         <div id='row4'>
-          {<GameCard logo={OW} onClick={() => setVisual(v.ROW4,'OW')}/>}
-          {<GameCard logo={COD} onClick={() => setVisual(v.ROW4,'COD')}/>}
-          {<GameCard logo={FALL} onClick={() => setVisual(v.ROW4,'FALL')}/>}
-          {<GameCard logo={MINE} onClick={() => setVisual(v.ROW4,'MINE')}/>}
+          {<GameCard sel={mode[v.ROW4] === 'OW'} logo={OW} onClick={() => setVisual(v.ROW4,'OW')}/>}
+          {<GameCard sel={mode[v.ROW4] === 'COD'} logo={COD} onClick={() => setVisual(v.ROW4,'COD')}/>}
+          {<GameCard sel={mode[v.ROW4] === 'FALL'} logo={FALL} onClick={() => setVisual(v.ROW4,'FALL')}/>}
+          {<GameCard sel={mode[v.ROW4] === 'MINE'} logo={MINE} onClick={() => setVisual(v.ROW4,'MINE')}/>}
         </div>
         {mode[v.ROW4] !== v.HIDE_R4 && (
         <Show name={text[mode[v.ROW4]]} onClick={() => hideVisual(v.ROW4)} drop={() => hideView(v.DESC4)}/>)}

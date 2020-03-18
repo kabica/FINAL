@@ -12,9 +12,10 @@
 .title_card--selected {
   margin-right: 12px;
   margin-left: 12px;
-  /* border: 4px solid magenta; */
+  border: 4px solid rgb(81, 1, 178);
+  border-radius: 4px;
   /* box-shadow: 0px 10px 5px rgba(255, 0, 255, 0.685); */
-  box-shadow: 0px 10px 6px rgba(241, 4, 95, 0.61);
+  box-shadow: 0px 10px 6px rgb(81, 1, 178);
 }
 #more {
   border-radius: 0px 8px 8px 0px;
