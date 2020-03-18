@@ -48,25 +48,23 @@ const images = {
   FALL: FALLOUT,
   MINE: MINE_W
 }
-const func = function() {
-  axios.get('http://localhost:8000/')
-  .then(response => console.log(response.data))
-  .catch(error => console.log(error))
-}
+const getMessages = function() {
+  axios.get('http://localhost:8000/comments')
+  .then(comms => {
+    console.log(comms.data)
+  })
+  .catch(error => console.log(error));
+};
 
 const postMessage = function(text) {
-  axios.post('http://localhost:8000/alex', {
-    author: 'alex',
+  return axios.post('http://localhost:8000/comments', {
+    author: 1,
     user: 1,
     text: text
   })
-  .then(alert('done'))
+  .then(getMessages())
   .catch(err => console.log(err))
-}
-
-const post = function() {
-  
-}
+};
 
 
 function Overview(props) {
@@ -75,7 +73,7 @@ function Overview(props) {
   return (
     <div id='game'>
       <div id='banner'>
-        <img id='wide'src={images[props.game]} alt="logo" onClick={func}/>
+        <img id='wide'src={images[props.game]} alt="logo"/>
         {<Platforms game={props.game}/>}
       </div>
       <div id='notes' >
@@ -90,7 +88,7 @@ function Overview(props) {
             <form noValidate autoComplete="off">
               <TextField value={mode} id="outlined-secondary"label="Outlined secondary"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
             </form>
-            <Button id='button'variant="outlined" color="primary" onClick={() => postMessage(mode)}>
+            <Button id='button'variant="outlined" color="primary" onClick={() => {postMessage(mode);}}>
               Primary
             </Button>
         </div>
