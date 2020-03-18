@@ -1,6 +1,6 @@
 .mark {
   box-sizing: border-box;
-  border: solid 4px aqua;
+  border: solid 4px 	rgb(81, 1, 178);
   position: absolute;
   top: 0;
   left: 0;
@@ -29,6 +29,6 @@
 
   &:after {
     margin-top: 4px;
-    border-color: aqua transparent transparent transparent;
+    border-color:	rgb(81, 1, 178) transparent transparent transparent;
   }
 }

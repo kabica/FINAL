@@ -9,11 +9,8 @@
   background-color: rgba(51, 51, 51, 1);
 }
 
-.navbar h1 {
-  color: aqua;
-  font-family: 'Bungee Hairline', cursive;
-  font-size: 40px;
-  margin-left: 10%;
+#name {
+  height: 80px;
 }
 
 .navbar-sticky {
@@ -33,10 +30,10 @@
 }
 
 .navbar--logo {
-  width: 4rem;
   height: 4rem;
+  width: 2.5rem;
   margin-right: 0.5rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
   animation: rotate 0.7s ease-in-out 0.5s;
   border-radius: 30px;
 }
@@ -51,16 +48,16 @@
   margin: 0.4rem 1rem 0 0;
   padding: 0 0.3rem;
   cursor: pointer;
-  color: aqua;
+  color: 	white;
   font-size: 20px;
 }
 
 .navbar--link-item a {
-  color: aqua;         /* Unvisited link  */
+  color: 	white;         /* Unvisited link  */
   text-decoration: none;
   display: block;
 }
-.navbar--link-item a:visited {color: aqua;} /* Visited link    */
+.navbar--link-item a:visited {color: 	white;} /* Visited link    */
 .navbar--link-item a:hover {color:#FF00FF;}   /* Mouse over link */
 
 @keyframes moveDown {
