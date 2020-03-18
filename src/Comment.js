@@ -7,7 +7,11 @@ import './Comment.css';
 function Comment(props) {
   return (
     <div id='comment'>
-      {props.text}
+      <div id='meta'>
+        <div><strong>{props.author}</strong></div>
+        <div><strong>{props.time}</strong></div>
+      </div>
+      <div id='content'>{props.text}</div>
     </div>
   );
 }

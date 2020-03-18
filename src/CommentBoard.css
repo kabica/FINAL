@@ -24,4 +24,6 @@
 }
 #button {
   width: 130px;
+  background-color: blue;
+  color: white;
 }
