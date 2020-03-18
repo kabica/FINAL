@@ -54,7 +54,13 @@ class StatsApi extends Component {
     ])
       .then(([res1, res2, res3, res4]) => Promise.all([res1.json(), res2.json(), res3.json(), res4.json()]))
       .then(([data1, data2, data3, data4]) => {
-        this.setState({ isLoaded: true, selection: this.props.gameSelect, Overwatch: Object.values(data1['data']['segments']['0']['stats']), Division2: Object.values(data2['data']['segments']['0']['stats']), CounterStrike: Object.values(data3['data']['segments']['0']['stats']), Splitgate: Object.values(data4['data']['segments']['0']['stats'])});
+        this.setState({ 
+          isLoaded: true, 
+          selection: this.props.gameSelect, 
+          Overwatch: Object.values(data1['data']['segments']['0']['stats']), 
+          Division2: Object.values(data2['data']['segments']['0']['stats']), 
+          CounterStrike: Object.values(data3['data']['segments']['0']['stats']), 
+          Splitgate: Object.values(data4['data']['segments']['0']['stats'])});
       })
       .catch(error => console.log(error));
   }

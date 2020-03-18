@@ -3,6 +3,7 @@
   height: 90vw;
   float: right;
   width: 100%;
+  transition: transform 300ms ease 100ms;
 
   &__background,
   &__background__shadow,
