@@ -1,0 +1,31 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 240px;
+  width: 1238px;
+  margin-bottom: 2em;
+}
+
+#scroll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border: 1px solid blue;
+  height: 100%;
+}
+#chatInput {
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid blue;
+  border-right: 1px solid blue;
+  border-bottom: 1px solid blue;
+}
+#outlined-secondary{
+  width: 1108px;
+  background-color: rgb(88, 88, 88);
+}
+#button {
+  width: 130px;
+  background-color: blue;
+  color: white;
+}

@@ -1,4 +1,4 @@
-#comment {
+#commentGroup {
   font-family: 'Bungee Hairline';
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   margin-bottom: 0.16em;
 }
 
-#content {
+#commentText {
   width: 90%;
   font-size: 20px;
   color: white;

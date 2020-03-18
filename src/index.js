@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Discover from './Discover';
-import Overview from './Overview.js'
+import Discover from './Discover/Discover';
+
 import * as serviceWorker from './serviceWorker';
 import axios from "axios";
 

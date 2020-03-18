@@ -1,27 +1,27 @@
 import React from 'react';
 import './Discover3.css';
-import Overview from './Overview'
-import GameCard from './GameCard';
-import OW from './img/ow.jpg';
-import R6 from './img/r6.jpg'
-import dota from './img/dota.jpg'
-import apex from './img/apex.jpeg';
-import fort from './img/fort.jpg'
-import pubg from './img/pubg.png'
-import BL3 from './img/BL3.png'
-import BF1 from './img/BF1.png'
-import R6_D from './img/r6dark.jpg'
-import DST2 from './img/destiny2.png'
+import Overview from '../Overview/Overview'
+import GameCard from '../GameCards/GameCard';
+import OW from '../img/ow.jpg';
+import dota from '../img/dota.jpg'
+import apex from '../img/apex.jpeg';
+import fort from '../img/fort.jpg'
+import pubg from '../img/pubg.png'
+import BL3 from '../img/BL3.png'
+import BF1 from '../img/BF1.png'
+import R6_D from '../img/r6dark.jpg'
+import DST2 from '../img/destiny2.png'
 import Show from './Show'
-import FORT_S from './img/FORT_S.png'
-import ROCKET from './img/rocket.png'
-import LoL from './img/LoL.png'
-import COD from './img/COD.png'
-import FALL from './img/FALLOUT.png'
-import MINE from './img/MINE.png'
+import FORT_S from '../img/FORT_S.png'
+import ROCKET from '../img/rocket.png'
+import LoL from '../img/LoL.png'
+import COD from '../img/COD.png'
+import FALL from '../img/FALLOUT.png'
+import MINE from '../img/MINE.png'
 import { useState } from "react";
-import { v } from './constants';
-import { text } from './text'
+import { v } from '../constants';
+import { text } from '../Overview/text';
+
 
 
 

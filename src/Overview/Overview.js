@@ -1,29 +1,27 @@
 import React from 'react';
 import './Overview.css';
-import OW_WIDE from './img/ow_wide.png'
-import R6B from './img/R6B.png'
-import R6_INV from './img/R6_INV.png'
-import PatchNote from './PatchNote'
-import R6 from './img/R6B.png'
-import DEST_2 from './img/DEST_2.png'
-import PUBG from './img/PUBG_banner.png'
-import APEX_W from './img/APEX_W.png'
-import FORT_W from './img/FORT_W2.png'
-import ROCKET_W from './img/ROCKET_W.png'
-import DOTA_W from './img/DOTA_W.png'
-import BF1_W from './img/BF1_W.png'
-import OW_W from './img/ow_wide.png'
-import LoL_W from './img/LoL_W.png'
-import BL3_W from './img/BL3_W.png'
-import COD_W from './img/COD_W.png'
-import FALLOUT from './img/FALLOUT_W.png'
-import MINE_W from './img/MINE_W.png'
+
+import PatchNote from '../Patchnotes/PatchNote'
+import R6 from '../img/R6B.png'
+import DEST_2 from '../img/DEST_2.png'
+import PUBG from '../img/PUBG_banner.png'
+import APEX_W from '../img/APEX_W.png'
+import FORT_W from '../img/FORT_W2.png'
+import ROCKET_W from '../img/ROCKET_W.png'
+import DOTA_W from '../img/DOTA_W.png'
+import BF1_W from '../img/BF1_W.png'
+import OW_W from '../img/ow_wide.png'
+import LoL_W from '../img/LoL_W.png'
+import BL3_W from '../img/BL3_W.png'
+import COD_W from '../img/COD_W.png'
+import FALLOUT from '../img/FALLOUT_W.png'
+import MINE_W from '../img/MINE_W.png'
 import { useState, useEffect} from "react";
-import notes  from './notes'
+import notes  from './notes';
 import Platforms from './Platforms'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import CommentBoard from './CommentBoard'
+import CommentBoard from '../Comments/CommentBoard'
 const axios = require('axios');
 
 

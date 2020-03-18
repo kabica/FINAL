@@ -1,5 +1,5 @@
 import React from 'react';
-import SWITCH from './img/switch.png'
+import SWITCH from '../img/switch.png'
 import './Platform.css'
 const axios = require('axios');
 

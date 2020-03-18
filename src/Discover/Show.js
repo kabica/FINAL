@@ -1,6 +1,6 @@
 import React from 'react';
-import './GameCard.css';
-import Overview from './Overview'
+import '../GameCards/GameCard.css';
+import Overview from '../Overview/Overview'
 import { useState } from "react";
 
 function Show(props) {

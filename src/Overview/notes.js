@@ -69,7 +69,7 @@ const notes = {
   LoL: {
     DESC: 'alex',
     PATCH: 'alex'
-  },
+  }
   
   
 
