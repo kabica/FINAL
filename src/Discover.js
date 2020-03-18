@@ -64,7 +64,7 @@ function Discover() {
         <div>BROROGIE</div>
         <div>JOEROGI</div>
       </nav>
-      <body>
+      <div id='body'>
         <div id='row1'>
           {<GameCard logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>}
           {<GameCard logo={pubg} onClick={() => setVisual(v.ROW1,'PUBG')}/>}
@@ -104,7 +104,7 @@ function Discover() {
         {mode[v.ROW4] !== v.HIDE_R4 && (
         <Show name={text[mode[v.ROW4]]} onClick={() => hideVisual(v.ROW4)} drop={() => hideView(v.DESC4)}/>)}
         {mode[v.DESC4] === 'show' && (<Overview game={mode[v.ROW4]} />)}
-      </body>
+      </div>
     </main>
   );
 }

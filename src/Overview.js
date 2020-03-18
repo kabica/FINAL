@@ -18,11 +18,12 @@ import BL3_W from './img/BL3_W.png'
 import COD_W from './img/COD_W.png'
 import FALLOUT from './img/FALLOUT_W.png'
 import MINE_W from './img/MINE_W.png'
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import notes  from './notes'
 import Platforms from './Platforms'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import CommentBoard from './CommentBoard'
 const axios = require('axios');
 
 
@@ -48,28 +49,10 @@ const images = {
   FALL: FALLOUT,
   MINE: MINE_W
 }
-const getMessages = function() {
-  axios.get('http://localhost:8000/comments')
-  .then(comms => {
-    console.log(comms.data)
-  })
-  .catch(error => console.log(error));
-};
 
-const postMessage = function(text) {
-  return axios.post('http://localhost:8000/comments', {
-    author: 1,
-    user: 1,
-    text: text
-  })
-  .then(getMessages())
-  .catch(err => console.log(err))
-};
 
 
 function Overview(props) {
-  const [mode, setMode] = useState('');
-  
   return (
     <div id='game'>
       <div id='banner'>
@@ -83,16 +66,7 @@ function Overview(props) {
           {<PatchNote title={'BARRICADE DEBRIS CONSISTENCY'} text={note}/>}
           {<PatchNote title={attack} text={notes.FORT.PATCH}/>}
       </div>
-      <div id='scroll'>
-        <div id='chatInput'>
-            <form noValidate autoComplete="off">
-              <TextField value={mode} id="outlined-secondary"label="Outlined secondary"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
-            </form>
-            <Button id='button'variant="outlined" color="primary" onClick={() => {postMessage(mode);}}>
-              Primary
-            </Button>
-        </div>
-      </div>
+      {<CommentBoard />}
     </div>
   );
 }
