@@ -1,0 +1,20 @@
+#commentGroup {
+  font-family: 'Bungee Hairline';
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+#meta{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(255, 102, 0);
+  margin-bottom: 0.16em;
+}
+
+#commentText {
+  width: 90%;
+  font-size: 20px;
+  color: white;
+}
