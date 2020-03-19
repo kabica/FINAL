@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Button } from './Button';
-import Icon from 'react-icons-kit';
+
 
 import BackgroundVideo from "./BackgroundVideo"
 
