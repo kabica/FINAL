@@ -29,12 +29,13 @@ const postComment = function(text) {
 function CommentBoard(props) {
   const [mode, setMode] = useState('');
   const [state, setState] = useState({comments: []});
+  
   useEffect(() => {
     getComment()
     .then(comms => {
       setState(state => ({...state, comments: comms ? comms.data : ['no']}))
     })
-  },[])
+  },[]);
 
   return (
     <div id='container'>

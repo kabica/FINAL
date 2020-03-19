@@ -22,7 +22,7 @@ import Platforms from './Platforms'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import CommentBoard from '../Comments/CommentBoard'
-import Characters from '../Overview/Characters'
+import Characters from './Characters'
 const axios = require('axios');
 
 
