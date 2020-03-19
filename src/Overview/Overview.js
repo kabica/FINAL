@@ -22,6 +22,7 @@ import Platforms from './Platforms'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import CommentBoard from '../Comments/CommentBoard'
+import Characters from '../Overview/Characters'
 const axios = require('axios');
 
 
@@ -55,11 +56,11 @@ function Overview(props) {
     <div id='game'>
       <div id='banner'>
         <img id='wide'src={images[props.game]} alt="logo"/>
-        {<Platforms game={props.game}/>}
+        {/* {<Platforms game={props.game}/>} */}
       </div>
       <div id='notes' >
-        <div id='section'>OVERVIEW: {props.game}</div>
-          {<PatchNote text={note}/>}
+        <div id='section'>CHARACTERS: {props.game}</div>
+        <Characters />
         <div id='section'>PATCH NOTES: {props.game}</div>
           {<PatchNote title={'BARRICADE DEBRIS CONSISTENCY'} text={note}/>}
           {<PatchNote title={attack} text={notes.FORT.PATCH}/>}
