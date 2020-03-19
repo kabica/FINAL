@@ -19,7 +19,7 @@ import COD from '../img/COD.png'
 import FALL from '../img/FALLOUT.png'
 import MINE from '../img/MINE.png'
 import { useState } from "react";
-import { v } from '../constants';
+import { v } from './constants';
 import { text } from '../Overview/text';
 
 

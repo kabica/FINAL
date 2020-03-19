@@ -2,6 +2,7 @@ import React from 'react';
 import '../GameCards/GameCard.css';
 import Overview from '../Overview/Overview'
 import { useState } from "react";
+import Fade from '@material-ui/core/Fade';
 
 function Show(props) {
   const [mode, setMode] = useState('+')
