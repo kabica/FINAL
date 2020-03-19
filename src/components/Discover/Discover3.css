@@ -32,6 +32,7 @@ nav {
 #row1 {
   display: flex;
   margin-bottom: 24px;
+  margin-top: 5rem;
 }
 #row2 {
   display: flex;

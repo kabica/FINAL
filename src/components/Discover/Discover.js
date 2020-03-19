@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import './Discover3.css';
 import Overview from '../Overview/Overview'
 import GameCard from '../GameCards/GameCard';
@@ -18,9 +18,10 @@ import LoL from '../img/LoL.png'
 import COD from '../img/COD.png'
 import FALL from '../img/FALLOUT.png'
 import MINE from '../img/MINE.png'
-import { useState } from "react";
 import { v } from './constants';
 import { text } from '../Overview/text';
+import Navbar from '../Header/Navbar'
+
 
 
 
@@ -56,14 +57,22 @@ function Discover() {
     if(key === v.DESC4) (mode[key] === v.HIDE) ? setMode(mode => ({...mode, desc4: v.SHOW})) : setMode(mode => ({...mode, desc4: v.HIDE}));
   };
 
+  const aliases = {
+    Nickname: "MasterChef815",
+    Discord: "Chief#4782",
+    Steam: "The Chief",
+    EpicGames: "XxChiefxX",
+    Origin: "The_Chief",
+    Battlenet: "TheChief#59071",
+    Uplay: "MasterChef",
+  }
+
+
   return ( 
     <main class='container'>
-      <nav>
-        <div>GAMETRAX</div>
-        <div>PAROGIE</div>
-        <div>BROROGIE</div>
-        <div>JOEROGI</div>
-      </nav>
+        <Fragment>
+          <Navbar nickname={aliases.Nickname}/>
+        </Fragment>
       <div id='body'>
         <div id='row1'>
           {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>}

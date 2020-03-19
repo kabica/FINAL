@@ -78,7 +78,6 @@ const games = [
   },
 ];
 
-// class App extends Component {
   function App() {
   useEffect(() => {
     return () => {
@@ -112,7 +111,6 @@ const games = [
   }
 
   window.addEventListener("scroll", debounce(handleScroll))
-  // render() {
     return (
       <div className="app">
         <Fragment>
