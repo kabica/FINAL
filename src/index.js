@@ -12,6 +12,9 @@ if (process.env.REACT_APP_API_BASE_URL) {
 }
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Discover />, document.getElementById('root'));
 
 serviceWorker.unregister();
+
+
+
