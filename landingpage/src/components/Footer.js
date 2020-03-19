@@ -5,7 +5,7 @@ import { Icon } from 'react-icons-kit';
 import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
 import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown';
 import { generateMedia } from 'styled-media-query';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 class Footer extends Component {
   state = {
