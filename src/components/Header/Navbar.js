@@ -11,9 +11,9 @@ const Navbar = ({ sticky, nickname}) => (
       {sticky? null : <img src={name} alt="name" id="name"/>}
     </div>
     <ul className="navbar--link">
-      <li className="navbar--link-item"><a href='#discover'>Discover</a></li>
-      <li className="navbar--link-item"><a href='#friends'>Friends</a></li>
-      <li className="navbar--link-item"><a href='#profile'>{nickname}</a></li>
+      <li className="navbar--link-item"><a href='/signup'>Discover</a></li>
+      <li className="navbar--link-item"><a href='/'>Friends</a></li>
+      <li className="navbar--link-item"><a href='/login'>{nickname}</a></li>
     </ul>
   </nav>
 )
