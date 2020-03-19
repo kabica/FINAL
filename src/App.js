@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import Slider from './components/GameSlider'
-import Banner from './components/Banner'
+import Banner from './components/Banner/Banner'
 import Navbar from "./components/Header/Navbar"
 import './App.css'
-import './components/Banner.css'
+import './components/Banner/Banner.css'
 
 const aliases = {
   Nickname: "MasterChef815",

@@ -19,7 +19,7 @@ class StatsApi extends Component {
   
   componentDidMount() {
     Promise.all([
-      fetch("https://public-api.tracker.gg/v2/overwatch/standard/profile/battlenet/MirroR%2311669", {
+      fetch("https://public-api.tracker.gg/v2/overwatch/standard/profile/battlenet/Fenrir%2313544", {
         method: 'GET',
         headers: {  
           'TRN-Api-Key': 'd6cb4f92-76d2-4d61-83f6-7d5bda0bd524',
@@ -50,13 +50,28 @@ class StatsApi extends Component {
           'Accept': 'application/json',
           'Accept-Encoding': 'gzip',
         }
-      }),
+      })
     ])
+    // owpromise.then(response1 => {return response1.json()})
+    // .then((data1) => {this.setState({isLoaded: true, Overwatch: Object.values(data1['data']['segments']['0']['stats'])})})
+    // .catch(error => console.log(error));
+
+    // div2promise.then(response2 => {return response2.json()})
+    // .then((data2) => {this.setState({isLoaded: true, Division2: Object.values(data2['data']['segments']['0']['stats'])})})
+    // .catch(error => console.log(error));
+
+    // csgopromise.then(response3 => {return response3.json()})
+    // .then((data3) => {this.setState({isLoaded: true, CounterStrike: Object.values(data3['data']['segments']['0']['stats'])})})
+    // .catch(error => console.log(error));
+
+    // splitgatepromise.then(response4 => {return response4.json()})
+    // .then((data4) => {this.setState({isLoaded: true, Splitgate: Object.values(data4['data']['segments']['0']['stats'])})})
+    // .catch(error => console.log(error));
+
       .then(([res1, res2, res3, res4]) => Promise.all([res1.json(), res2.json(), res3.json(), res4.json()]))
       .then(([data1, data2, data3, data4]) => {
         this.setState({ 
-          isLoaded: true, 
-          selection: this.props.gameSelect, 
+          isLoaded: true,
           Overwatch: Object.values(data1['data']['segments']['0']['stats']), 
           Division2: Object.values(data2['data']['segments']['0']['stats']), 
           CounterStrike: Object.values(data3['data']['segments']['0']['stats']), 
