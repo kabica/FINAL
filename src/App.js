@@ -1,7 +1,8 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import Slider from './components/GameSlider'
 import Banner from './components/Banner/Banner'
-import Navbar from "./components/Header/Navbar"
+import Navbar from './components/Header/Navbar'
+import YouTube from './components/YouTube/YouTube'
 import './App.css'
 import './components/Banner/Banner.css'
 
@@ -122,6 +123,7 @@ const games = [
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
           ))}
         </Slider>
+        <YouTube videoId='_nBlN9yp9R8'/>
       </div>
     );
   }
