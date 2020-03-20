@@ -20,15 +20,15 @@ const postComment = function(text) {
     user: 1,
     text: text
   })
-  .then(getComment())
+  .then(() => getComment())
   .catch(err => console.log(err))
 };
-
 
 
 function CommentBoard(props) {
   const [mode, setMode] = useState('');
   const [state, setState] = useState({comments: []});
+
   useEffect(() => {
     getComment()
     .then(comms => {
@@ -36,9 +36,10 @@ function CommentBoard(props) {
     })
   },[])
 
+
   return (
     <div id='container'>
-      <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={'11:26am'}text={post.text || 'no'}/>)}</div>
+      <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={post.created_at}text={post.text || 'no'}/>)}</div>
       <div id='chatInput'>
         <form noValidate autoComplete="off">
           <TextField value={mode} id="outlined-secondary"label="Let the world know!"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
