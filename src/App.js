@@ -6,6 +6,7 @@ import YouTube from './components/YouTube/YouTube'
 import './App.css'
 import './components/Banner/Banner.css'
 import Particles from 'react-particles-js';
+import Spotify from './components/Spotify/Spotify'
 
 const aliases = {
   Nickname: "MasterChef815",
@@ -86,6 +87,12 @@ const videos = {
   id3: 'CnyyNuYewdw'
 }
 
+const albums = {
+  uri1: "spotify:album:08HXwwR6WTHdR1VGnZtYm5",
+  uri2: "spotify:album:1yqMOYhq6ZCTCsPkU85yER",
+  uri3: "spotify:album:73TmwDD6mBOZh6sF9sKXZo"
+}
+
   function App() {
   useEffect(() => {
     return () => {
@@ -130,9 +137,11 @@ const videos = {
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
             ))}
         </Slider>
-          <Particles id='particles' style={{ width: '100%', height: '100%', position: 'fixed', top: '0' }}/>
-        <h1 className="videos">Highlited Videos</h1>
+        <Particles id='particles' style={{ width: '100%', height: '100%', position: 'fixed' }}/>
+        <h1 className="videos">Highlighted Videos</h1>
         <YouTube videos={videos}/>
+        <h1 className="albums">Gaming Playlists</h1>
+        <Spotify albums={albums}/>
       </div>
     );
   }
