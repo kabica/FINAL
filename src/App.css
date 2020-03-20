@@ -1,0 +1,9 @@
+.videos{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+canvas {
+  z-index: -1;
+}

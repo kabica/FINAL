@@ -5,6 +5,7 @@ import Navbar from './components/Header/Navbar'
 import YouTube from './components/YouTube/YouTube'
 import './App.css'
 import './components/Banner/Banner.css'
+import Particles from 'react-particles-js';
 
 const aliases = {
   Nickname: "MasterChef815",
@@ -79,6 +80,12 @@ const games = [
   },
 ];
 
+const videos = {
+  id1: 'PmXNkp96g-Q',
+  id2: 'MNrQ-pHg9f8',
+  id3: 'CnyyNuYewdw'
+}
+
   function App() {
   useEffect(() => {
     return () => {
@@ -121,9 +128,11 @@ const games = [
         <Slider>
           {games.map(game => (
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
-          ))}
+            ))}
         </Slider>
-        <YouTube videoId='_nBlN9yp9R8'/>
+          <Particles id='particles' style={{ width: '100%', height: '100%', position: 'fixed', top: '0' }}/>
+        <h1 className="videos">Highlited Videos</h1>
+        <YouTube videos={videos}/>
       </div>
     );
   }
