@@ -1,31 +1,34 @@
 #container {
   display: flex;
   flex-direction: column;
-  height: 240px;
+  height: 24em;
   width: 1238px;
   margin-bottom: 2em;
+  border: 1px solid rgba(71, 69, 69, 0.596);
+  border-radius: 8px;
 }
 
 #scroll {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  border: 1px solid blue;
+  /* border: 2px solid rgba(71, 69, 69, 0.596); */
   height: 100%;
+  padding: 0.6em;
 }
 #chatInput {
   display: flex;
   flex-direction: row;
-  border-left: 1px solid blue;
-  border-right: 1px solid blue;
-  border-bottom: 1px solid blue;
+
 }
 #outlined-secondary{
   width: 1108px;
   background-color: rgb(88, 88, 88);
+  border-radius: 0px 0px 0px 8px;
 }
 #button {
   width: 130px;
-  background-color: blue;
+  background-color: rgba(71, 69, 69, 0.596);
   color: white;
+  border-radius: 0px 0px 8px 0px;
 }
