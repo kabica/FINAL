@@ -21,6 +21,7 @@ import MINE from '../img/MINE.png'
 import { useState } from "react";
 import { v } from './constants';
 import { text } from '../Overview/text';
+import Nav from '../Header/Navbar'
 
 
 
@@ -58,12 +59,7 @@ function Discover() {
 
   return ( 
     <main class='container'>
-      <nav>
-        <div>GAMETRAX</div>
-        <div>PAROGIE</div>
-        <div>BROROGIE</div>
-        <div>JOEROGI</div>
-      </nav>
+      <Nav />  
       <div id='body'>
         <div id='row1'>
           {<GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>}
