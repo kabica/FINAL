@@ -6,7 +6,6 @@ import SpotifyPlayer from 'react-spotify-player';
 import DISCORD from '../img/discord.png'
 import AliasCard from './AliasCard'
 
-
 const onReady = function(event) {
   // access to player in all event handlers via event.target
   event.target.pauseVideo();
