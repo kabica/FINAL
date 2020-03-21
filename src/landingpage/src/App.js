@@ -4,6 +4,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup'
 import Discover from '../../components/Discover/Discover'
 import Profile from '../../App'
+import Edit from '../../components/Edit/Edit'
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" component={Signup}/>
         <Route path="/profile" component={Profile} />
         <Route path="/discover" component={Discover}/>
+        <Route path="/edit" component={Edit}/>
       </Switch>
     </div>
   );
