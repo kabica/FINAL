@@ -76,12 +76,13 @@ class StatsApi extends Component {
           Division2: Object.values(data2['data']['segments']['0']['stats']), 
           CounterStrike: Object.values(data3['data']['segments']['0']['stats']), 
           Splitgate: Object.values(data4['data']['segments']['0']['stats'])});
-      })
-      .catch(error => console.log(error));
-  }
-  render() {
-    const { isLoaded, Overwatch, Division2, CounterStrike, Splitgate } = this.state;
-
+          console.log('Dataaaaa', Object.values(data3['data']['segments']['0']['stats']))
+        })
+        .catch(error => console.log(error));
+      }
+      render() {
+        const { isLoaded, Overwatch, Division2, CounterStrike, Splitgate } = this.state;
+        
     if(!isLoaded) {
       return (
       <div className="loading">

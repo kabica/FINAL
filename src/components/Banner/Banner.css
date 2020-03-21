@@ -51,7 +51,8 @@
 }
 
 .MuiButton-contained {
-  margin-left: 30rem !important;
+  /* margin-left: 30rem !important; */
+  float: right;
   background-color: black !important;
 }
 
@@ -63,10 +64,14 @@
     margin-top: 7%;
   }
 
+  .container-banner {
+    margin-top: 15px;
+  }
+
   .container-banner h1 {
     font-size: 25px;
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 60px;
   }
 
@@ -74,4 +79,5 @@
     width: 15px;
     height: 15px;
   }
+
 }

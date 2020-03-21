@@ -15,3 +15,13 @@ canvas {
 .app h1 a {
   margin-left: 1%;
 }
+
+@media (max-width:360px) {
+
+  .videos, .albums, .gamesSlider{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+  }
+
+}
