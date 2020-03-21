@@ -37,6 +37,8 @@ function CommentBoard(props) {
   },[])
 
 
+
+
   return (
     <div id='container'>
       <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={post.created_at}text={post.text || 'no'}/>)}</div>

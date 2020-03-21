@@ -5,6 +5,7 @@ import Discover from './components/Discover/Discover';
 import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom';
 import Mo from './landingpage/src/App';
+import Edit from './components/Edit/Edit'
 
 import * as serviceWorker from './serviceWorker';
 import axios from "axios";

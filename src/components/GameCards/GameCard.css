@@ -20,7 +20,7 @@
 #more {
   border-radius: 0px 8px 8px 0px;
   font-family: 'Bungee';
-  color: rgb(217, 230, 227);
+  color: rgb(8, 235, 182);
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -30,7 +30,8 @@
   min-width: 1.5em;
   max-width: 1.5em;
   height: 100%;
-  background-image: linear-gradient(rgb(107, 1, 107), rgba(231, 7, 55, 0.856));
+  background-image: linear-gradient(rgb(58, 57, 58), rgba(235, 226, 228, 0.856));
+  /* background-image: linear-gradient(rgb(107, 1, 107), rgba(231, 7, 55, 0.856)); */
   /* background-color: rgba(170, 1, 1, 0.808); */
 }
 #more:hover {
@@ -60,6 +61,7 @@
   align-items: flex-start;
   background-color: rgb(24, 23, 23);
   transition: 2s;
+  font-weight: 800;
 
 }
 

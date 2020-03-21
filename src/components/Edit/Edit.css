@@ -1,0 +1,141 @@
+
+#edit_page{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page_header {
+  margin-top: 1em;
+  font-family: 'Play', sans-serif;
+  font-size: 38px;
+  color: white;
+  width: 94%;
+  border-bottom: 2px solid white;
+}
+.category_header {
+  margin: 1em 0em 0.5em 0em;
+  font-family: 'Play', sans-serif;
+  font-size: 28px;
+  color: white;
+  width: 94%;
+}
+#avatar_card {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  border-radius: 8px;
+  width: 94%;
+  height: 14em;
+}
+
+#alias_card {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  border-radius: 8px;
+  width: 94%;
+  height: 14em;
+  justify-content: space-around;
+
+}
+#alias_card_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#alias_card_col {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#alias_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.alias {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: 1em 1em 2em 0em;
+  justify-content: space-between;
+}
+.alias_header {
+  font-family: 'Play', sans-serif;
+  color: white;
+  margin: 1.4em 1em 0em 1em;
+}
+.note {
+  font-family: 'Play', sans-serif;
+  font-style: italic;
+  color: white;
+  margin: 1.4em 1em 0em 1em;
+}
+
+#platform {
+  width: 3em;
+  height: 3em;
+}
+
+
+#profile_media {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  justify-content: space-between;
+}
+
+#youtube_card {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  border-radius: 8px;
+  width: 94%;
+  height: 18em;
+}
+#videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#video_col {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 2em 1em 0em 1em;
+}
+input {
+  margin-top: 1em;
+  height: 1.6em;
+  border-radius: 4px;
+  background-color: rgb(131, 131, 131);
+  border: 1px solid #9ecaed;
+  color: black;
+  font-family: 'Play', sans-serif;
+  font-size: 1em;
+}
+
+::placeholder {
+  color: black;
+  font-family: 'Play', sans-serif;
+  font-size: 1em;
+}
+
+#spotify_card {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  border-radius: 8px;
+  width: 94%;
+  height: 19em;
+  margin-bottom: 4em;
+}
+#vid {
+  border-radius: 4px;
+}
