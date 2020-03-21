@@ -42,30 +42,48 @@
   justify-content: space-between;
 }
 
-.youtube_col {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
+#youtube_card {
+  /* display: flex;
+  flex-direction: row; */
+  border: 1px solid white;
+  border-radius: 8px;
+  width: 94%;
+  height: 18em;
 }
-.spotify_col {
+#videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#video_col {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 260px;
+  margin: 2em 1em 0em 1em;
+}
+input {
+  margin-top: 2em;
+  height: 2em;
+  border-radius: 4px;
+  background-color: rgb(131, 131, 131);
+  border: 1px solid purple;
+  color: black;
+  font-family: 'Play', sans-serif;
+}
+::placeholder {
+  color: black;
+  font-family: 'Play', sans-serif;
+  font-size: 1.2em;
 }
 
-.youtube_card {
-  display: flex;
-  flex-direction: column;
+#spotify_card {
   border: 1px solid white;
   border-radius: 8px;
-  width: 100%;
-  height: 32em;
+  width: 94%;
+  height: 19em;
+  margin-bottom: 4em;
 }
-.spotify_card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid white;
-  border-radius: 8px;
-  width: 100%;
-  height: 32em;
+#vid {
+  border-radius: 4px;
 }
