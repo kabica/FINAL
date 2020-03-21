@@ -7,6 +7,9 @@ import './App.css'
 import './components/Banner/Banner.css'
 import Particles from 'react-particles-js';
 import Spotify from './components/Spotify/Spotify'
+import Button from '@material-ui/core/Button';
+import EditIcon from '@material-ui/icons/Edit';
+
 
 const aliases = {
   Nickname: "MasterChef815",
@@ -132,15 +135,41 @@ const albums = {
           <Navbar sticky={isSticky} nickname={aliases.Nickname}/>
         </Fragment>
         <Banner stickyRef={stickyRef} aliases={aliases}/>
+        <h1 className="gamesSlider">Featured Games
+          <a href='/edit'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
         <Slider>
           {games.map(game => (
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
             ))}
         </Slider>
-        <Particles id='particles' style={{ width: '100%', height: '100%', position: 'fixed' }}/>
-        <h1 className="videos">Highlighted Videos</h1>
+        <Particles id='particles' 
+          style={{ width: '100%', height: '100%', position: 'fixed' }}
+          params={{
+            "particles": {
+                "number": {
+                    "value": 100
+                },
+                "size": {
+                    "value": 3
+                }
+            },
+
+          }} 
+        />
+        <h1 className="videos">Highlighted Videos        
+          <a href='/videos'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
         <YouTube videos={videos}/>
-        <h1 className="albums">Gaming Playlists</h1>
+        <h1 className="albums">Gaming Playlists
+          <a href='/albums'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
         <Spotify albums={albums}/>
       </div>
     );

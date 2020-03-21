@@ -1,4 +1,4 @@
-.videos, .albums{
+.videos, .albums, .gamesSlider{
   color: white;
   text-align: center;
   font-size: 50px;
@@ -6,4 +6,12 @@
 
 canvas {
   z-index: -1;
+}
+
+.app h1 {
+  font-family: 'Play', sans-serif;
+}
+
+.app h1 a {
+  margin-left: 1%;
 }
