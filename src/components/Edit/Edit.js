@@ -27,7 +27,7 @@ function Edit(props) {
     YT3: props.YT3 || 'alex',
     SPOT1: props.SPOT1 || 'Enter a playlist URL',
     SPOT2: props.SPOT2 || 'Enter a playlist URL',
-    SPOT3: props.SPOT3 || 'Enter a playlist URL',
+    SPOT3: props.SPOT3
   }
   const [state, setState] = useState(initial)
  
@@ -94,7 +94,12 @@ function Edit(props) {
               view={view}
               theme={theme}
             />
-            <input placeholder={state.SPOT1}></input>
+            <input 
+              placeholder='Enter a playlist URL'
+              value={state.SPOT3 || ""}
+              onChange={(event) => {setState({...state, SPOT3: event.target.value})}}
+              type="text"
+            />
           </div>
         </div>
       </div>
