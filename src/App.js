@@ -160,13 +160,13 @@ const albums = {
           }} 
         />
         <h1 className="videos">Highlighted Videos        
-          <a href='/videos'>
+          <a href='/edit'>
             <EditIcon color="secondary" fontSize="large"/>
           </a>
         </h1>
         <YouTube videos={videos}/>
         <h1 className="albums">Gaming Playlists
-          <a href='/albums'>
+          <a href='/edit'>
             <EditIcon color="secondary" fontSize="large"/>
           </a>
         </h1>
