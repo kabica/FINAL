@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import './Discover3.css';
 import Overview from '../Overview/Overview'
 import GameCard from '../GameCards/GameCard';

@@ -21,9 +21,11 @@ function Banner( {stickyRef, aliases}) {
         <ListItemText><img className="logo" src={discord} alt="logo"/>{aliases.Discord}</ListItemText>
         <ListItemText><img className="logo" src={steam} alt="logo"/>{aliases.Steam}</ListItemText>
         <ListItemText><img className="logo" src={epic} alt="logo"/>{aliases.EpicGames}
-          {/* <Button variant="contained">
+        <a href='/edit'>
+          <Button variant="contained">
           Edit Profile
-          </Button> */}
+          </Button>
+        </a>
         </ListItemText>
         <ListItemText><img className="logo" src={origin} alt="logo"/>{aliases.Origin}</ListItemText>
         <ListItemText><img className="logo" src={battlenet} alt="logo"/>{aliases.Battlenet}</ListItemText>

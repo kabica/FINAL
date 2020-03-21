@@ -6,11 +6,17 @@
   font-family: monospace;
   float: right;
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2%;
+}
+
+.container-banner a {
+  text-decoration: none;
 }
 
 .container-banner span {
   color: white;
+  font-family: 'Play', sans-serif;
 }
 .container-banner h1 {
   color: white;
@@ -20,6 +26,7 @@
   padding-bottom: 9%;
   z-index: 1000;
   margin-right: 150px;
+  font-family: 'Play', sans-serif;
 }
 
 #profilePic {
