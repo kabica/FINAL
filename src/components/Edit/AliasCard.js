@@ -27,8 +27,8 @@ function AliasCard(props) {
               <p class='alias_header'>Battlnet: </p>
               <input 
                 value={state.DISCORD || ''}
-                placeholder='Enter Discord alias'
-                onChange={(event) => setState({...state, DISCORD: event.target.value})}
+                placeholder='Enter Discord alias2'
+                onChange={(event) => {setState({...state, DISCORD: event.target.value}); props.updateAlias(event.target.value);}}
                 type='text'
               />
             </div>

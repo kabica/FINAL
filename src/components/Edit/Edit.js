@@ -52,8 +52,9 @@ function Edit(props) {
     .then(() => setState({...state, MODE: 'done'}))
     .catch(err => console.log(err))
   };
-  const updateAlias = function(discord, steam, uplay, battle, epic, origin) {
+  const updateAlias = function(test) {
     // setState({...state, DISCORD: discord, STEAM: steam, UPLAY: uplay, BATTLE: battle, EPIC: epic, ORIGIN: origin})
+    setState({...state, DISCORD: test})
   }
   useEffect(() => {
     setState({...state, avatar: STAR})
