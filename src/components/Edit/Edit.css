@@ -73,6 +73,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: 1em;
 }
 #alias_card_col {
   height: 8em;
@@ -143,7 +144,6 @@ input {
   color: black;
   font-family: 'Play', sans-serif;
   font-size: 1em;
-  margin-right: 1em;
 }
 ::placeholder {
   color: black;

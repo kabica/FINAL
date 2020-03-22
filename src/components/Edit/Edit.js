@@ -27,7 +27,9 @@ function Edit(props) {
     SPOT2: props.SPOT2 || 'Enter a playlist URL',
     SPOT3: props.SPOT3 || 'Enter a playlist URL',
     avatar: CHEF,
-    BANNER: props.BANNER || 'Enter a banner image URL'
+    BANNER: props.BANNER || 'Enter a banner image URL',
+    DISCORD: props.DISCORD || 'Discord alias',
+    STEAM: props.STEAM || 'Steam alias',
   };
   const [state, setState] = useState({initial});
   const updateProfile = function(text) {
@@ -39,14 +41,24 @@ function Edit(props) {
       song1: state.SPOT1 || '',
       song2: state.SPOT2 || '',
       song3: state.SPOT3 || '',
-      user: 1
+      user: 1,
+      DISCORD: state.DISCORD || '',
+      STEAM: state.STEAM || '',
+      UPLAY: state.UPLAY || '',
+      BATTLE: state.BATTLE || '',
+      EPIC: state.EPIC || '',
+      ORIGIN: state.ORIGIN || '',
     })
     .then(() => setState({...state, MODE: 'done'}))
     .catch(err => console.log(err))
   };
+  const updateAlias = function(discord, steam, uplay, battle, epic, origin) {
+    // setState({...state, DISCORD: discord, STEAM: steam, UPLAY: uplay, BATTLE: battle, EPIC: epic, ORIGIN: origin})
+  }
   useEffect(() => {
     setState({...state, avatar: STAR})
   },[]);
+
  
   return (
     <div id='edit_page'>
@@ -78,7 +90,7 @@ function Edit(props) {
       </div>
 
       <div class='category_header'>Platform Info</div>
-      <AliasCard />
+      <AliasCard state={state} alias={state.DISCORD} updateAlias={updateAlias}/>
 
       <div class='category_header'>Youtube Feed</div>
       <div id='youtube_card'>

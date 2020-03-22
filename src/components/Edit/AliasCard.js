@@ -4,6 +4,10 @@ import { useState } from "react";
 
 
 function AliasCard(props) {
+  const initial = {
+    DISCORD: props.DISCORD || 'Discord Alias'
+  }
+  const [state, setState] = useState({initial})
 
   return (
     <div id='alias_card'>
@@ -12,33 +16,63 @@ function AliasCard(props) {
           <div id='alias_card_col'>
             <div id='alias_row'>
               <p class='alias_header'>Discord: </p>
-              <input></input>
+              <input 
+                value={state.DISCORD || ''}
+                placeholder='Enter Discord alias'
+                onChange={(event) => setState({...state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
             <div id='alias_row'>
               <p class='alias_header'>Battlnet: </p>
-              <input></input>
+              <input 
+                value={state.DISCORD || ''}
+                placeholder='Enter Discord alias'
+                onChange={(event) => setState({...state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
           </div>
 
           <div id='alias_card_col'>
             <div id='alias_row'>
               <p class='alias_header'>Steam: </p>
-              <input></input>
+              <input 
+                value={state.DISCORD || ''}
+                placeholder='Enter Discord alias'
+                onChange={(event) => setState({...props.state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
             <div id='alias_row'>
               <p class='alias_header'>Epic: </p>
-              <input></input>
+              <input 
+                value={props.state.DISCORD || ''}
+                placeholder='Enter Discord alias'
+                onChange={(event) => setState({...props.state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
           </div>
 
           <div id='alias_card_col'>
             <div id='alias_row'>
               <p class='alias_header'>Origin: </p>
-              <input></input>
+              <input 
+                value={state.DISCORD || ''}
+                placeholder='Enter Discord alias1'
+                onChange={(event) => setState({...props.state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
             <div id='alias_row'>
               <p class='alias_header'>Uplay: </p>
-              <input></input>
+              <input 
+                value={state.DISCORD || ''}
+                placeholder='Enter Discord alias'
+                onChange={(event) => setState({...props.state, DISCORD: event.target.value})}
+                type='text'
+              />
             </div>
           </div>
 
