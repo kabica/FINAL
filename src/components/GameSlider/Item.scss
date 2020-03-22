@@ -14,3 +14,11 @@
 .item:hover {
   cursor: pointer;
 }
+
+@media (max-width:360px) {
+
+  .item {
+    width: 10em;
+  }
+
+}

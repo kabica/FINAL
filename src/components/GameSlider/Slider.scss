@@ -26,3 +26,15 @@
     transform: translateX(25%);
   }
 }
+
+@media (max-width:360px) {
+
+  .slider {
+    height: 200px;
+
+    &__container {
+      padding: 0;
+    }
+  }
+
+}
