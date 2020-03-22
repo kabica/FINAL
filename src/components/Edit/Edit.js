@@ -9,6 +9,7 @@ import { v } from './editConfig';
 import axios from 'axios';
 import CHEF from '../img/halo.png'
 import STAR from '../img/star.png'
+import Youtube from './Youtube'
 
 const onReady = function(event) {
   // access to player in all event handlers via event.target
@@ -56,6 +57,9 @@ function Edit(props) {
     // setState({...state, DISCORD: discord, STEAM: steam, UPLAY: uplay, BATTLE: battle, EPIC: epic, ORIGIN: origin})
     setState({...state, [key]: test})
   }
+  const updateVid = function(key, test) {
+    setState({...state, [key]: test})
+  }
   useEffect(() => {
     setState({...state, avatar: STAR})
   },[]);
@@ -94,36 +98,8 @@ function Edit(props) {
       <AliasCard state={state} alias={state.DISCORD} updateAlias={updateAlias}/>
 
       <div class='category_header'>Youtube Feed</div>
-      <div id='youtube_card'>
-        <div id='videos'>
-          <div id='video_col'>
-            <YouTube id='vid'videoId="M7_s_mvC0O8"onReady={onReady}opts={v.opts}/>
-            <input 
-              placeholder='Enter a video URL'
-              value={state.YT1 || ""}
-              onChange={(event) => {setState({...state, YT1: event.target.value})}}
-              type="text"
-            />
-          </div>
-          <div id='video_col'>
-            <YouTube id='vid'videoId="M7_s_mvC0O8"onReady={onReady}opts={v.opts}/>
-            <input 
-              placeholder='Enter a video URL'
-              value={state.YT2 || ""}
-              onChange={(event) => {setState({...state, YT2: event.target.value})}}
-              type="text"
-            />
-          </div>
-          <div id='video_col'>
-            <YouTube id='vid'videoId="M7_s_mvC0O8"onReady={onReady}opts={v.opts}/>
-            <input 
-              value={state.YT3 || ""}
-              onChange={(event) => {setState({...state, YT3: event.target.value})}}
-              type="text"
-            />
-          </div>
-        </div>
-      </div>
+      <Youtube onReady={onReady} opts={v.opts} state={state} updateVid={updateVid}/>
+      
 
       <div class='category_header'>Spotify Feed</div>
         <div id='spotify_card'>
