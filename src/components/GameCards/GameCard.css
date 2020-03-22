@@ -78,3 +78,30 @@
   margin: 0px;
 }
 
+.mark_discover {
+  box-sizing: border-box;
+  border: solid 4px 	rgb(81, 1, 178);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  position: relative;
+
+}
+
+.mark_discover:after,
+.mark_discover:after {
+	z-index: -1;
+	position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -19px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: solid 17px rgb(81, 1, 178);
+  border-left: solid 17px transparent;
+  border-right: solid 17px transparent;
+}

@@ -1,4 +1,4 @@
-const Overwatch = [{
+export const Overwatch = [{
     "rank": null,
     "percentile": null,
     "displayName": "Time Played",
@@ -374,7 +374,7 @@ const Overwatch = [{
   }
 ];
 
-const Division2 = [{
+export const Division2 = [{
     "rank": null,
     "percentile": 59.0,
     "displayName": "Time Played",
@@ -992,7 +992,7 @@ const Division2 = [{
   }
 ];
 
-const CounterStrike = [{
+export const CounterStrike = [{
     "rank": null,
     "percentile": 99.0,
     "displayName": "Time Played",
@@ -1291,7 +1291,7 @@ const CounterStrike = [{
   }
 ];
 
-const Splitgate = [{
+export const Splitgate = [{
     "rank": null,
     "percentile": 99.9,
     "displayName": "Points",
