@@ -11,6 +11,7 @@ import CHEF from '../img/halo.png'
 import STAR from '../img/star.png'
 import Youtube from './Youtube'
 import Spotify from './Spotify';
+import Avatar from './Avatar';
 
 const onReady = function(event) {
   // access to player in all event handlers via event.target
@@ -64,6 +65,9 @@ function Edit(props) {
   const updateSpotify = function(key, test) {
     setState({...state, [key]: test})
   }
+  const updateAvatar = function(key, test) {
+    setState({...state, [key]: test})
+  }
   useEffect(() => {
     setState({...state, avatar: STAR})
   },[]);
@@ -74,29 +78,7 @@ function Edit(props) {
       <div class='page_header'>Profile Edit</div>
       
       <div class='category_header'>Avatar + Banner</div>
-      <div id='avatar_card'>
-        <img id='current_img'src={state.avatar} alt=''></img>
-        <div id='profile_options'>
-          <div id='avatar_options'>
-            <img id='avatar_img'src={CHEF} alt='' onClick={() => setState({...state, avatar: CHEF})}></img>
-            <img id='avatar_img'src={STAR} alt='' onClick={() => setState({...state, avatar: STAR})}></img>
-            <img id='avatar_img'src={CHEF} alt=''></img>
-            <img id='avatar_img'src={CHEF} alt=''></img>
-            <img id='avatar_img'src={CHEF} alt=''></img>
-            <img id='avatar_img'src={CHEF} alt=''></img>
-          </div>
-          <div id='banner_select'>
-            <div class='banner_header'>Banner URL:</div>
-            <input
-              value={state.BANNER || ''}
-              placeholder='Enter a banner image URL'
-              onChange={(event) => {setState({...state, BANNER: event.target.value})}}
-              type="text"
-            />
-          </div>
-        </div>
-        
-      </div>
+      <Avatar state={state} CHEF={CHEF} STAR={STAR} updateAvatar={updateAvatar}/>
 
       <div class='category_header'>Platform Info</div>
       <AliasCard state={state} alias={state.DISCORD} updateAlias={updateAlias}/>
