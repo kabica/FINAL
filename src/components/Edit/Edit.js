@@ -36,7 +36,6 @@ function Edit(props) {
   };
   const [state, setState] = useState({initial});
   const updateProfile = function(text) {
-    setState({...state, MODE: 'saving'})
     return axios.post('http://localhost:8000/alex', {
       video1: state.YT1 || '',
       video2: state.YT2 || '',

@@ -32,6 +32,7 @@ function Youtube(props) {
           <div id='video_col'>
             <YouTube id='vid'videoId="M7_s_mvC0O8"onReady={onReady}opts={props.opts}/>
             <input 
+              placeholder='Enter a video URL'
               value={props.state.YT3 || ""}
               onChange={(event) => props.updateVid('YT3',event.target.value)}
               type="text"
