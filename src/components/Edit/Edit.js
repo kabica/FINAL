@@ -52,9 +52,9 @@ function Edit(props) {
     .then(() => setState({...state, MODE: 'done'}))
     .catch(err => console.log(err))
   };
-  const updateAlias = function(test) {
+  const updateAlias = function(key,test) {
     // setState({...state, DISCORD: discord, STEAM: steam, UPLAY: uplay, BATTLE: battle, EPIC: epic, ORIGIN: origin})
-    setState({...state, DISCORD: test})
+    setState({...state, [key]: test})
   }
   useEffect(() => {
     setState({...state, avatar: STAR})
@@ -71,7 +71,7 @@ function Edit(props) {
         <div id='profile_options'>
           <div id='avatar_options'>
             <img id='avatar_img'src={CHEF} alt='' onClick={() => setState({...state, avatar: CHEF})}></img>
-            <img id='avatar_img'src={CHEF} alt=''></img>
+            <img id='avatar_img'src={STAR} alt='' onClick={() => setState({...state, avatar: STAR})}></img>
             <img id='avatar_img'src={CHEF} alt=''></img>
             <img id='avatar_img'src={CHEF} alt=''></img>
             <img id='avatar_img'src={CHEF} alt=''></img>
