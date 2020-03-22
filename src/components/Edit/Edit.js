@@ -13,10 +13,7 @@ import Youtube from './Youtube'
 import Spotify from './Spotify';
 import Avatar from './Avatar';
 
-const onReady = function(event) {
-  // access to player in all event handlers via event.target
-  event.target.pauseVideo();
-}
+import { connect } from 'react-redux';
 
 
 
@@ -35,15 +32,16 @@ function Edit(props) {
     STEAM: props.STEAM || 'Steam alias',
   };
   const [state, setState] = useState({initial});
+
   const updateProfile = function(text) {
     return axios.post('http://localhost:8000/alex', {
+      user: 1,
       video1: state.YT1 || '',
       video2: state.YT2 || '',
       video3: state.YT3 || '',
       song1: state.SPOT1 || '',
       song2: state.SPOT2 || '',
       song3: state.SPOT3 || '',
-      user: 1,
       DISCORD: state.DISCORD || '',
       STEAM: state.STEAM || '',
       UPLAY: state.UPLAY || '',
@@ -55,7 +53,6 @@ function Edit(props) {
     .catch(err => console.log(err))
   };
   const updateAlias = function(key,test) {
-    // setState({...state, DISCORD: discord, STEAM: steam, UPLAY: uplay, BATTLE: battle, EPIC: epic, ORIGIN: origin})
     setState({...state, [key]: test})
   }
   const updateVid = function(key, test) {
@@ -71,11 +68,11 @@ function Edit(props) {
     setState({...state, avatar: STAR})
   },[]);
 
- 
+ let test = localStorage.getItem('alex');
   return (
     <div id='edit_page'>
-      <div class='page_header'>Profile Edit</div>
-      
+      <div class='page_header' onClick={() => console.log(props)}>Profile Edit</div>
+
       <div class='category_header'>Avatar + Banner</div>
       <Avatar state={state} CHEF={CHEF} STAR={STAR} updateAvatar={updateAvatar}/>
 
@@ -83,7 +80,7 @@ function Edit(props) {
       <AliasCard state={state} alias={state.DISCORD} updateAlias={updateAlias}/>
 
       <div class='category_header'>Youtube Feed</div>
-      <Youtube onReady={onReady} opts={v.opts} state={state} updateVid={updateVid}/>
+      <Youtube opts={v.opts} state={state} updateVid={updateVid}/>
       
       <div class='category_header'>Spotify Feed</div>
       <Spotify size={v.size} view={v.theme} theme={v.theme} state={state} updateSpotify={updateSpotify}/>
@@ -96,5 +93,10 @@ function Edit(props) {
     </div>
   );
 }
+sessionStorage.time = 12.5
+const mapStateToProps = function(redux) {
+  return redux;
+};
 
-export default Edit;
+export default connect(mapStateToProps)(Edit);
+// export default Edit;

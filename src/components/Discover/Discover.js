@@ -57,9 +57,9 @@ function Discover() {
     if(key === v.DESC4) (mode[key] === v.HIDE) ? setMode(mode => ({...mode, desc4: v.SHOW})) : setMode(mode => ({...mode, desc4: v.HIDE}));
   };
 
-  return ( 
+  return (
     <main class='container'>
-      <Nav />  
+      <Nav /> 
       <div id='body'>
         <div id='row1'>
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>
