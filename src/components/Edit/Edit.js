@@ -10,6 +10,7 @@ import axios from 'axios';
 import CHEF from '../img/halo.png'
 import STAR from '../img/star.png'
 import Youtube from './Youtube'
+import Spotify from './Spotify';
 
 const onReady = function(event) {
   // access to player in all event handlers via event.target
@@ -60,6 +61,9 @@ function Edit(props) {
   const updateVid = function(key, test) {
     setState({...state, [key]: test})
   }
+  const updateSpotify = function(key, test) {
+    setState({...state, [key]: test})
+  }
   useEffect(() => {
     setState({...state, avatar: STAR})
   },[]);
@@ -100,59 +104,13 @@ function Edit(props) {
       <div class='category_header'>Youtube Feed</div>
       <Youtube onReady={onReady} opts={v.opts} state={state} updateVid={updateVid}/>
       
-
       <div class='category_header'>Spotify Feed</div>
-        <div id='spotify_card'>
-          <div id='videos'>
-            <div id='video_col'>
-            <SpotifyPlayer
-              uri="spotify:album:1TIUsv8qmYLpBEhvmBmyBk"
-              size={v.size}
-              view={v.view}
-              theme={v.theme}
-            />
-            <input 
-              placeholder='Enter a playlist URL'
-              value={state.SPOT1 || ""}
-              onChange={(event) => {setState({...state, SPOT1: event.target.value})}}
-              type="text"
-            />
-          </div>
-          <div id='video_col'>
-            <SpotifyPlayer
-              uri="spotify:album:1TIUsv8qmYLpBEhvmBmyBk"
-              size={v.size}
-              view={v.view}
-              theme={v.theme}
-            />
-            <input 
-              placeholder='Enter a playlist URL'
-              value={state.SPOT2 || ""}
-              onChange={(event) => {setState({...state, SPOT2: event.target.value})}}
-              type="text"
-            />
-          </div>
-          <div id='video_col'>
-            <SpotifyPlayer
-              uri="spotify:album:1TIUsv8qmYLpBEhvmBmyBk"
-              size={v.size}
-              view={v.view}
-              theme={v.theme}
-            />
-            <input 
-              placeholder='Enter a playlist URL'
-              value={state.SPOT3 || ""}
-              onChange={(event) => {setState({...state, SPOT3: event.target.value})}}
-              type="text"
-            />
-          </div>
-        </div>
-      </div>
+      <Spotify size={v.size} view={v.theme} theme={v.theme} state={state} updateSpotify={updateSpotify}/>
+
       <div id='confirm_button'>
         <a href='/profile'>
-        <button onClick={updateProfile}>Confirm</button>
+          <button onClick={updateProfile}>Confirm</button>
         </a>
-        
       </div>
     </div>
   );
