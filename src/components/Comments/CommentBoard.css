@@ -32,3 +32,41 @@
   color: white;
   border-radius: 0px 0px 8px 0px;
 }
+
+
+@media (max-width :768px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    height: 24em;
+    width: 96%;
+    margin-bottom: 2em;
+    border: 1px solid rgba(71, 69, 69, 0.596);
+    border-radius: 8px;
+  }
+  
+  #scroll {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /* border: 2px solid rgba(71, 69, 69, 0.596); */
+    height: 100%;
+    padding: 0.6em;
+  }
+  #chatInput {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  #outlined-secondary{
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+    border-radius: 0px 0px 0px 8px;
+  }
+  #button {
+    width: 130px;
+    background-color: rgba(71, 69, 69, 0.596);
+    color: white;
+    border-radius: 0px 0px 8px 0px;
+  }
+}

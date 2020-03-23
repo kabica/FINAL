@@ -31,7 +31,7 @@ const Login = function(props) {
         setState({...state, status: response.data.error})
       }
       else if(response.data.Encryption) {
-        console.log(response.data.Encryption, response.data.email)
+        console.log(response.data.Encryption)
         sessionStorage.Encryption = response.data.Encryption;
         setState({...state, status: 'success'})
       }

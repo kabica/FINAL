@@ -19,3 +19,28 @@
   font-size: 40px;
   margin: 12px 0px 12px 0px;
 }
+
+
+@media (max-width :768px) {
+  #patch_note {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  #content {
+    word-break: break-word;
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Bungee Hairline';
+    text-align: justify;
+  }
+  
+  #note {
+    font-family: 'Bungee';
+    color: white;
+    font-size: 2em;
+    margin: 12px 0px 12px 0px;
+  }
+}

@@ -57,34 +57,20 @@ function Edit(props) {
     setState({...state, [key]: test})
   }
   
-  const login = function () {
-    console.log('HERE: ',sessionStorage.Encryption)
-    return axios.post('http://localhost:8000/auth', {
-      email: sessionStorage.Encryption,
+  useEffect(() => {
+    setState({...state, avatar: STAR})
+    axios.post('http://localhost:8000/auth', {
+      email: sessionStorage.Encryption
     })
-    .then(response => {
-      console.log('RESPONSE: ', response.data.status)
-      if(response.data.status === 'error') {
-        console.log(response.data.status)
-        setState({...state, status: response.data.status})
-      }
-      else {
-        console.log(response.data.Encryption, response.data.email)
-        setState({...state, status: response.data.status, avatar: STAR})
-      }
-    })
-    .catch(err => console.log(err))
-  };
-  // useEffect(() => {
-  //   login()
-  // },[]);
+    .then(result => setState({...state, status: result.data.verified, avatar: STAR, em: result.data.em}))
+  },[]);
 
   return (
     <div>
-      {state.status !== 'error' && (
+    {state.status === 'true' && (
     <div id='edit_page'>
       
-      <div class='page_header' onClick={login}>Profile Edit</div>
+      <div class='page_header' onClick={''}>Profile Edit</div>
 
       <div class='category_header'>Avatar + Banner</div>
       <Avatar state={state} CHEF={CHEF} STAR={STAR} updateAvatar={updateState}/>
