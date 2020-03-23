@@ -126,12 +126,12 @@ class Friends extends React.Component {
         maxWidth: 1000
       }}
       />
-        <Button className='header'variant="contained" color="secondary">
-          Manage Friend List
-        </Button>
-        <Button className='header' variant="contained" color="secondary">
-          Add a Friend
-        </Button>
+      <Button className='header'variant="contained" color="secondary">
+        Manage Friend List
+      </Button>
+      <Button className='header' variant="contained" color="secondary">
+        Add a Friend
+      </Button>
       <h2>Online</h2>
       <Grid container spacing={2}>
         <Grid item xs={12}>
