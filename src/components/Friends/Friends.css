@@ -1,12 +1,10 @@
 #friends .MuiGrid-spacing-xs-2 {
-  width: 100% !important;
-  margin: 0 !important;
-  margin-top: 4rem !important;
+  width: 60% !important;
+  margin-left: 24rem !important;
 }
 #friends .MuiGrid-spacing-xs-3 {
   width: 100% !important;
   margin: 0 !important;
-  margin-top: 4rem !important;
 }
 
 #friends .MuiPaper-root {
@@ -22,16 +20,18 @@
   margin-left: 6rem;
   width: 90%;
   font-family: 'Play', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
   margin-bottom: 5rem;
+  font-size: 50px;
 }
 
-#friends button {
+#friends .header {
   color: white;
-  margin: 0 20px 0 20px;
+  margin: 9px 20px 0 20px;
+  height: 40px;
 }
 
 #friends .MuiButton-contained {
@@ -57,7 +57,21 @@
   margin-top: -20px;
 }
 
-#friends img {
+#friends .user {
   height: 100%;
   width: 100%;
+}
+
+#friends h2 {
+  margin-top: 4rem;
+  margin-left: 30rem;
+  color: white;
+  font-family: 'Play', sans-serif;
+  border-bottom: solid 1px #9ecaed;
+  width: 50%;
+}
+
+#friends .offline .WithStyles\(ForwardRef\(Badge\)\)-badge-224 {
+  background-color: grey !important;
+  color: grey !important;
 }

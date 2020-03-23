@@ -1,31 +1,22 @@
 import React from 'react';
 import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Slide, Button, Typography, Badge } from '@material-ui/core';
-import { Person } from '@material-ui/icons';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Chief from '../public/images/chief.jpg'
 import Navbar from '../Header/Navbar';
 import './Friends.css'
 import { makeStyles, withStyles} from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import av1 from '../public/images/apexavatar1.jpg'
 import av2 from '../public/images/apexavatar.png'
 import av3 from '../public/images/csgoavatar.jpg'
 import av4 from '../public/images/div2avatar.jpg'
 import av5 from '../public/images/owavatar.jpg'
+import av6 from '../public/images/ow2avatar.jpeg'
+import av7 from '../public/images/fortavatar.jpeg'
+import av8 from '../public/images/wowavatar.jpg'
 
-
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    // color: theme.palette.text.secondary,
-  },
-}));
+import SearchBar from 'material-ui-search-bar'
 
 const StyledBadge = withStyles(theme => ({
   badge: {
@@ -66,7 +57,7 @@ const aliases = {
   Uplay: "MasterChef",
 }
 
-const friends = [
+const online = [
   {
     name: 'Chief',
     avatar: Chief,
@@ -77,6 +68,11 @@ const friends = [
     name: 'XxxKillerxxX',
     avatar: av2,
   },
+
+]
+
+const offline = [
+
   {
     name: 'SumGuy',
     avatar: av3,
@@ -87,146 +83,105 @@ const friends = [
     name: 'The Thicc Walrus',
     avatar: av5,
   },
+  {
+    name: 'Stacy42',
+    avatar: av6,
+  }, {
+    name: 'Dad',
+    avatar: av7,
+  }, {
+    name: 'Meat Police',
+    avatar: av8,
+  },
 ]
 
 
-
 export default function Friends() {
-  const classes = useStyles();
 
   return (
     <div id='friends'>
-           <h1>Your Friends
-        <Button variant="contained" color="secondary">
-          Manage Friend List
-        </Button>
-        <Button variant="contained" color="secondary">
-          Add a Friend
-        </Button>
-      </h1>
       <Navbar nickname={aliases.Nickname}/>
-    <Grid container spacing={2}>
-    <Grid item xs={12}>
-      <Grid container justify="center" spacing={3}>
-      {friends.map(item => (
-        <Grid item>
-          <Card>
-            <CardContent height={150} width={220}>
-              <StyledBadge
-              overlap="circle"
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'right',
-              }}
-              variant="dot"
-              >
-              <Avatar>
-                {' '}
-                <img className="user" src={item.avatar} alt="user icon" height="48" />{' '}
-              </Avatar>
-              </StyledBadge>
-              <Typography variant="h5"  component="p">
-                {item.name}
-              </Typography>
-            </CardContent>
-          </Card>
+      <h1>Your Friends
+      <Button className='header'variant="contained" color="secondary">
+        Manage Friend List
+      </Button>
+      <Button className='header' variant="contained" color="secondary">
+        Add a Friend
+      </Button>
+      </h1>
+      <SearchBar
+      className='search'
+      onChange={() => console.log('onChange')}
+      onRequestSearch={() => console.log('onRequestSearch')}
+      style={{
+        margin: '0 auto',
+        maxWidth: 1000
+      }}
+      />
+      <h2>Online</h2>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Grid container justify="center" spacing={3}>
+            {online.map(item => (
+              <Grid item>
+                <Card>
+                  <CardContent height={150} width={220}>
+                    <StyledBadge
+                    overlap="circle"
+                    anchorOrigin={{
+                      vertical: 'bottom',
+                      horizontal: 'right',
+                    }}
+                    variant="dot"
+                    >
+                    <Avatar>
+                      {' '}
+                      <img className="user" src={item.avatar} alt="user icon" height="48" />{' '}
+                    </Avatar>
+                    </StyledBadge>
+                    <Typography variant="h5"  component="p">
+                      {item.name}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
-      ))}
       </Grid>
-    </Grid>
-  </Grid>
+      <h2>Offline</h2>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <Grid container justify="center" spacing={3}>
+            {offline.map(item => (
+              <Grid item>
+                <Card>
+                  <CardContent height={150} width={220}>
+                    <StyledBadge
+                    className="offline"
+                    overlap="circle"
+                    anchorOrigin={{
+                      vertical: 'bottom',
+                      horizontal: 'right',
+                    }}
+                    variant="dot"
+                    >
+                    <Avatar>
+                      {' '}
+                      <img className="user" src={item.avatar} alt="user icon" height="48" />{' '}
+                    </Avatar>
+                    </StyledBadge>
+                    <Typography variant="h5"  component="p">
+                      {item.name}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
   </div>
   )
 
-  // function FormRow() {
-  //   return (
-  //     <React.Fragment>
-  //       <Grid item xs={4} container direction="row" justify="center" alignItems="center">
-  //         <Paper className={classes.paper}>
-  //         <StyledBadge
-  //           overlap="circle"
-  //           anchorOrigin={{
-  //             vertical: 'bottom',
-  //             horizontal: 'right',
-  //           }}
-  //           variant="dot"
-  //         >
-  //           <Avatar>
-  //             {' '}
-  //             <img className="user" src={Chief} alt="user icon" height="48" />{' '}
-  //           </Avatar>
-  //           </StyledBadge>
-  //           <Typography variant="h5" className="user-list-name">
-  //             Chief
-  //           </Typography>
-  //         </Paper>
-  //       </Grid>
-  //       <Grid item xs={4} container direction="row" justify="center" alignItems="center">
-  //         <Paper className={classes.paper}>
-  //         <StyledBadge
-  //           overlap="circle"
-  //           anchorOrigin={{
-  //             vertical: 'bottom',
-  //             horizontal: 'right',
-  //           }}
-  //           variant="dot"
-  //         >
-  //           <Avatar>
-  //             {' '}
-  //             <img className="user" src={Chief} alt="user icon" height="48" />{' '}
-  //           </Avatar>
-  //           </StyledBadge>
-  //           <Typography variant="h5" className="user-list-name">
-  //             Chief
-  //           </Typography>
-  //         </Paper>
-  //       </Grid>
-  //       <Grid item xs={4} container direction="row" justify="center" alignItems="center">
-  //         <Paper className={classes.paper}>
-  //         <StyledBadge
-  //           overlap="circle"
-  //           anchorOrigin={{
-  //             vertical: 'bottom',
-  //             horizontal: 'right',
-  //           }}
-  //           variant="dot"
-  //         >
-  //           <Avatar>
-  //             {' '}
-  //             <img className="user" src={Chief} alt="user icon" height="48" />{' '}
-  //           </Avatar>
-  //           </StyledBadge>
-  //           <Typography variant="h5" className="user-list-name">
-  //             Chief
-  //           </Typography>
-  //         </Paper>
-  //       </Grid>
-  //     </React.Fragment>
-  //   );
-  // }
-
-  // return (
-  //   <div id='friends' className={classes.root}>
-      // <h1>Your Friends
-      //   <Button variant="contained" color="secondary">
-      //     Manage Friend List
-      //   </Button>
-      //   <Button variant="contained" color="secondary">
-      //     Add a Friend
-      //   </Button>
-      // </h1>
-      // <Navbar nickname={aliases.Nickname}/>
-  //     <Grid container spacing={3}>
-  //       <Grid container item xs={5} spacing={3}>
-  //         <FormRow />
-  //       </Grid>
-  //       <Grid container item xs={5} spacing={3}>
-  //         <FormRow />
-  //       </Grid>
-  //       <Grid container item xs={5} spacing={3}>
-  //         <FormRow />
-  //       </Grid>
-  //     </Grid>
-  //   </div>
-  // );
 }
