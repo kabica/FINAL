@@ -1,11 +1,11 @@
 import React from 'react';
-import { List, ListItem, ListItemAvatar, Avatar, ListItemText, Slide, Button, Typography, Badge } from '@material-ui/core';
+import { Avatar, Button, Typography, Badge } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Chief from '../public/images/chief.jpg'
 import Navbar from '../Header/Navbar';
 import './Friends.css'
-import { makeStyles, withStyles} from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import av1 from '../public/images/apexavatar1.jpg'
 import av2 from '../public/images/apexavatar.png'
@@ -15,6 +15,7 @@ import av5 from '../public/images/owavatar.jpg'
 import av6 from '../public/images/ow2avatar.jpeg'
 import av7 from '../public/images/fortavatar.jpeg'
 import av8 from '../public/images/wowavatar.jpg'
+// import Search from './Search'
 
 import SearchBar from 'material-ui-search-bar'
 
@@ -95,29 +96,42 @@ const offline = [
   },
 ]
 
+//array of all names
+const names = []
+online.map(item => (names.push(item.name)))
+offline.map(item => (names.push(item.name)))
 
-export default function Friends() {
 
+class Friends extends React.Component {
+
+  handleKeyPress = (event) => {
+  if(event.key){
+      console.log(event.key)
+    }
+  }
+
+  render() {
   return (
     <div id='friends'>
       <Navbar nickname={aliases.Nickname}/>
       <h1>Your Friends
-      <Button className='header'variant="contained" color="secondary">
-        Manage Friend List
-      </Button>
-      <Button className='header' variant="contained" color="secondary">
-        Add a Friend
-      </Button>
       </h1>
       <SearchBar
       className='search'
-      onChange={() => console.log('onChange')}
+      onKeyPress={this.handleKeyPress}
+      onChange={ () => { console.log('onChange')}}
       onRequestSearch={() => console.log('onRequestSearch')}
       style={{
         margin: '0 auto',
         maxWidth: 1000
       }}
       />
+        <Button className='header'variant="contained" color="secondary">
+          Manage Friend List
+        </Button>
+        <Button className='header' variant="contained" color="secondary">
+          Add a Friend
+        </Button>
       <h2>Online</h2>
       <Grid container spacing={2}>
         <Grid item xs={12}>
@@ -183,5 +197,7 @@ export default function Friends() {
       </Grid>
   </div>
   )
-
+  }
 }
+
+export default Friends
