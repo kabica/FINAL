@@ -12,7 +12,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-       
+        
         <Header />
         <TabComponent />
         <Particles id='particles'
@@ -99,7 +99,7 @@ class Main extends Component {
                 },
                 "bubble": {
                   "distance": 600,
-                  "size": 10,
+                  "size": 12,
                   "duration": 1,
                   "opacity": 0.8,
                   "speed": 2
