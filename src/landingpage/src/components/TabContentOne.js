@@ -3,11 +3,16 @@ import styled from 'styled-components';
 // import { Button } from './Button';
 // import { Link } from 'react-router-dom';
 import { generateMedia } from 'styled-media-query';
+import overwatch from '../images/overwatch.png'
+import widowmaker from '../images/widowmaker.png'
 
 function TabContentOne() {
   return (
     <TabContentContainer>
-     
+      <div>
+        <img src={overwatch} alt="overwatch"/>
+        <img src={widowmaker} alt="widowmaker"/>
+      </div>
     </TabContentContainer>
   );
 }
