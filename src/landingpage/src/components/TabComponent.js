@@ -6,7 +6,7 @@ import Particles from 'react-particles-js'
 
 // Tabs Content
 import TabContentOne from './TabContentOne';
-import TabContentTwo from './TabContentTwo';
+
 import '../css/TabsNav.css';
 
 class TabComponent extends Component {
