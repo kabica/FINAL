@@ -98,15 +98,15 @@
     margin: 0px;
   }
   .show {
-    min-width: 96%;
+    min-width: 90%;
     border-radius: 8px;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 9.5rem;
+    min-height: 14em; 
     border: 2px solid white;
     font-family: 'Bungee Hairline';
     color: white;
-    font-size: 1rem;
+    font-size: 2em;
     margin-bottom: 24px;
     margin-left: 1em;
     margin-right: 1em;

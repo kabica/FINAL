@@ -9,6 +9,8 @@
 #character {
 display: flex;
 flex-direction: column;
+justify-content: space-between;
+align-items: center;
 }
 
 
@@ -20,6 +22,7 @@ flex-direction: column;
   #characterImg {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
   #character {
   display: flex;
@@ -32,6 +35,7 @@ flex-direction: column;
   #charImg {
     width: 11em;
     height: 14em;
+    margin: 0em 1em 0em 1em;
   }
   #characterImg {
     display: flex;

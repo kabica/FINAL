@@ -72,7 +72,7 @@
 
 @media (min-width :361px) and (max-width :768px) {
   #body {
-    width: 100vh;
+    min-width: 100vh;
     height: 100%;
   }
   #main1 {
