@@ -3,7 +3,7 @@
     min-height: 300px;
     max-height: 800px;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -12,7 +12,7 @@
     min-height: 100%;
     width: auto;
     height: auto;
-
+    margin-top: -140px;
   }
   
   /* Add some content at the bottom of the video/page */
@@ -46,19 +46,76 @@
       background-color: hsla(0, 0%, 0%, 0);
       font-size: 1.25rem;
       border-radius: 5px;
+      animation-name: moveToLeft;
+      animation-duration: 2s;
+      overflow: hidden;
+      position: relative;
   }
   .SubContent button:hover {
       background-color: #8524e0;
       color: #000000c0;
+      cursor: pointer;
   }
 
   .SubContent img {
     display: block;
     margin: 15px auto;
+    animation-name: moveToRight;
+    animation-duration: 2s;
+    overflow: hidden;
+    position: relative;
   }
 
   body{
     background-color: rgba(0, 0, 0, 0.918);
   }
+
+  h2{
+    animation-name: moveToRight;
+    animation-duration: 2s;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+ span img{
+   height: 30px;
+   width: 100px;
+   filter: invert(1000%) sepia(2200%) saturate(10%) hue-rotate(-1700deg) brightness(1000%) contrast(120%);
+   padding: 10px;
+   margin: 10px;
+   margin-top: 50px;
+   animation-name: moveToLeft;
+  animation-duration: 2s;
+  overflow: hidden;
+  position: relative;
+ }
+ 
+ span{
+    position: absolute;
+   margin-top: 300px;
+ }
+
+ @keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+ @keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
   

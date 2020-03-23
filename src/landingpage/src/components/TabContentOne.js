@@ -7,22 +7,7 @@ import { generateMedia } from 'styled-media-query';
 function TabContentOne() {
   return (
     <TabContentContainer>
-      <div className="container">
-        <div className="tab-content">
-          <div>
-            <span className="title">
-              If you decide Gametrax isn't for you - no problem. No commitment.
-              Delete anytime.
-            </span>
-            <br />
-            <Link to="/login">
-              <Button className="tab-btn" style={{ marginTop: '2rem' }}>
-                try it now
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
+     
     </TabContentContainer>
   );
 }
