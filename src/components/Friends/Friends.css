@@ -75,3 +75,13 @@
   background-color: grey !important;
   color: grey !important;
 }
+
+#friends .search {
+  background-color: grey !important;
+  width: 800px;
+  height: 50px;
+}
+
+#friends .search svg {
+  color: white !important;
+}
