@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
+// import { Button } from './Button';
+// import { Link } from 'react-router-dom';
 import { generateMedia } from 'styled-media-query';
 
 function TabContentOne() {
