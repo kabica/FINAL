@@ -1,41 +1,72 @@
 
+.main-section{
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 2rem;
+  padding: 10rem 10rem;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  background: #000000;
+}
 
 
+.main-section h1{
+  font-size: 3rem;
+  
+  line-height: 1.2;
+  
+  color: #6f11c1;
+}
 
 
+.main-section p{
+  font-size: 2rem;
+  color: #f9f9f9;
+  margin-bottom: 120px;
+}
+
+img{
+  width: 500px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #000000;
+  margin: 2rem 2rem;
+  padding: 20px 20px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  color: #f9f9f9;
+}
+
+.card img{
+  height: 400px;
+}
+
+.card > div{
+  padding: 2rem;
+}
+
+.card:nth-child(even){
+  order: 2;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media  */
-@media (min-width: 900px) {
-  .mdScreen {
-    display: none;
+@media(max-width:600px){
+  .card{
+    display: block;
   }
 }
 
-/* @media (max-width: 900px) {
-  .lgScreen {
-    display: none;
-  }
-  .mdScreen {
-    display: block;
-    margin-bottom: 0.4rem;
-  }
-} */
+.zuQcu .container{
+  margin: 0 !important;
+}

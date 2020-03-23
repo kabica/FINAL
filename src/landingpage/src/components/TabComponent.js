@@ -15,9 +15,7 @@ class TabComponent extends Component {
   render() {
     return (
       <div>
-      
             <TabContentOne />
-          
       </div>
     );
   }
