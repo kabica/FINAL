@@ -32,7 +32,7 @@ const Login = function(props) {
       }
       else if(response.data.Encryption) {
         console.log(response.data.Encryption, response.data.email)
-        sessionStorage.Encryption = response.data.encryption;
+        sessionStorage.Encryption = response.data.Encryption;
         setState({...state, status: 'success'})
       }
     })
@@ -48,9 +48,9 @@ const Login = function(props) {
         console.log(response.data.error)
         setState({...state, status: response.data.error})
       }
-      else if(response.data.encryption) {
-        console.log(response.data.encryption)
-        sessionStorage.Encryption = response.data.encryption;
+      else if(response.data.Encryption) {
+        console.log(response.data.Encryption)
+        sessionStorage.Encryption = response.data.Encryption;
         setState({...state, status: 'success'})
       }
     })

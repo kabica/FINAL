@@ -22,9 +22,9 @@ if (process.env.REACT_APP_API_BASE_URL) {
 
 
 
-ReactDOM.render(<Login />, document.getElementById('root'));
+// ReactDOM.render(<Login />, document.getElementById('root'));
 // ReactDOM.render(<Router><Provider store={store}><Mo /></Provider></Router>, document.getElementById('root'));
-// ReactDOM.render(<Router><Mo /></Router>, document.getElementById('root'));
+ReactDOM.render(<Router><Mo /></Router>, document.getElementById('root'));
 
 
 

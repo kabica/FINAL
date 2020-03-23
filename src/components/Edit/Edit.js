@@ -14,7 +14,7 @@ import Spotify from './Spotify';
 import Avatar from './Avatar';
 
 import { connect } from 'react-redux';
-
+const bcrypt = require('bcryptjs');
 
 
 function Edit(props) {
@@ -48,42 +48,55 @@ function Edit(props) {
       BATTLE: state.BATTLE || '',
       EPIC: state.EPIC || '',
       ORIGIN: state.ORIGIN || '',
+      status: 'invalidUser'
     })
     .then(() => setState({...state, MODE: 'done'}))
     .catch(err => console.log(err))
   };
-  const updateAlias = function(key,test) {
+  const updateState = function(key,test) {
     setState({...state, [key]: test})
   }
-  const updateVid = function(key, test) {
-    setState({...state, [key]: test})
-  }
-  const updateSpotify = function(key, test) {
-    setState({...state, [key]: test})
-  }
-  const updateAvatar = function(key, test) {
-    setState({...state, [key]: test})
-  }
-  useEffect(() => {
-    setState({...state, avatar: STAR})
-  },[]);
+  
+  const login = function () {
+    console.log('HERE: ',sessionStorage.Encryption)
+    return axios.post('http://localhost:8000/auth', {
+      email: sessionStorage.Encryption,
+    })
+    .then(response => {
+      console.log('RESPONSE: ', response.data.status)
+      if(response.data.status === 'error') {
+        console.log(response.data.status)
+        setState({...state, status: response.data.status})
+      }
+      else {
+        console.log(response.data.Encryption, response.data.email)
+        setState({...state, status: response.data.status, avatar: STAR})
+      }
+    })
+    .catch(err => console.log(err))
+  };
+  // useEffect(() => {
+  //   login()
+  // },[]);
 
- let test = localStorage.getItem('alex');
   return (
+    <div>
+      {state.status !== 'error' && (
     <div id='edit_page'>
-      <div class='page_header' onClick={() => console.log(props)}>Profile Edit</div>
+      
+      <div class='page_header' onClick={login}>Profile Edit</div>
 
       <div class='category_header'>Avatar + Banner</div>
-      <Avatar state={state} CHEF={CHEF} STAR={STAR} updateAvatar={updateAvatar}/>
+      <Avatar state={state} CHEF={CHEF} STAR={STAR} updateAvatar={updateState}/>
 
       <div class='category_header'>Platform Info</div>
-      <AliasCard state={state} alias={state.DISCORD} updateAlias={updateAlias}/>
+      <AliasCard state={state} alias={state.DISCORD} updateAlias={updateState}/>
 
       <div class='category_header'>Youtube Feed</div>
-      <Youtube opts={v.opts} state={state} updateVid={updateVid}/>
+      <Youtube opts={v.opts} state={state} updateVid={updateState}/>
       
       <div class='category_header'>Spotify Feed</div>
-      <Spotify size={v.size} view={v.theme} theme={v.theme} state={state} updateSpotify={updateSpotify}/>
+      <Spotify size={v.size} view={v.theme} theme={v.theme} state={state} updateSpotify={updateState}/>
 
       <div id='confirm_button'>
         <a href='/profile'>
@@ -91,12 +104,14 @@ function Edit(props) {
         </a>
       </div>
     </div>
+    )}
+    </div>
   );
 }
-sessionStorage.time = 12.5
+
 const mapStateToProps = function(redux) {
   return redux;
 };
 
-export default connect(mapStateToProps)(Edit);
-// export default Edit;
+// export default connect(mapStateToProps)(Edit);
+export default Edit;
