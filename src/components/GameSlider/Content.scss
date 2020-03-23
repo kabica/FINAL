@@ -137,3 +137,37 @@
   //   font-size: 30px !important;
   // }
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .content {
+    height: 620vw;
+    width: 80%;
+    margin-right: 9rem;
+
+    &__close {
+      width: 30px;
+      height: 30px;
+    }
+
+    &__title {
+      font-size: 3em;
+    }
+
+    &__area {
+  
+  
+      &__container {
+        padding: 30px 20px;
+        color: wheat;
+      }
+    }
+
+  }
+
+  .cross {
+    height: 30px;
+    width: 30px;
+  }
+
+}

@@ -29,3 +29,20 @@ iframe {
   }
 
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .youtube {
+    display: grid;
+    margin-left: 1%;
+    padding: 15px;
+    width: 76%;
+  }
+
+  iframe {
+    width: 570px;
+    height: 400px;
+    padding-top: 20px;
+  }
+
+}

@@ -124,3 +124,47 @@
     overflow-x: unset !important;
   }
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  #friends h1 {
+    font-size: 35px;
+    width: 70%;
+    margin-left: 19px;
+    margin-bottom: 40px;
+  }
+
+  #friends .search {
+    width: 400px;
+    height: 40px;
+    margin-left: 6rem !important;
+  }
+
+  #friends .MuiButton-contained {
+    height: 30px;
+    width: 190px;
+  }
+
+  #friends .header {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 70px;
+    float: left;
+  }
+
+  #friends h2 {
+    margin-left: 2rem;
+    margin-top: 8rem;
+    width: 65%;
+  }
+
+  #friends .MuiGrid-spacing-xs-2 {
+    margin-left: 3.5rem !important;
+  }
+
+  #friends .MuiGrid-container {
+    flex-wrap: wrap !important;
+    overflow-y: unset !important;
+    overflow-x: unset !important;
+  }
+}

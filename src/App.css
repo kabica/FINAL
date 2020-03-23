@@ -25,3 +25,14 @@ canvas {
   }
 
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .videos, .albums, .gamesSlider{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin-left: -110px;
+  }
+
+}

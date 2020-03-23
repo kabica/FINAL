@@ -38,3 +38,14 @@
   }
 
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .slider {
+    height: 300px;
+
+    &__container {
+      padding: 0;
+    }
+  }
+}
