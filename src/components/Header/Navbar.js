@@ -12,7 +12,7 @@ const Navbar = ({ sticky, nickname}) => (
     </div>
     <ul className="navbar--link">
       <li className="navbar--link-item"><a href='/discover'>Discover</a></li>
-      <li className="navbar--link-item"><a href='/'>Friends</a></li>
+      <li className="navbar--link-item"><a href='/friends'>Friends</a></li>
       <li className="navbar--link-item"><a href='/profile'>{nickname}</a></li>
     </ul>
   </nav>

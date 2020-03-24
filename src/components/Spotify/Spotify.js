@@ -17,6 +17,7 @@ class Spotify extends React.Component {
     return (
       <div className='spotify'>
         <SpotifyPlayer
+          className="spot"
           uri={albums.uri1}
           size={size}
           view={view}

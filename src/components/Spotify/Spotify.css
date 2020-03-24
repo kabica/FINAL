@@ -24,3 +24,19 @@
   }
 
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .spotify {
+    display: grid;
+    margin-left: 8%;
+    padding: 15px;
+    width: 81%;
+  }
+
+  iframe {
+    margin-bottom: 2%;
+  }
+
+
+}
