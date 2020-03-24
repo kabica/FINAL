@@ -26,14 +26,14 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 0em 1em 0em 1em;
+    margin: 0em 0.5em 0em 0.5em;
   }
   
   #content {
     word-break: break-word;
     width: auto;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: 'Bungee Hairline';
     text-align: justify;
   }
@@ -41,7 +41,7 @@
   #note {
     font-family: 'Bungee';
     color: white;
-    font-size: 2em;
+    font-size: 1.4em;
     margin: 12px 0px 12px 0px;
   }
 }
