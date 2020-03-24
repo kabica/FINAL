@@ -29,9 +29,9 @@
 
   .spotify {
     display: grid;
-    margin-left: 1%;
+    margin-left: 8%;
     padding: 15px;
-    width: 76%;
+    width: 81%;
   }
 
   iframe {

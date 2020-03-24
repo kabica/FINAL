@@ -32,7 +32,10 @@ canvas {
     color: white;
     text-align: center;
     font-size: 3em;
-    margin-left: -110px;
+  }
+
+  canvas {
+    margin: -770px;
   }
 
 }

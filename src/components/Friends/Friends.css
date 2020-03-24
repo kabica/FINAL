@@ -11,7 +11,12 @@
   width: 300px;
   height: 80px;
   background-color: rgba(88, 88, 88, 0.7) !important;
+  transition: all .2s ease-in-out;
+}
 
+#friends .MuiPaper-root:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 #friends h1 {
@@ -112,6 +117,7 @@
   #friends h2 {
     margin-left: 2rem;
     margin-top: 8rem;
+    width: 82%;
   }
 
   #friends .MuiGrid-spacing-xs-2 {
@@ -129,37 +135,41 @@
 
   #friends h1 {
     font-size: 35px;
-    width: 70%;
-    margin-left: 19px;
+    width: 90%;
+    margin-left: 42px;
     margin-bottom: 40px;
   }
 
   #friends .search {
-    width: 400px;
+    width: 600px;
     height: 40px;
-    margin-left: 6rem !important;
+    margin-left: 5.5rem !important;
   }
 
   #friends .MuiButton-contained {
-    height: 30px;
-    width: 190px;
+    height: 60px;
+    width: 150px;
+  }
+
+  #friends .MuiButton-label {
+    font-size: 17px !important;
   }
 
   #friends .header {
     margin-top: 20px;
     margin-right: 0px;
-    margin-left: 70px;
+    margin-left: 160px;
     float: left;
   }
 
   #friends h2 {
     margin-left: 2rem;
     margin-top: 8rem;
-    width: 65%;
+    width: 90%;
   }
 
   #friends .MuiGrid-spacing-xs-2 {
-    margin-left: 3.5rem !important;
+    margin-left: 9.5rem !important;
   }
 
   #friends .MuiGrid-container {
