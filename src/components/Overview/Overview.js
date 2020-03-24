@@ -54,9 +54,8 @@ const images = {
 function Overview(props) {
   return (
     <div id='game'>
-      <div id='banner'>
+      <div id='banner1'>
         <img id='wide'src={images[props.game]} alt="logo"/>
-        {/* {<Platforms game={props.game}/>} */}
       </div>
       <div id='notes' >
         <div id='section'>CHARACTERS: {props.game}</div>

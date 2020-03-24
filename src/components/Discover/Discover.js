@@ -56,6 +56,8 @@ function Discover() {
     if(key === v.DESC4) (mode[key] === v.HIDE) ? setMode(mode => ({...mode, desc4: v.SHOW})) : setMode(mode => ({...mode, desc4: v.HIDE}));
   };
 
+
+
   const aliases = {
     Nickname: "MasterChef815",
     Discord: "Chief#4782",
@@ -72,6 +74,7 @@ function Discover() {
         <Fragment>
           <Navbar nickname={aliases.Nickname}/>
         </Fragment>
+
       <div id='body'>
         <div id='row1'>
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>
@@ -83,7 +86,7 @@ function Discover() {
         <Show name={text[mode[v.ROW1]]} onClick={() => hideVisual(v.ROW1)} drop={() => hideView(v.DESC1)}/>)}
         {mode[v.DESC1] === 'show' && (<Overview game={mode[v.ROW1]} />)}
 
-        <div id='row2'>
+        <div id='row2'> 
           <GameCard sel={mode[v.ROW2] === 'BL3'} logo={BL3} onClick={() => setVisual(v.ROW2,'BL3')}/>
           <GameCard sel={mode[v.ROW2] === 'APEX'} logo={apex} onClick={() => setVisual(v.ROW2,'APEX')}/>
           <GameCard sel={mode[v.ROW2] === 'DOTA'} logo={dota} onClick={() => setVisual(v.ROW2,'DOTA')}/>
@@ -92,11 +95,11 @@ function Discover() {
         {mode[v.ROW2] !== v.HIDE_R2 && (
         <Show name={text[mode[v.ROW2]]} onClick={() => hideVisual(v.ROW2)} drop={() => hideView(v.DESC2)}/>)}
         {mode[v.DESC2] === 'show' && (<Overview game={mode[v.ROW2]} />)}
-
+     
         <div id='row3'>
           <GameCard sel={mode[v.ROW3] === 'R6'} logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>
           <GameCard sel={mode[v.ROW3] === 'OW'} logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>
-          <GameCard sel={mode[v.ROW3] === 'BF1'} logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>
+          <GameCard sel={mode[v.ROW3] === 'BF1'} logo={OW} onClick={() => setVisual(v.ROW3,'BF1')}/>
           <GameCard sel={mode[v.ROW3] === 'LoL'} logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>
         </div>
         {mode[v.ROW3] !== v.HIDE_R3 && (
