@@ -38,7 +38,7 @@
   #container {
     display: flex;
     flex-direction: column;
-    height: 24em;
+    height: 18em;
     margin-bottom: 2em;
     width: 96%;
     border: 1px solid rgba(71, 69, 69, 0.596);
