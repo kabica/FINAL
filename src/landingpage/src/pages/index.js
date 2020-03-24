@@ -4,6 +4,8 @@ import TabComponent from '../components/TabComponent';
 import Footer from '../components/Footer';
 import Particles from 'react-particles-js'
 import './particles.css';
+import './parent.css';
+
 
 
 
@@ -11,7 +13,7 @@ import './particles.css';
 class Main extends Component {
   render() {
     return (
-      <div>
+      <div className="parent">
         
         <Header />
         <TabComponent />
@@ -33,7 +35,7 @@ class Main extends Component {
                 "type": "polygon",
                 "stroke": {
                   "width": 2,
-                  "color": "#5E149E"
+                  "color": "#F7F7F7"
                 },
                 "polygon": {
                   "nb_sides": 6

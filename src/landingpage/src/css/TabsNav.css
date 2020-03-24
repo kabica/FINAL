@@ -1,4 +1,3 @@
-
 .main-section{
   height: 35vh;
   display: flex;
@@ -6,22 +5,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1rem;
-  margin: 2rem 2rem;
+  margin: 2rem 10rem;
   padding: 10rem 10rem;
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
-  background: #000000;
+  background: #1a1919;
 }
 
 
-.main-section h1{
-  font-size: 3rem;
-  
-  line-height: 1.2;
-  
-  color: #6f11c1;
+#gamexxx{
+  margin-top: 70px;
 }
 
 
@@ -39,13 +33,14 @@ img{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  background: #000000;
-  margin: 2rem 2rem;
+  background: #1a1919;
+  margin: 2rem 10rem;
   padding: 20px 20px;
   outline: none;
   border-color: #9ecaed;
   box-shadow: 0 0 10px #9ecaed;
   color: #f9f9f9;
+  font-size: 25px;
 }
 
 .card img{
@@ -53,7 +48,7 @@ img{
 }
 
 .card > div{
-  padding: 2rem;
+  padding: 10px;
 }
 
 .card:nth-child(even){
@@ -70,3 +65,30 @@ img{
 .zuQcu .container{
   margin: 0 !important;
 }
+.droOkG .container{
+  margin: 0 !important;
+}
+
+#tracker{
+  height: 100px;
+  width: 160px;
+  margin-left: 270px;
+}
+
+#youtube{
+  height: 160px;
+  width: 290px;
+  margin-left: 220px;
+}
+
+#spotify{
+  height: 230px;
+  width: 290px;
+  margin-left: 220px;
+}
+
+#rainbow{
+  margin-left: 170px
+}
+
+

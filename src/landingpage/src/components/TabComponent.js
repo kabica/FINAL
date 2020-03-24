@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 // Tabs Content
 import TabContentOne from './TabContentOne';
 
-import '../css/TabsNav.css';
 
 
 
