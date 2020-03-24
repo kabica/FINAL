@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommentBoard.css';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Comment from './Comment'
 import { useState, useEffect} from "react";
 const axios = require('axios');
@@ -46,9 +46,9 @@ function CommentBoard(props) {
         <form noValidate autoComplete="off">
           <TextField value={mode} id="outlined-secondary"label="Let the world know!"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
         </form>
-        <Button id='button'variant="outlined" color="primary" onClick={() => {postComment(mode);}}>
+        <div id='button1' onClick={() => {postComment(mode);}}>
           Post!
-        </Button>
+        </div>
       </div>
     </div>
   );

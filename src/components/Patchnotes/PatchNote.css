@@ -8,7 +8,7 @@
   word-break: break-word;
   width: 1000px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
   font-family: 'Bungee Hairline';
   text-align: justify;
 }
@@ -18,4 +18,54 @@
   color: white;
   font-size: 40px;
   margin: 12px 0px 12px 0px;
+}
+
+
+@media (max-width :767px) {
+  #patch_note {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  #content {
+    word-break: break-word;
+    width: auto;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Bungee Hairline';
+    text-align: justify;
+  }
+  
+  #note {
+    font-family: 'Bungee';
+    color: white;
+    font-size: 2em;
+    margin: 12px 0px 12px 0px;
+  }
+}
+
+@media (min-width :768px) {
+  #patch_note {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+  }
+  
+  #content {
+    word-break: break-word;
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Bungee Hairline';
+    text-align: justify;
+  }
+  
+  #note {
+    font-family: 'Bungee';
+    color: white;
+    font-size: 2em;
+    margin: 12px 0px 12px 0px;
+  }
 }

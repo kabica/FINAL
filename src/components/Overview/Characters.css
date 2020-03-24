@@ -9,4 +9,41 @@
 #character {
 display: flex;
 flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+
+@media (max-width :768px) {
+  #charImg {
+    width: 11em;
+    height: 14em;
+  }
+  #characterImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #character {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
+}
+
+@media (min-width :768px) {
+  #charImg {
+    width: 11em;
+    height: 14em;
+    margin: 0em 1em 0em 1em;
+  }
+  #characterImg {
+    display: flex;
+    flex-direction: row;
+  }
+  #character {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
 }
