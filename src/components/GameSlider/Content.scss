@@ -2,7 +2,10 @@
   position: relative;
   height: 90vw;
   float: right;
-  width: 100%;
+  width: 98%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-right: 1%;
 
   &__background,
   &__background__shadow,
@@ -16,6 +19,9 @@
   &__background {
     left: 0;
     right: 0;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
 
     &__shadow {
       left: 0;
@@ -43,6 +49,7 @@
       background-position: center 10%;
       background-size: cover;
       z-index: 1;
+      opacity: 0;
     }
   }
 
@@ -87,6 +94,10 @@
 }
 
 .cross {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.cross:hover {
+  cursor: pointer;
 }

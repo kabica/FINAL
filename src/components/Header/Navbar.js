@@ -7,13 +7,13 @@ import name from '../public/images/gametrax-letters.png'
 const Navbar = ({ sticky, nickname}) => (
   <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
     <div className="navbar--logo-holder">
-      {sticky ? <img src={logo} alt="avatar" className="navbar--logo" /> : null}
-      {sticky? null : <img src={name} alt="name" id="name"/>}
+      {sticky ? <a href='/'><img src={logo} alt="avatar" className="navbar--logo" /></a> : null}
+      {sticky? null : <a href='/'><img src={name} alt="name" id="name"/></a>}
     </div>
     <ul className="navbar--link">
-      <li className="navbar--link-item"><a href='/signup'>Discover</a></li>
+      <li className="navbar--link-item"><a href='/discover'>Discover</a></li>
       <li className="navbar--link-item"><a href='/'>Friends</a></li>
-      <li className="navbar--link-item"><a href='/login'>{nickname}</a></li>
+      <li className="navbar--link-item"><a href='/profile'>{nickname}</a></li>
     </ul>
   </nav>
 )
