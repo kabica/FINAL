@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import './Discover3.css';
 import Overview from '../Overview/Overview'
 import GameCard from '../GameCards/GameCard';
@@ -18,10 +18,9 @@ import LoL from '../img/LoL.png'
 import COD from '../img/COD.png'
 import FALL from '../img/FALLOUT.png'
 import MINE from '../img/MINE.png'
-import { useState } from "react";
 import { v } from './constants';
 import { text } from '../Overview/text';
-import Nav from '../Header/Navbar'
+import Navbar from '../Header/Navbar'
 
 
 
@@ -57,9 +56,25 @@ function Discover() {
     if(key === v.DESC4) (mode[key] === v.HIDE) ? setMode(mode => ({...mode, desc4: v.SHOW})) : setMode(mode => ({...mode, desc4: v.HIDE}));
   };
 
-  return (
-    <main id='main1'>
-      <Nav /> 
+
+
+  const aliases = {
+    Nickname: "MasterChef815",
+    Discord: "Chief#4782",
+    Steam: "The Chief",
+    EpicGames: "XxChiefxX",
+    Origin: "The_Chief",
+    Battlenet: "TheChief#59071",
+    Uplay: "MasterChef",
+  }
+
+
+  return ( 
+    <main class='container'>
+        <Fragment>
+          <Navbar nickname={aliases.Nickname}/>
+        </Fragment>
+
       <div id='body'>
         <div id='row1'>
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>

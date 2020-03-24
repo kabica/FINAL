@@ -1,0 +1,26 @@
+.spotify {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: center;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+@media (max-width:360px) {
+
+  .spotify {
+    display: grid;
+    margin-left: 1%;
+    padding: 15px;
+  }
+
+  iframe {
+    margin-bottom: 2%;
+  }
+
+}

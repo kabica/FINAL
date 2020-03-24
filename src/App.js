@@ -1,9 +1,15 @@
 import React, { Fragment, useEffect, useRef, useState } from 'react';
 import Slider from './components/GameSlider'
 import Banner from './components/Banner/Banner'
-import Navbar from "./components/Header/Navbar"
+import Navbar from './components/Header/Navbar'
+import YouTube from './components/YouTube/YouTube'
 import './App.css'
 import './components/Banner/Banner.css'
+import Particles from 'react-particles-js';
+import Spotify from './components/Spotify/Spotify'
+import Button from '@material-ui/core/Button';
+import EditIcon from '@material-ui/icons/Edit';
+
 
 const aliases = {
   Nickname: "MasterChef815",
@@ -78,7 +84,18 @@ const games = [
   },
 ];
 
-// class App extends Component {
+const videos = {
+  id1: 'PmXNkp96g-Q',
+  id2: 'MNrQ-pHg9f8',
+  id3: 'CnyyNuYewdw'
+}
+
+const albums = {
+  uri1: "spotify:album:08HXwwR6WTHdR1VGnZtYm5",
+  uri2: "spotify:album:1yqMOYhq6ZCTCsPkU85yER",
+  uri3: "spotify:album:73TmwDD6mBOZh6sF9sKXZo"
+}
+
   function App() {
   useEffect(() => {
     return () => {
@@ -112,18 +129,48 @@ const games = [
   }
 
   window.addEventListener("scroll", debounce(handleScroll))
-  // render() {
     return (
       <div className="app">
         <Fragment>
           <Navbar sticky={isSticky} nickname={aliases.Nickname}/>
         </Fragment>
         <Banner stickyRef={stickyRef} aliases={aliases}/>
+        <h1 className="gamesSlider">Featured Games
+          <a href='/edit'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
         <Slider>
           {games.map(game => (
             <Slider.Item game={game} key={game.id}>item1</Slider.Item>
-          ))}
+            ))}
         </Slider>
+        <Particles id='particles' 
+          style={{ width: '100%', height: '100%', position: 'fixed' }}
+          params={{
+            "particles": {
+                "number": {
+                    "value": 100
+                },
+                "size": {
+                    "value": 3
+                }
+            },
+
+          }} 
+        />
+        <h1 className="videos">Highlighted Videos        
+          <a href='/edit'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
+        <YouTube videos={videos}/>
+        <h1 className="albums">Gaming Playlists
+          <a href='/edit'>
+            <EditIcon color="secondary" fontSize="large"/>
+          </a>
+        </h1>
+        <Spotify albums={albums}/>
       </div>
     );
   }
