@@ -33,7 +33,7 @@
 
 @media (max-width: 360px) {
   #body {
-    width: 100vh;
+    min-width: 100vh;
   }
   #main1 {
     display: flex;

@@ -163,7 +163,7 @@ input {
 #vid {
   border-radius: 4px;
 }
-button {
+.button_edit {
   font-family: 'Play', sans-serif;
   font-size: 2em;
   width: 8em;
@@ -174,7 +174,7 @@ button {
   background-color: rgb(151, 150, 150);
   outline: none;
 }
-button:hover {
+.button_edit:hover {
   cursor: pointer;
   color: rgba(128, 0, 128, 0.5);
   border: 1px solid rgb(255, 0, 98);

@@ -56,8 +56,6 @@ function Discover() {
     if(key === v.DESC4) (mode[key] === v.HIDE) ? setMode(mode => ({...mode, desc4: v.SHOW})) : setMode(mode => ({...mode, desc4: v.HIDE}));
   };
 
-
-
   const aliases = {
     Nickname: "MasterChef815",
     Discord: "Chief#4782",
@@ -74,7 +72,6 @@ function Discover() {
         <Fragment>
           <Navbar nickname={aliases.Nickname}/>
         </Fragment>
-
       <div id='body'>
         <div id='row1'>
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>

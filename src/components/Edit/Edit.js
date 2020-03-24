@@ -86,7 +86,7 @@ function Edit(props) {
 
       <div id='confirm_button'>
         <a href='/profile'>
-          <button onClick={updateProfile}>Confirm</button>
+          <button class='edit_button'onClick={updateProfile}>Confirm</button>
         </a>
       </div>
     </div>
