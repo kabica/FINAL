@@ -31,11 +31,12 @@
   
   #content {
     word-break: break-word;
-    width: 100%;
+    width: auto;
     color: white;
     font-size: 0.6em;
     font-family: 'Bungee Hairline';
     text-align: justify;
+    /* text-align: left; */
   }
   
   #note {
