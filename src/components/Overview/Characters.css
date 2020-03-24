@@ -16,8 +16,8 @@ align-items: center;
 
 @media (max-width :768px) {
   #charImg {
-    width: 11em;
-    height: 14em;
+    width: 5em;
+    height: 6em;
   }
   #characterImg {
     display: flex;
