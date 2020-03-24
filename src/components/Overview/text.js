@@ -1,6 +1,6 @@
 const text = {
   FORT: 
-  "Fortnite Battle Royale is a game of survival, which means in order to win, you must defeat the other 99 online players in the game. This competitive element adds a touch of urgency to the game, gamers also need to avoid being caught in the eye of the storm to remain in the game, there are regular countdowns to when the storm is approaching.",
+  "Fortnite Battle Royale is a game of survival, which means in order to win, you must defeat the other 99 online players in the game. This competitive element adds a touch of urgency to the game, gamers also need to avoid being caught in the eye of the storm to remain in the game.",
 
   PUBG: "PLAYERUNKNOWN'S BATTLEGROUNDS is a battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing.",
 
