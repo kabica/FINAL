@@ -85,6 +85,7 @@
 
   .navbar {
     max-height: 3rem;
+    width: 100vh;
   }
 
   #name {
