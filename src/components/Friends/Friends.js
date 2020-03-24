@@ -130,10 +130,10 @@ class Friends extends React.Component {
         value={this.state.search}
         onChange={this.updateSearch.bind(this)}
       />
-      <Button className='header'variant="contained" color="secondary">
+      <Button className='header1' variant="contained" color="secondary">
         Manage Friend List
       </Button>
-      <Button className='header' variant="contained" color="secondary">
+      <Button className='header2' variant="contained" color="secondary">
         Add a Friend
       </Button>
       <h2>Online</h2>

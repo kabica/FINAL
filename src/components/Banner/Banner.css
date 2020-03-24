@@ -129,3 +129,12 @@
   } 
 
 }
+
+@media (min-width:769px) and (max-width:1048px){
+
+  .container-banner h1 {
+    margin-right: 10vw;
+  }
+
+
+}
