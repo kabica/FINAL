@@ -74,8 +74,8 @@ const Login = function(props) {
       type='password'
       placeholder='Enter pw'
       />
-      <button class='button_auth' onClick={login}>Login</button>
-      <button class='button_auth' onClick={register}>Reg</button>
+      <button class='button_log' onClick={login}>Login</button>
+      <button class='button_log' onClick={register}>Reg</button>
       {state.status === 'success' && (<div>SUCCESS : USER AUTHENTICATION</div>)}
       {state.status === 'error' && (<div>ERROR : USER AUTHENTICATION</div>)}
     </div>
