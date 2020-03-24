@@ -96,35 +96,41 @@ const offline = [
   },
 ]
 
-//array of all names
-const names = []
-online.map(item => (names.push(item.name)))
-offline.map(item => (names.push(item.name)))
-
 
 class Friends extends React.Component {
 
-  handleKeyPress = (event) => {
-  if(event.key){
-      console.log(event.key)
-    }
+  constructor() {
+    super();
+    this.state = {
+      search: ""
+    };
+  }
+
+  updateSearch(event) {
+    this.setState({search: event.target.value})
   }
 
   render() {
+    let filteredOnlineFriends = online.filter(
+      (friend) => {
+        return friend.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+      }
+    );
+    let filteredOfflineFriends = offline.filter(
+      (friend) => {
+        return friend.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1;
+      }
+    );
+
   return (
     <div id='friends'>
       <Navbar nickname={aliases.Nickname}/>
       <h1>Your Friends
       </h1>
-      <SearchBar
-      className='search'
-      onKeyPress={this.handleKeyPress}
-      onChange={ () => { console.log('onChange')}}
-      onRequestSearch={() => console.log('onRequestSearch')}
-      style={{
-        margin: '0 auto',
-        maxWidth: 1000
-      }}
+      <input type="text"
+        className='searchbar' 
+        value={this.state.search}
+        onChange={this.updateSearch.bind(this)}
       />
       <Button className='header'variant="contained" color="secondary">
         Manage Friend List
@@ -136,7 +142,7 @@ class Friends extends React.Component {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Grid container justify="center" spacing={3}>
-            {online.map(item => (
+            {filteredOnlineFriends.map(item => (
               <Grid item>
                 <Card>
                   <CardContent height={150} width={220}>
@@ -167,7 +173,7 @@ class Friends extends React.Component {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Grid container justify="center" spacing={3}>
-            {offline.map(item => (
+            {filteredOfflineFriends.map(item => (
               <Grid item>
                 <Card>
                   <CardContent height={150} width={220}>
