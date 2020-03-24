@@ -32,7 +32,7 @@ class Login extends Component {
                 "type": "polygon",
                 "stroke": {
                   "width": 2,
-                  "color": "#5E149E"
+                  "color": "#F7F7F7"
                 },
                 "polygon": {
                   "nb_sides": 6
