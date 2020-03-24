@@ -43,3 +43,19 @@
 .slide-button:hover {
   cursor: pointer;
 }
+
+@media (max-width:360px) {
+
+  .slide-button {
+    margin: 0;
+  }
+
+}
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .slide-button {
+    margin: 0;
+  }
+
+}

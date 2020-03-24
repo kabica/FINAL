@@ -14,3 +14,36 @@
 iframe {
   padding: 0 1rem 0 1rem;
 }
+
+@media (max-width:360px) {
+
+  .youtube {
+    display: grid;
+    margin-left: 3%;
+    padding: 15px;
+    width: 85%;
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+}
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .youtube {
+    display: grid;
+    margin-left: 8%;
+    padding: 15px;
+    width: 81%;
+  }
+
+  iframe {
+    width: 570px;
+    height: 400px;
+    padding-top: 20px;
+  }
+
+}

@@ -10,3 +10,33 @@
   margin-left: 4%;
   margin-bottom: 5%;
 }
+
+@media (max-width:360px) {
+
+  .spotify {
+    display: grid;
+    margin-left: 1%;
+    padding: 15px;
+  }
+
+  iframe {
+    margin-bottom: 2%;
+  }
+
+}
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .spotify {
+    display: grid;
+    margin-left: 8%;
+    padding: 15px;
+    width: 81%;
+  }
+
+  iframe {
+    margin-bottom: 2%;
+  }
+
+
+}
