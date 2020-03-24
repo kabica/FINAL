@@ -9,7 +9,7 @@
   margin-right: 12px;
   margin-left: 12px;
 }
-/* .title_card--selected {
+.title_card--selected {
   margin-right: 12px;
   margin-left: 12px;
   border: 4px solid rgb(81, 1, 178);
@@ -202,7 +202,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-height: 9.5rem;
-    /* max-height: 6.875em; */
+    max-height: 6.875em;
     border: 2px solid white;
     font-family: 'Bungee Hairline';
     color: white;

@@ -15,9 +15,7 @@ import av5 from '../public/images/owavatar.jpg'
 import av6 from '../public/images/ow2avatar.jpeg'
 import av7 from '../public/images/fortavatar.jpeg'
 import av8 from '../public/images/wowavatar.jpg'
-// import Search from './Search'
 
-import SearchBar from 'material-ui-search-bar'
 
 const StyledBadge = withStyles(theme => ({
   badge: {
