@@ -173,7 +173,7 @@ class LoginForm extends Component {
 
 export default LoginForm;
 
-// Media
+//Media
 const customMedia = generateMedia({
   tablet: '640px'
 });
@@ -314,7 +314,7 @@ const FormContainer = styled.div`
 // Button
 const Btn = styled.button`
   color: #fff;
-  background: rgba(229, 9, 20);
+  background: rgb(54, 42, 121);
   border: none;
   outline: none;
   padding: 0.8rem 1.3rem;
