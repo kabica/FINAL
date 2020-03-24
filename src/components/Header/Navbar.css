@@ -103,6 +103,10 @@
     margin-top: 0px;
   }
 
+  .navbar--logo {
+    height: 34px;
+  }
+
 }
 
 @media (max-width:768px) and (min-width:361px) {
