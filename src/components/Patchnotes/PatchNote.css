@@ -45,6 +45,9 @@
     font-size: 1em;
     margin: 12px 0px 12px 0px;
   }
+  ul {
+    padding: 10px;
+  }
 }
 
 @media (min-width :768px) {
