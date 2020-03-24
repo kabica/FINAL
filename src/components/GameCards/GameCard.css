@@ -73,6 +73,7 @@
 #desc {
   margin: 0px;
 }
+
 @media (max-width :360px) {
   #game_image1 {
     max-width: 100%;
@@ -84,13 +85,13 @@
   .title_card {
     flex: 0 0 auto;
     width: 90%;
-    height: 52em;
+    height: 42em;
     margin: 0em 1em 2em 1em;
   }
   .title_card--selected {
     flex: 0 0 auto;
     width: 90%;
-    height: 52em;
+    height: 43em;
     margin: 0em 1em 2em 1em;
     border: 4px solid rgb(81, 1, 178);
     border-radius: 4px;
@@ -169,7 +170,7 @@
     font-weight: 800;
   }
 }
-@media (min-width :769px) and (max-width: 1800px) {
+@media (min-width :769px){
   #game_image1 {
     max-width: 100%;
     min-width: 100%;
@@ -178,12 +179,12 @@
   }
   
   .title_card {
-    width: 30em;
+    width: 90%;
     height: auto;
   }
   .title_card--selected {
-    width: 30em;
-    max-height: 24em;
+    width: 90%;
+    height: auto;
     margin-right: 12px;
     margin-left: 12px;
     border: 4px solid rgb(81, 1, 178);
@@ -201,8 +202,7 @@
     border-radius: 8px;
     flex-direction: row;
     justify-content: space-between;
-    max-height: 9.5rem;
-    max-height: 6.875em;
+    height: 12em;
     border: 2px solid white;
     font-family: 'Bungee Hairline';
     color: white;
@@ -218,7 +218,7 @@
   }
 }
 
-.mark_discover {
+/* .mark_discover {
   box-sizing: border-box;
   border: solid 4px 	rgb(81, 1, 178);
   top: 0;
@@ -245,4 +245,4 @@
   border-top: solid 17px rgb(81, 1, 178);
   border-left: solid 17px transparent;
   border-right: solid 17px transparent;
-}
+} */

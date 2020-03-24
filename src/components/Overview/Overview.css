@@ -48,9 +48,8 @@
     width: 45em;
   }
   #wide {
-    width: 80%;
+    width: 90%;
     height:auto;
-    margin-left: 1em;
   }
   #banner1 {
     display: flex;
