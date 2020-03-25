@@ -54,3 +54,33 @@
     color: white;
   }
 }
+
+@media (min-width: 361px) {
+  #commentGroup {
+    font-family: 'Bungee Hairline';
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+    border: 2px solid rgb(19, 18, 18);
+    margin: 0.1em;
+    border-radius: 8px;
+    padding: 0.5em;
+    font-weight: 600;
+    background-color: rgba(71, 69, 69, 0.596);
+    height: auto;
+  }
+  #meta{
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(149, 49, 243);
+    margin-bottom: 0.16em;
+  }
+  
+  #commentText {
+    width: 90%;
+    font-size: 1em;
+    color: white;
+  }
+}
