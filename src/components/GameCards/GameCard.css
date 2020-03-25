@@ -122,6 +122,24 @@
     transition: 2s;
     font-weight: 800;
   }
+  #more {
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Bungee';
+    color: rgb(8, 235, 182);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    border-left: 1px solid white;
+    min-width: 1em;
+    max-width: 1em;
+    height: 100%;
+    background-image: linear-gradient(rgb(58, 57, 58), rgba(235, 226, 228, 0.856));
+  }
+  #more:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width :361px) and (max-width :768px) {
   #game_image1 {
