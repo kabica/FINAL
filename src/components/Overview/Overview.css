@@ -24,7 +24,9 @@
   width: 1238px;
   height: 600px;
 }
-
+#patch_category {
+  font-size: 1.6em;
+}
 @media (max-width: 360px) {
   #game {
     display: flex;

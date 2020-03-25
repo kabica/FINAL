@@ -23,9 +23,9 @@ function Show(props) {
           {mode}
         </div>
       </div>
-      {mode['desc1'] === 'show' && (<Overview game={mode['row1']} />)}
+      {/* {mode['desc1'] === 'show' && (<Overview game={mode['row1']} />)} */}
     </body>
-  );
+  ); 
 }
 
 export default Show;

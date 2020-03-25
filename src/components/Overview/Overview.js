@@ -47,7 +47,7 @@ const images = {
   COD: COD_W,
   FALL: FALLOUT,
   MINE: MINE_W
-}
+};
 
 
 
@@ -59,14 +59,14 @@ function Overview(props) {
       </div>
       <div id='notes' >
         <div id='section'>CHARACTERS: {props.game}</div>
-        <Characters />
+        <Characters game={props.game}/>
         <div id='section'>PATCH NOTES: {props.game}</div>
-          {<PatchNote title={'BARRICADE DEBRIS CONSISTENCY'} text={note}/>}
-          {<PatchNote title={attack} text={notes.FORT.PATCH}/>}
+          {<PatchNote title={notes[props.game].DESC1} text={notes[props.game].PATCH1}/>}
+          {<PatchNote title={notes[props.game].DESC} text={notes[props.game].PATCH}/>}
       </div>
       {<CommentBoard />}
     </div>
-  );
+  ); 
 }
 
 export default Overview;
