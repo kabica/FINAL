@@ -40,13 +40,16 @@ function CommentBoard(props) {
 
 
   return (
-    <div id='container'>
+    <div id='comment_container'>
       <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={post.created_at}text={post.text || 'no'}/>)}</div>
       <div id='chatInput'>
-        <form noValidate autoComplete="off">
-          <TextField value={mode} id="outlined-secondary"label="Let the world know!"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
-        </form>
-        <div id='button1' onClick={() => {postComment(mode);}}>
+        <input 
+          id='comment_board'
+          value={mode || ''}
+          placeholder='Post a comment!'
+          onChange={(event) => setMode(event.target.value)}
+        />
+        <div id='comment_button' onClick={() => {postComment(mode);}}>
           Post!
         </div>
       </div>
