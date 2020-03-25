@@ -78,6 +78,11 @@
 }
 
 @media (max-width :360px) {
+  #desc {
+    font-size: 0.8em;
+    margin: 0px;
+    font-weight: 0;
+  }
 
   #game_image1 {
     max-width: 100%;
@@ -104,7 +109,7 @@
   #overview {
     font-family: 'Bungee';
     color: white;
-    font-size: 1.8em;
+    font-size: 1.15em;
     margin: 0px;
   }
   #text {
