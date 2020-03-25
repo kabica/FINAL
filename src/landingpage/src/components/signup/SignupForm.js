@@ -3,7 +3,7 @@ import { generateMedia } from 'styled-media-query';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 // import FBlogo from '../../images/fb-logo.png';
-
+import './Signup.css'
 import styled from 'styled-components';
 
 const regExp = RegExp(
@@ -139,14 +139,14 @@ class SignupForm extends Component {
               <React.Fragment>
                 {/* <img src={FBlogo} alt="facebook logo" /> */}
                 <Link to="/" className="login-fb-text">
-                  Signup with Facebook
+                  Signup with Google
                 </Link>
                 <br />
                 <br />
                 <React.Fragment>
-                  <span style={{ color: '#999' }}> New to Gametrax?</span>&nbsp;
+                  <span style={{ color: '#999' }}> New to Gametrax? </span>&nbsp;
                   <Link to="/" className="sign-up-text">
-                    Sign up now.
+                    Sign Up Now
                   </Link>
                 </React.Fragment>
               </React.Fragment>
@@ -314,7 +314,7 @@ const FormContainer = styled.div`
 // Button
 const Btn = styled.button`
   color: #fff;
-  background: rgba(229, 9, 20);
+  background: rgba(106, 9, 229);
   border: none;
   outline: none;
   padding: 0.8rem 1.3rem;

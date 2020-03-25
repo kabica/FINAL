@@ -6,3 +6,11 @@
   float: right;
   margin-bottom: 5%;
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .slider-wrapper {
+    width: 100%;
+    float: left;  
+  }
+}

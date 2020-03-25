@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { generateMedia } from 'styled-media-query';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import './Login.css'
 
 
 import styled from 'styled-components';
@@ -124,7 +124,7 @@ class LoginForm extends Component {
             </div>
 
             <label className="checkbox-container">
-              Remember me
+              Remember Me
               <input
                 type="checkbox"
                 defaultChecked={this.state.checked}
@@ -139,14 +139,14 @@ class LoginForm extends Component {
               <React.Fragment>
                 {/* <img src={FBlogo} alt="facebook logo" /> */}
                 <Link to="/" className="login-fb-text">
-                  Login with Facebook
+                  Login With Google
                 </Link>
                 <br />
                 <br />
                 <React.Fragment>
-                  <span style={{ color: '#999' }}> New to Gametrax?</span>&nbsp;
+                  <span style={{ color: '#999' }}> New to Gametrax? </span>&nbsp;
                   <Link to="/" className="sign-up-text">
-                    Sign up now.
+                    Sign Up Now
                   </Link>
                 </React.Fragment>
               </React.Fragment>
@@ -191,8 +191,9 @@ const FormContainer = styled.div`
     background: rgba(0, 0, 0, 0.8);
     position: relative;
     width: 28.125rem;
-    height: 41.25rem;
+    height: 31.25rem;
     padding: 4rem;
+    margin-top: 46%
     ${customMedia.lessThan('tablet')`
       padding: 0.6rem;
       height:35rem;
@@ -314,7 +315,7 @@ const FormContainer = styled.div`
 // Button
 const Btn = styled.button`
   color: #fff;
-  background: rgb(54, 42, 121);
+  background: rgba(106, 9, 229);
   border: none;
   outline: none;
   padding: 0.8rem 1.3rem;

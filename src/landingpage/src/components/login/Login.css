@@ -1,0 +1,87 @@
+.login_Background__1oT0a {
+  height: 100vh;
+  background-size: 100% 100% !important;
+}
+
+.form-container {
+  margin-top: 12rem;
+  height: 31.25rem;
+}
+
+.need-help {
+  margin-left: 13.6rem !important;
+}
+
+form div label {
+  top: 2.4rem !important;
+}
+
+.lang-btn {
+  margin-top: 0px !important;
+}
+
+@media (max-width:360px) {
+
+  .login_Background__1oT0a {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 1rem;
+    height: 100vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .eoRvHd {
+    border: none !important;
+  }
+
+  .eoRvHd h1 {
+    margin: 0 2rem !important;
+    margin-top: 8rem !important;
+  }
+
+  .eoRvHd .input-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .eoRvHd .bottom-form {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .login_Background__1oT0a {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 7rem;
+    height: 100vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .eoRvHd {
+    border: none !important;
+  }
+
+  .eoRvHd h1 {
+    margin: 0 1rem !important;
+    margin-top: 8rem !important;
+
+  }
+
+  .eoRvHd .input-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .eoRvHd .bottom-form {
+    margin-left: 1rem;
+  }
+
+}

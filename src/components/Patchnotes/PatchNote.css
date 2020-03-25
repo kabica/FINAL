@@ -8,14 +8,74 @@
   word-break: break-word;
   width: 1000px;
   color: white;
-  font-size: 1.4em;
-  font-family: 'Bungee Hairline';
+  font-size: 1em;
+  /* font-family: 'Bungee Hairline'; */
+  font-family: 'Source Code Pro', monospace;
   text-align: justify;
 }
 
 #note {
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 40px;
   margin: 12px 0px 12px 0px;
+}
+
+
+@media (max-width :767px) {
+  #patch_note {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 90%;
+  }
+  
+  #content {
+    word-break: break-word;
+    width: auto;
+    color: white;
+    font-size: 1.2em;
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
+    text-align: justify;
+  }
+  
+  #note {
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 1.6em;
+    margin: 12px 0px 12px 0px;
+  }
+  ul {
+    padding: 10px;
+  }
+}
+
+@media (min-width :768px) {
+  #patch_note {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+  }
+  
+  #content {
+    word-break: break-word;
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
+    text-align: justify;
+  }
+  
+  #note {
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 2.2em;
+    margin: 12px 0px 12px 0px;
+  }
 }

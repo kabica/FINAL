@@ -5,7 +5,8 @@
   width: 1000px;
 }
 #section {
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 54px;
   width: 1238px;
@@ -24,29 +25,107 @@
   width: 1238px;
   height: 600px;
 }
+#patch_category {
+  font-size: 1.6em;
+}
+@media (max-width: 360px) {
+  #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+  #section {
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 2em;
+    width: 90%;
+    margin: 24px 0.5em 0em 0.5em;
+    border-bottom: 1px solid grey;
+  }
+  #notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+  }
+  #wide {
+    width: 90%;
+    height:auto;
+  }
+  #banner1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
-/* #scroll {
-  font-family: 'Bungee';
-  color: white;
-  font-size: 30px;;
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  border: 1px solid white;
-  height: 200px;
-  flex: 0 0 auto;
-  justify-content: flex-end;
+@media (min-width: 361px) and (max-width :768px) {
+  #game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* justify-content: space-around; */
+  }
+  #section {
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 2.4em;
+    width: 90%;
+    margin: 24px 0.5em 0em 0.5em;
+    border-bottom: 1px solid grey;
+  }
+  #notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #wide {
+    width: 94%;
+    height:auto;
+  }
+  #banner1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
-#chatInput {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
+@media (min-width: 769px){
+  #game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #banner1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #section {
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 2.6em;
+    width: 100%;
+    margin-top: 24px;
+    border-bottom: 1px solid grey;
+  }
+  #notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0em 1em 0em 1em;
+  }
+  #wide {
+    width: 90%;
+    height:auto;
+  
+  }
+
 }
-#outlined-secondary{
-  width: 870px;
-  background-color: rgb(88, 88, 88);
-}
-#button {
-  width: 130px;
-} */

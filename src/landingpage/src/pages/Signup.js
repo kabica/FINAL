@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SignupForm from '../components/signup/SignupForm';
-import SignupFooter from '../components/signup/SignupFooter';
+// import SignupFooter from '../components/signup/SignupFooter';
 import classes from './signup.module.css'
 
 class Signup extends Component {
@@ -12,7 +12,6 @@ class Signup extends Component {
         </div>
         <SignupForm />
         </div>
-        <SignupFooter />
       </div>
     );
   }

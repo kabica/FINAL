@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { Icon } from 'react-icons-kit';
 import { iosWorld } from 'react-icons-kit/ionicons/iosWorld';
 import { arrowSortedDown } from 'react-icons-kit/typicons/arrowSortedDown';
+import './Login.css';
+
 
 class LoginFooter extends Component {
   state = {
@@ -20,43 +22,22 @@ class LoginFooter extends Component {
   render() {
     return (
       <FooterContainer>
-        <span style={{ marginLeft: '10%', color: '#999' }}>
-          Questions?&nbsp;<Link to="/">Call 1-811-111-1111</Link>
-        </span>
-        <div className="footer-columns">
-          <ul>
-            <li>
-              <Link to="/">Gift Card Terms</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/">Terms of Use</Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link to="/">Privacy Statement</Link>
-            </li>
-          </ul>
-        </div>
-
         {/* Language Button */}
         <div className="lang-btn" onClick={this.handleToggle}>
-          <Icon icon={iosWorld} size={20} />
+          {/* <Icon icon={iosWorld} size={20} />
           &nbsp;&nbsp;English&nbsp;&nbsp;
-          <Icon icon={arrowSortedDown} />
+          <Icon icon={arrowSortedDown} /> */}
         </div>
 
         {/* Toggle Language Content */}
         {this.state.langContent && (
           <div className="lang-toggle">
-            <ul>
+            {/* <ul>
               <li>English</li>
             </ul>
             <ul>
               <li>French</li>
-            </ul>
+            </ul> */}
           </div>
         )}
       </FooterContainer>
@@ -77,7 +58,7 @@ const FooterContainer = styled.footer`
   background: rgba(0, 0, 0, 0.8);
   padding-top: 3rem;
   padding-bottom: 4rem;
-  margin-top: 6rem;
+  margin-top: 0rem;
   position: relative;
   z-index: 5;
   ${customMedia.lessThan('tablet')`

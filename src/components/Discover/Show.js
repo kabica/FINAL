@@ -14,16 +14,17 @@ function Show(props) {
 
   return (
     <body class='show'>
-      <div id='text' onClick={props.onClick}>
-        <p id='overview'>game overview</p>
-        <p id='desc'>{props.name}</p>
+      <div id='show_card1'>
+        <div id='text' onClick={props.onClick}>
+          <p id='overview'>GAME OVERVIEW</p>
+          <p id='desc'>{props.name}</p>
+        </div>
+        <div id='more' onClick={() =>{ hideView();  toggleMode();}}>
+          {mode}
+        </div>
       </div>
-      <div id='more' onClick={() =>{ hideView();  toggleMode();}}>
-        {mode}
-      </div>
-      {mode['desc1'] === 'show' && (<Overview game={mode['row1']} />)}
     </body>
-  );
+  ); 
 }
 
 export default Show;
