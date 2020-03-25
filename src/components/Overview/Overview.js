@@ -16,6 +16,8 @@ import BL3_W from '../img/BL3_W.png'
 import COD_W from '../img/COD_W.png'
 import FALLOUT from '../img/FALLOUT_W.png'
 import MINE_W from '../img/MINE_W.png'
+import DIV2 from '../img/DIV2_WIDE.png'
+import SPLIT from '../img/SPLIT_WIDE.png'
 import { useState, useEffect} from "react";
 import notes  from './notes';
 import Platforms from './Platforms'
@@ -46,7 +48,9 @@ const images = {
   BL3: BL3_W,
   COD: COD_W,
   FALL: FALLOUT,
-  MINE: MINE_W
+  MINE: MINE_W,
+  DIV2: DIV2,
+  SPLIT: SPLIT
 };
 
 

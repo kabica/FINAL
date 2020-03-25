@@ -28,7 +28,11 @@ const text = {
 
   FALL: 'Bethesda Game Studios, the award-winning creators of Skyrim and Fallout 4, welcome you to the evolving world of Fallout 76. Work together with other players, or not, to survive. Experience the largest and most dynamic world ever created in the Fallout universe with major free updates which grow and evolve the game with new and different ways to play. ',
 
-  MINE: 'Minecraft is a game about placing blocks and going on adventures. Build anything you can imagine with unlimited resources in Creative mode, or go on grand expeditions in Survival, journeying across mysterious lands and into the depths of your own infinite worlds. Will you hide from monsters or craft tools, armor and weapons to fight back?'
+  MINE: 'Minecraft is a game about placing blocks and going on adventures. Build anything you can imagine with unlimited resources in Creative mode, or go on grand expeditions in Survival, journeying across mysterious lands and into the depths of your own infinite worlds. Will you hide from monsters or craft tools, armor and weapons to fight back?',
+
+  DIV2: "With three Dark Zone across Washington D.C., you'll be able to explore unique areas of the city that have been untouched for months. These mysterious, walled-off sections of D.C. offer a fair and intense Player vs. Environment vs. Player experience where anything can happen, and no one can be trusted. Prove your skills against other Division agents in a variety of different player versus player experiences on unique maps not seen anywhere else in The Division 2.",
+
+  SPLIT: 'Splitgate: Arena Warfare is a fast-paced multiplayer shooter that uses player-controlled portals to create a new dimension of arena combat. Evoking memories of the most revered shooters of the past two decades, Splitgate: Arena Warfare embraces the classic and familiar feel of close-quarters combat while adding a multi-dimensional twist that adds a never-before-seen spatial wrinkle to the arena shooter setting. Battle against up to 10 friends in online multiplayer or refine your skills versus formidable AI.'
 }
 
 module.exports = { text }

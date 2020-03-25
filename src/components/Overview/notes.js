@@ -478,6 +478,51 @@ const notes = {
     </div>,
     DESC1: '',
     PATCH1:''
+  },
+  DIV2: {
+    DESC: 'GENERAL GAMEPLAY:',
+    PATCH: 
+    <div>
+      <div id='patch_category'>Seasonal Levels: </div>
+      <ul>
+      <li>
+       100 levels are available to earn throughout the season, yielding increased rewards as you progress through the ranks including gear, cosmetic items as well as new gear sets and a unique exotic. Each season, an optional Season Pass* is available in the in-game store, granting additional cosmetics and opportunities for season gear as you progress. The Season 1 – Shadow Tide Season Pass is free for all Warlords of New York owners. Remember, all in-game activities granting XP will also count towards your Seasonal Level progression, ensuring that you can progress at your own pace and through playing your favorite content.
+      </li>
+      <li>
+      Throughout the season, five seasonal manhunt targets will become available. A new target unlocks every 3 weeks and is accompanied by a double XP event, providing an opportunity to progress quicker. Take down all four Lieutenants to unlock the Prime Target. Once the Prime Target is dealt with, you will unlock the unique skill variant, EMP Sticky Bomb.
+      </li>
+      </ul>
+    </div>,
+    DESC1: 'EVENT REWORK:',
+    PATCH1: 
+    <div>
+      <div id='patch_category'>Global Events: </div>
+      <ul>
+      <li>
+      Global Events are one-week time limited in-game events, allowing you to activate gameplay-altering modifiers. The Global Event modifiers will have you adjust your tactics, offering you new ways to experience Tom Clancy’s The Division 2. Three Global Events will become available this season and participating in the each event yields up to 10 rewards based on your performance.
+      </li>
+      <li>
+      In Season 1, the Urban Jungle apparel event will become available from March 31 to April 20, earn or purchase keys with Premium Credits to obtain new apparel.Prove your status as an agent by rising through the ranks, competing with other players in various in-game activities to rank up and earn rewards. Season 1 contains four Leagues, each lasting 2 weeks and yielding up to 10 rewards based on your performance.
+      </li>
+      </ul>
+    </div>
+  },
+  SPLIT: {
+    DESC: 'GENERAL GAMEPLAY:',
+    PATCH: 
+    <div>
+      <div id='patch_category'>HOT FIXES: </div>
+      <ul>
+      <li>
+      After a game is completed, players will see a new Post Game UI screen, which will contain various stats with medals to indicate how you did compared to the other players on your team. Players will then be auto queued into another match. Fixed bug where plasma rifle wouldn’t cooldown if you fired or closed a portal after it overheated
+      </li>
+      <li>
+      Fixed bug where portal/suicide kills didn’t play kill sound or show damage done. Fixed bug where unlinked portals would sometimes keep flashing and playing audio. Fixed bug where Domination Indicators wouldn’t appear if you join a game in progress. Fixed bug where players in Waiting Area would appear as your teammate. Fixed bug where kill/assist message would sometimes show 0 damage done
+      </li>
+      </ul>
+    </div>,
+    DESC1: '',
+    PATCH1: ''
   }
   
 }
