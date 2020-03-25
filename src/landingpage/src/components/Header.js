@@ -14,9 +14,9 @@ class Header extends Component {
         <div className="header-top">
           <BackgroundVideo/>
         </div>
-        <div className="header-content">
+        {/* <div className="header-content">
           
-        </div>
+        </div> */}
       </div>
     );
   }

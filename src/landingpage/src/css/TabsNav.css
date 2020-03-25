@@ -91,5 +91,113 @@ img{
   margin-left: 170px
 }
 
+@media (min-width :769px) and (max-width: 1800px){
+  body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
 
+
+}
+
+
+
+
+
+
+@media (min-width :361px) and (max-width: 768px){
+
+   body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+@media (max-width: 360px){
+   body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    /* width: 1px; */
+    flex-wrap: wrap;
+  }
+
+  .main-section{
+  height: 10px;
+  width: 3px;
+  margin: 100px 900px;
+  padding: 200px 200px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  background: #1a1919;
+  word-wrap: break-word !important;
+  
+}
+
+#gamexxx{
+  margin-top: 300px !important;
+  margin-bottom: 10px;
+  width: 200px;
+
+}
+
+
+.main-section p{
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-bottom: 500px;
+  width: 1000px;
+  margin-left: 500px;
+  
+  word-wrap: break-all;
+  
+}
+
+img{
+  width: 300px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #1a1919;
+  margin: 100px 900px;
+  padding: 200px 200px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.card img{
+  height: 400px;
+}
+
+.card > div{
+  padding: 10px;
+}
+
+.card:nth-child(even){
+  order: 2;
+}
+
+
+}
 
