@@ -50,3 +50,36 @@ form div label {
     margin-left: 1rem;
   }
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .signup_Background__2NY-l {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 7rem;
+    height: 69vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .gHlDyY {
+    border: none !important;
+  }
+
+  .gHlDyY h1 {
+    margin: 0 1rem !important;
+  }
+
+  .gHlDyY .input-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .gHlDyY .bottom-form {
+    margin-left: 1rem;
+  }
+
+
+}

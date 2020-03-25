@@ -50,3 +50,35 @@ form div label {
     margin-left: 1rem;
   }
 }
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .login_Background__1oT0a {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 7rem;
+    height: 69vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .eoRvHd {
+    border: none !important;
+  }
+
+  .eoRvHd h1 {
+    margin: 0 1rem !important;
+  }
+
+  .eoRvHd .input-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .eoRvHd .bottom-form {
+    margin-left: 1rem;
+  }
+
+}
