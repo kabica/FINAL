@@ -1,11 +1,11 @@
-.login_Background__1oT0a {
+.signup_Background__2NY-l {
   height: 100vh;
   background-size: 100% 100% !important;
 }
 
 .form-container {
   margin-top: 12rem;
-  height: 31.25rem;
+  height: 31.25rem !important;
 }
 
 .need-help {
@@ -22,7 +22,7 @@ form div label {
 
 @media (max-width:360px) {
 
-  .login_Background__1oT0a {
+  .signup_Background__2NY-l {
     background-size: cover !important;
   }
 
@@ -33,20 +33,20 @@ form div label {
     padding: 0 !important;
   }
 
-  .eoRvHd {
+  .gHlDyY {
     border: none !important;
   }
 
-  .eoRvHd h1 {
+  .gHlDyY h1 {
     margin: 0 1rem !important;
   }
 
-  .eoRvHd .input-container {
+  .gHlDyY .input-container {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .eoRvHd .bottom-form {
+  .gHlDyY .bottom-form {
     margin-left: 1rem;
   }
 }

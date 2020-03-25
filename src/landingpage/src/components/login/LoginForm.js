@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { generateMedia } from 'styled-media-query';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Login.css'
 
