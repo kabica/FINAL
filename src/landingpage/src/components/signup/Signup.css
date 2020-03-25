@@ -1,0 +1,85 @@
+.signup_Background__2NY-l {
+  height: 100vh;
+  background-size: 100% 100% !important;
+}
+
+.form-container {
+  margin-top: 12rem;
+  height: 31.25rem !important;
+}
+
+.need-help {
+  margin-left: 13.6rem !important;
+}
+
+form div label {
+  top: 2.4rem !important;
+}
+
+.lang-btn {
+  margin-top: 0px !important;
+}
+
+@media (max-width:360px) {
+
+  .signup_Background__2NY-l {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 7rem;
+    height: 69vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .gHlDyY {
+    border: none !important;
+  }
+
+  .gHlDyY h1 {
+    margin: 0 1rem !important;
+  }
+
+  .gHlDyY .input-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .gHlDyY .bottom-form {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width:768px) and (min-width:361px) {
+
+  .signup_Background__2NY-l {
+    background-size: cover !important;
+  }
+
+  .form-container {
+    margin-top: 7rem;
+    height: 69vh !important;
+    width: 100vw !important;
+    padding: 0 !important;
+  }
+
+  .gHlDyY {
+    border: none !important;
+  }
+
+  .gHlDyY h1 {
+    margin: 0 1rem !important;
+  }
+
+  .gHlDyY .input-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .gHlDyY .bottom-form {
+    margin-left: 1rem;
+  }
+
+
+}

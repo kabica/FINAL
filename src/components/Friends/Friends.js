@@ -15,6 +15,8 @@ import av5 from '../public/images/owavatar.jpg'
 import av6 from '../public/images/ow2avatar.jpeg'
 import av7 from '../public/images/fortavatar.jpeg'
 import av8 from '../public/images/wowavatar.jpg'
+import Particles from 'react-particles-js';
+
 
 
 const StyledBadge = withStyles(theme => ({
@@ -123,6 +125,20 @@ class Friends extends React.Component {
   return (
     <div id='friends'>
       <Navbar nickname={aliases.Nickname}/>
+      <Particles id='particles' 
+          style={{ width: '100%', height: '100%', position: 'fixed' }}
+          params={{
+            "particles": {
+                "number": {
+                    "value": 100
+                },
+                "size": {
+                    "value": 3
+                }
+            },
+
+          }} 
+        />
       <h1>Your Friends
       </h1>
       <input type="text"
