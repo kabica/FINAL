@@ -25,6 +25,9 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import CommentBoard from '../Comments/CommentBoard'
 import Characters from '../Overview/Characters'
+import HeroBanner from '../Heros/OWBanner'
+import Operators from '../Heros/Operators'
+import VaultOps from '../Heros/VaultOps';
 const axios = require('axios');
 
 
@@ -63,7 +66,10 @@ function Overview(props) {
       </div>
       <div id='notes' >
         <div id='section'>CHARACTERS: {props.game}</div>
-        <Characters game={props.game}/>
+        {props.game === 'OW' && (<HeroBanner game={props.game}/>)}
+        {props.game === 'APEX' && (<Characters game={props.game}/>)}
+        {props.game === 'R6' && (<Operators game={props.game}/>)}
+        {props.game === 'BL3' && (<VaultOps game={props.game}/>)}
         <div id='section'>PATCH NOTES: {props.game}</div>
           {<PatchNote title={notes[props.game].DESC1} text={notes[props.game].PATCH1}/>}
           {<PatchNote title={notes[props.game].DESC} text={notes[props.game].PATCH}/>}
