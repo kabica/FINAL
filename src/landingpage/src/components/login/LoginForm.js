@@ -97,7 +97,7 @@ class LoginForm extends Component {
                 onChange={this.handleEmailChange}
                 value={this.state.email}
               />
-              <label>Email or Phone number</label>
+              <label>Email</label>
               <span style={{ color: '#db7302' }}>{this.state.emailError}</span>
             </div>
             <div className="input-container">
@@ -173,7 +173,7 @@ class LoginForm extends Component {
 
 export default LoginForm;
 
-// Media
+//Media
 const customMedia = generateMedia({
   tablet: '640px'
 });
