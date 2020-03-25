@@ -9,12 +9,14 @@
   width: 1000px;
   color: white;
   font-size: 1em;
-  font-family: 'Bungee Hairline';
+  /* font-family: 'Bungee Hairline'; */
+  font-family: 'Source Code Pro', monospace;
   text-align: justify;
 }
 
 #note {
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 40px;
   margin: 12px 0px 12px 0px;
@@ -34,12 +36,14 @@
     width: auto;
     color: white;
     font-size: 1.2em;
-    font-family: 'Bungee Hairline';
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
     text-align: justify;
   }
   
   #note {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2em;
     margin: 12px 0px 12px 0px;
@@ -59,12 +63,14 @@
     width: 100%;
     color: white;
     font-size: 1.2em;
-    font-family: 'Bungee Hairline';
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
     text-align: justify;
   }
   
   #note {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2em;
     margin: 12px 0px 12px 0px;

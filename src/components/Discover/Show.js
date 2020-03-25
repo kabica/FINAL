@@ -15,7 +15,7 @@ function Show(props) {
   return (
     <body class='show'>
       <div id='text' onClick={props.onClick}>
-        <p id='overview'>game overview</p>
+        <p id='overview'>GAME OVERVIEW</p>
         <p id='desc'>{props.name}</p>
       </div>
       <div id='more' onClick={() =>{ hideView();  toggleMode();}}>

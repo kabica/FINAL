@@ -5,7 +5,8 @@
   width: 1000px;
 }
 #section {
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 54px;
   width: 1238px;
@@ -34,7 +35,8 @@
     justify-content: space-around;
   }
   #section {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2.6em;
     width: 90%;
@@ -67,7 +69,8 @@
     justify-content: space-around;
   }
   #section {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2.6em;
     width: 90%;
@@ -103,7 +106,8 @@
     justify-content: space-around;
   }
   #section {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2.6em;
     width: 90%;
