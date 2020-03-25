@@ -24,7 +24,11 @@ const text = {
 
   LoL: "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
 
-  COD: "Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare® series from the ground up. In the visceral and dramatic single-player story campaign, Call of Duty: Modern Warfare pushes boundaries and breaks rules the way only Modern Warfare can."
+  COD: "Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare® series from the ground up. In the visceral and dramatic single-player story campaign, Call of Duty: Modern Warfare pushes boundaries and breaks rules the way only Modern Warfare can.",
+
+  FALL: 'Bethesda Game Studios, the award-winning creators of Skyrim and Fallout 4, welcome you to the evolving world of Fallout 76. Work together with other players, or not, to survive. Experience the largest and most dynamic world ever created in the Fallout universe with major free updates which grow and evolve the game with new and different ways to play. ',
+
+  MINE: 'Minecraft is a game about placing blocks and going on adventures. Build anything you can imagine with unlimited resources in Creative mode, or go on grand expeditions in Survival, journeying across mysterious lands and into the depths of your own infinite worlds. Will you hide from monsters or craft tools, armor and weapons to fight back?'
 }
 
 module.exports = { text }
