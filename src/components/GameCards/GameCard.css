@@ -18,7 +18,8 @@
 
 #more {
   border-radius: 0px 8px 8px 0px;
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: rgb(8, 235, 182);
   font-size: 40px;
   display: flex;
@@ -51,7 +52,8 @@
   height: 6.875em;
   width: 18.25em;
   border: 2px solid white;
-  font-family: 'Bungee Hairline';
+  /* font-family: 'Bungee Hairline'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 26px;
   margin-bottom: 24px;
@@ -66,7 +68,8 @@
   flex-direction: row;
 }
 #overview {
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 45px;
   margin: 0px;
@@ -107,7 +110,8 @@
     box-shadow: 0px 10px 6px rgb(81, 1, 178);
   }
   #overview {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 1.15em;
     margin: 0px;
@@ -125,7 +129,8 @@
     justify-content: space-between;
     height: auto;
     border: 2px solid white;
-    font-family: 'Bungee Hairline';
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 0.9em;
     margin-bottom: 24px;
@@ -186,7 +191,8 @@
     box-shadow: 0px 10px 6px rgb(81, 1, 178);
   }
   #overview {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 1.6em;
     margin: 0px;
@@ -198,9 +204,10 @@
     justify-content: space-between;
     height: auto;
     border: 2px solid white;
-    font-family: 'Bungee Hairline';
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 0.9em;
+    font-size: 1.4rem;
     margin-bottom: 24px;
     margin-left: 1em;
     margin-right: 1em;
@@ -253,7 +260,8 @@
     box-shadow: 0px 10px 6px rgb(81, 1, 178);
   }
   #overview {
-    font-family: 'Bungee';
+    /* font-family: 'Bungee'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
     font-size: 2rem;
     margin: 0px;
@@ -265,9 +273,10 @@
     justify-content: space-between;
     height: 12em;
     border: 2px solid white;
-    font-family: 'Bungee Hairline';
+    /* font-family: 'Bungee Hairline'; */
+    font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin-bottom: 24px;
     margin-left: 1em;
     margin-right: 1em;
