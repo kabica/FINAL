@@ -18,6 +18,8 @@ import LoL from '../img/LoL.png'
 import COD from '../img/COD.png'
 import FALL from '../img/FALLOUT.png'
 import MINE from '../img/MINE.png'
+import DIV2 from '../img/DIV2.png'
+import SPLIT from '../img/SPLIT.png'
 import { v } from './constants';
 import { text } from '../Overview/text';
 import Navbar from '../Header/Navbar'
@@ -77,7 +79,7 @@ function Discover() {
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>
           <GameCard sel={mode[v.ROW1] === 'PUBG'} logo={pubg} onClick={() => setVisual(v.ROW1,'PUBG')}/>
           <GameCard sel={mode[v.ROW1] === 'DEST_2'} logo={DST2} onClick={() => setVisual(v.ROW1,'DEST_2')}/>
-          <GameCard sel={mode[v.ROW1] === 'FORT'} logo={fort} onClick={() => setVisual(v.ROW1,'FORT')}/>
+          <GameCard sel={mode[v.ROW1] === 'DIV2'} logo={DIV2} onClick={() => setVisual(v.ROW1,'DIV2')}/>
         </div>
         {mode[v.ROW1] !== v.HIDE_R1 && (
         <Show name={text[mode[v.ROW1]]} onClick={() => hideVisual(v.ROW1)} drop={() => hideView(v.DESC1)}/>)}
@@ -96,7 +98,7 @@ function Discover() {
         <div id='row3'>
           <GameCard sel={mode[v.ROW3] === 'R6'} logo={R6_D} onClick={() => setVisual(v.ROW3,'R6')}/>
           <GameCard sel={mode[v.ROW3] === 'OW'} logo={OW} onClick={() => setVisual(v.ROW3,'OW')}/>
-          <GameCard sel={mode[v.ROW3] === 'BF1'} logo={OW} onClick={() => setVisual(v.ROW3,'BF1')}/>
+          <GameCard sel={mode[v.ROW3] === 'BF1'} logo={BF1} onClick={() => setVisual(v.ROW3,'BF1')}/>
           <GameCard sel={mode[v.ROW3] === 'LoL'} logo={LoL} onClick={() => setVisual(v.ROW3,'LoL')}/>
         </div>
         {mode[v.ROW3] !== v.HIDE_R3 && (
@@ -104,7 +106,7 @@ function Discover() {
         {mode[v.DESC3] === 'show' && (<Overview game={mode[v.ROW3]} />)}
 
         <div id='row4'>
-          <GameCard sel={mode[v.ROW4] === 'OW'} logo={OW} onClick={() => setVisual(v.ROW4,'OW')}/>
+          <GameCard sel={mode[v.ROW4] === 'SPLIT'} logo={SPLIT} onClick={() => setVisual(v.ROW4,'SPLIT')}/>
           <GameCard sel={mode[v.ROW4] === 'COD'} logo={COD} onClick={() => setVisual(v.ROW4,'COD')}/>
           <GameCard sel={mode[v.ROW4] === 'FALL'} logo={FALL} onClick={() => setVisual(v.ROW4,'FALL')}/>
           <GameCard sel={mode[v.ROW4] === 'MINE'} logo={MINE} onClick={() => setVisual(v.ROW4,'MINE')}/>

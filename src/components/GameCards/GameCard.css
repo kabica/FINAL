@@ -4,7 +4,6 @@
   min-height: 18.875em;
   max-height: 18.875em;
 }
-
 .title_card {
   margin-right: 12px;
   margin-left: 12px;
@@ -13,11 +12,9 @@
   margin-right: 12px;
   margin-left: 12px;
   border: 4px solid rgb(81, 1, 178);
-
   border-radius: 4px;
   box-shadow: 0px 10px 6px rgb(81, 1, 178);
 }
-
 
 #more {
   border-radius: 0px 8px 8px 0px;
@@ -42,13 +39,15 @@
   display: flex;
   flex-direction: column;
   word-break: break-word;
+  height: auto;
+  padding: 0em 1em 0em 1em;
+  font-size: 1.5em;
 }
-
 .show {
   min-width: 1238px;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   height: 6.875em;
   width: 18.25em;
@@ -58,12 +57,15 @@
   color: white;
   font-size: 26px;
   margin-bottom: 24px;
-  height: 240px !important;
   display: flex;
   align-items: flex-start;
   background-color: rgb(24, 23, 23);
   transition: 2s;
   font-weight: 800;
+}
+#show_card1 {
+  display: flex;
+  flex-direction: row;
 }
 #overview {
   /* font-family: 'Bungee'; */
@@ -75,9 +77,16 @@
 
 #desc {
   margin: 0px;
+  font-weight: 0;
 }
 
 @media (max-width :360px) {
+  #desc {
+    font-size: 0.8em;
+    margin: 0px;
+    font-weight: 0;
+  }
+
   #game_image1 {
     max-width: 100%;
     min-width: 100%;
@@ -87,16 +96,16 @@
   
   .title_card {
     flex: 0 0 auto;
-    width: 90%;
-    height: 42em;
-    margin: 0em 1em 2em 1em;
+    width: 88%;
+    height: 21.5em;
+    margin: 0em 0.2em .2em 1em;
   }
   .title_card--selected {
     flex: 0 0 auto;
     width: 90%;
-    height: 43em;
-    margin: 0em 1em 2em 1em;
-    border: 4px solid rgb(81, 1, 178);
+    height: 22em;
+    margin: 0em 0.2em .2em 1em;
+    border: 2px solid rgb(81, 1, 178);
     border-radius: 4px;
     box-shadow: 0px 10px 6px rgb(81, 1, 178);
   }
@@ -104,20 +113,26 @@
     /* font-family: 'Bungee'; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.15em;
     margin: 0px;
   }
+  #text {
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
+    height: auto;
+  }
   .show {
-    min-width: 90%;
+    min-width: 90vw;
     border-radius: 8px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    min-height: 16em; 
+    height: auto;
     border: 2px solid white;
     /* font-family: 'Bungee Hairline'; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 2em;
+    font-size: 0.9em;
     margin-bottom: 24px;
     margin-left: 1em;
     margin-right: 1em;
@@ -127,8 +142,34 @@
     transition: 2s;
     font-weight: 800;
   }
+  #show_card1 {
+    display: flex;
+    flex-direction: row;
+  }
+  #more {
+    height: auto;
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Bungee';
+    color: rgb(8, 235, 182);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    border-left: 1px solid white;
+    min-width: 1em;
+    max-width: 1em;
+    background-image: linear-gradient(rgb(58, 57, 58), rgba(235, 226, 228, 0.856));
+  }
+  #more:hover {
+    cursor: pointer;
+  }
 }
 @media (min-width :361px) and (max-width :768px) {
+  
+  #more {
+    min-width: 1em;
+  }
   #game_image1 {
     max-width: 100%;
     min-width: 100%;
@@ -153,15 +194,15 @@
     /* font-family: 'Bungee'; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 2rem;
+    font-size: 1.6em;
     margin: 0px;
   }
   .show {
     min-width: 96%;
     border-radius: 8px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    max-height: 9.5rem;
+    height: auto;
     border: 2px solid white;
     /* font-family: 'Bungee Hairline'; */
     font-family: 'Source Code Pro', monospace;
@@ -175,6 +216,26 @@
     background-color: rgb(24, 23, 23);
     transition: 2s;
     font-weight: 800;
+    text-align: justify;
+  }
+  #show_card1 {
+    display: flex;
+    flex-direction: row;
+  }
+  #more {
+    height: auto;
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Bungee';
+    color: rgb(8, 235, 182);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    border-left: 1px solid white;
+    min-width: 1em;
+    max-width: 1em;
+    background-image: linear-gradient(rgb(58, 57, 58), rgba(235, 226, 228, 0.856));
   }
 }
 @media (min-width :769px){
@@ -208,7 +269,7 @@
   .show {
     min-width: 96%;
     border-radius: 8px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     height: 12em;
     border: 2px solid white;
@@ -224,6 +285,26 @@
     background-color: rgb(24, 23, 23);
     transition: 2s;
     font-weight: 800;
+  }
+  #show_card1 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  #more {
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    font-family: 'Bungee';
+    color: rgb(8, 235, 182);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    border-left: 1px solid white;
+    min-width: 1em;
+    max-width: 1em;
+    background-image: linear-gradient(rgb(58, 57, 58), rgba(235, 226, 228, 0.856));
   }
 }
 

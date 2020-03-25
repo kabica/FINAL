@@ -45,8 +45,11 @@
     /* font-family: 'Bungee'; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 2em;
+    font-size: 1.6em;
     margin: 12px 0px 12px 0px;
+  }
+  ul {
+    padding: 10px;
   }
 }
 
@@ -55,7 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    width: 90%;
+    width: 100%;
   }
   
   #content {
@@ -72,7 +75,7 @@
     /* font-family: 'Bungee'; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    font-size: 2em;
+    font-size: 2.2em;
     margin: 12px 0px 12px 0px;
   }
 }

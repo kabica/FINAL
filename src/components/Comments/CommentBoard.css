@@ -1,10 +1,10 @@
-#container {
+#comment_container {
   display: flex;
   flex-direction: column;
   height: 24em;
   width: 1238px;
   margin-bottom: 2em;
-  border: 1px solid rgba(71, 69, 69, 0.596);
+  border: 1px solid rgb(73, 72, 73);
   border-radius: 8px;
 }
 
@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  /* border: 2px solid rgba(71, 69, 69, 0.596); */
   height: 100%;
   padding: 0.6em;
 }
@@ -35,13 +34,12 @@
 
 
 @media (max-width :767px) {
-  #container {
+  #comment_container {
     display: flex;
     flex-direction: column;
     height: 24em;
-    margin-bottom: 2em;
     width: 96%;
-    border: 1px solid rgba(71, 69, 69, 0.596);
+    margin-bottom: 2em;
     border-radius: 8px;
   }
   
@@ -57,26 +55,41 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 2.6em;
   }
-  #outlined-secondary{
-    width: 100%;
-    background-color: rgb(88, 88, 88);
-    border-radius: 0px 0px 0px 8px;
-  }
-  #button1 {
+  #comment_button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 5em;
-    /* width: 130px; */
     background-color: rgba(71, 69, 69, 0.596);
     color: white;
-    /* border-radius: 0px 0px 8px 0px; */
+    border-radius: 0px 0px 8px 0px;
+    height: 100%;
+  }
+  #comment_button:hover {
+    cursor: pointer;
+    color: orange;
+    border: 1px solid orange;
+  }
+  #comment_board {
+    border-radius: 0px 0px 0px 8px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0em 0em 0em 1em;
+  }
+  #comment_board:focus {
+    border-radius: 0px 0px 0px 8px;
+    outline: none;
+    border: 1px solid orange;
   }
 }
 
 @media (min-width :768px) {
-  #container {
+  #comment_container {
     display: flex;
     flex-direction: column;
     height: 24em;
@@ -98,20 +111,35 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 2.6em;
   }
-  #outlined-secondary{
-    width: 100%;
-    background-color: rgb(88, 88, 88);
-    border-radius: 0px 0px 0px 8px;
-  }
-  #button1 {
+  #comment_button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 5em;
-    /* width: 130px; */
     background-color: rgba(71, 69, 69, 0.596);
     color: white;
-    /* border-radius: 0px 0px 8px 0px; */
+    border-radius: 0px 0px 8px 0px;
+    height: 100%;
+  }
+  #comment_button:hover {
+    cursor: pointer;
+    color: orange;
+    border: 1px solid orange;
+  }
+  #comment_board {
+    border-radius: 0px 0px 0px 8px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0em 0em 0em 1em;
+  }
+  #comment_board:focus {
+    border-radius: 0px 0px 0px 8px;
+    outline: none;
+    border: 1px solid orange;
   }
 }

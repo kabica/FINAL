@@ -9,16 +9,32 @@ function Characters(props) {
   return (
     <div id='character'>
       <div id='characterImg'>
-        <img id='charImg'src={BANGALORE} alt="logo" />
-        <img id='charImg'src={CRYPTO} alt="logo" />
-        <img id='charImg'src={CAUSTIC} alt="logo" />
-        <img id='charImg'src={BLOODHOUND} alt="logo" />
+        <div id='img_container'>
+          <img id='charImg'src={BANGALORE} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={CRYPTO} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={CAUSTIC} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={BLOODHOUND} alt="logo" />
+        </div>
       </div>
       <div id='characterImg'>
-        <img id='charImg'src={BANGALORE} alt="logo" />
-        <img id='charImg'src={CRYPTO} alt="logo" />
-        <img id='charImg'src={CAUSTIC} alt="logo" />
-        <img id='charImg'src={BLOODHOUND} alt="logo" />
+        <div id='img_container'>
+          <img id='charImg'src={BANGALORE} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={CRYPTO} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={CAUSTIC} alt="logo" />
+        </div>
+        <div id='img_container'>
+          <img id='charImg'src={BLOODHOUND} alt="logo" />
+        </div>
       </div>
     </div>
   );
