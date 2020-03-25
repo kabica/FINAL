@@ -47,3 +47,19 @@ iframe {
   }
 
 }
+
+@media (min-width:769px) and (max-width:1880px){
+
+  .youtube {
+    margin-left: 4%;
+    padding: 15px;
+    width: 90%;
+  }
+
+  iframe {
+    width: 29vw;
+    height: 400px;
+    padding-top: 20px;
+  }
+
+}

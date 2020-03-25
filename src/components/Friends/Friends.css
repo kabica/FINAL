@@ -33,9 +33,15 @@
   font-size: 50px;
 }
 
-#friends .header {
+#friends .header1 {
   color: white;
-  margin: -39px 20px 0 20px;  
+  margin: -39px 93px 0 20px;  
+  height: 40px;
+}
+
+#friends .header2 {
+  color: white;
+  margin: -39px 3px 0 20px;  
   height: 40px;
 }
 
@@ -76,7 +82,7 @@
   width: 50%;
 }
 
-#friends .offline .WithStyles\(ForwardRef\(Badge\)\)-badge-224 {
+#friends .offline span {
   background-color: grey !important;
   color: grey !important;
 }
@@ -113,7 +119,12 @@
     width: 190px;
   }
 
-  #friends .header {
+  #friends .header1 {
+    margin-top: 20px;
+    margin-right: 80px;
+  }
+
+  #friends .header2 {
     margin-top: 20px;
     margin-right: 80px;
   }
@@ -145,21 +156,27 @@
   }
 
   #friends .searchbar {
-    width: 600px;
+    width: 140vw;
     height: 40px;
-    margin-left: 5.5rem !important;
+    margin-left: 4.5rem !important;
   }
 
   #friends .MuiButton-contained {
-    height: 60px;
-    width: 150px;
+    height: 40px;
+    width: 230px;
   }
 
   #friends .MuiButton-label {
     font-size: 17px !important;
   }
 
-  #friends .header {
+  #friends .header1 {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 80px;
+    float: left;
+  }
+  #friends .header2 {
     margin-top: 20px;
     margin-right: 0px;
     margin-left: 160px;
@@ -182,3 +199,40 @@
     overflow-x: unset !important;
   }
 }
+
+@media (min-width:1556px) and (max-width:1778px){
+
+  #friends .header2 {
+    color: white;
+    margin: -118px 313px 0 20px;  
+    height: 40px;
+  }
+
+}
+
+@media (min-width:769px) and (max-width:1555px) {
+
+  #friends .header2 {
+    margin-top: 10px;
+  }
+
+  #friends .header1 {
+    margin-top: 10px;
+    margin-right: 16em;
+  }
+
+  #friends .searchbar {
+    width: 70%;
+    margin-left: 7em;
+  }
+
+  #friends h2 {
+    margin-left: 9em;
+    width: 80%;
+  }
+
+  #friends .MuiGrid-container {
+    margin-left: 9em !important;
+  }
+
+} 

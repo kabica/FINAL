@@ -15,9 +15,7 @@ import av5 from '../public/images/owavatar.jpg'
 import av6 from '../public/images/ow2avatar.jpeg'
 import av7 from '../public/images/fortavatar.jpeg'
 import av8 from '../public/images/wowavatar.jpg'
-// import Search from './Search'
 
-import SearchBar from 'material-ui-search-bar'
 
 const StyledBadge = withStyles(theme => ({
   badge: {
@@ -132,10 +130,10 @@ class Friends extends React.Component {
         value={this.state.search}
         onChange={this.updateSearch.bind(this)}
       />
-      <Button className='header'variant="contained" color="secondary">
+      <Button className='header1' variant="contained" color="secondary">
         Manage Friend List
       </Button>
-      <Button className='header' variant="contained" color="secondary">
+      <Button className='header2' variant="contained" color="secondary">
         Add a Friend
       </Button>
       <h2>Online</h2>
