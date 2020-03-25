@@ -79,7 +79,7 @@ function Discover() {
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>
           <GameCard sel={mode[v.ROW1] === 'PUBG'} logo={pubg} onClick={() => setVisual(v.ROW1,'PUBG')}/>
           <GameCard sel={mode[v.ROW1] === 'DEST_2'} logo={DST2} onClick={() => setVisual(v.ROW1,'DEST_2')}/>
-          <GameCard sel={mode[v.ROW1] === 'FORT'} logo={DIV2} onClick={() => setVisual(v.ROW1,'DIV2')}/>
+          <GameCard sel={mode[v.ROW1] === 'DIV2'} logo={DIV2} onClick={() => setVisual(v.ROW1,'DIV2')}/>
         </div>
         {mode[v.ROW1] !== v.HIDE_R1 && (
         <Show name={text[mode[v.ROW1]]} onClick={() => hideVisual(v.ROW1)} drop={() => hideView(v.DESC1)}/>)}
@@ -106,7 +106,7 @@ function Discover() {
         {mode[v.DESC3] === 'show' && (<Overview game={mode[v.ROW3]} />)}
 
         <div id='row4'>
-          <GameCard sel={mode[v.ROW4] === 'OW'} logo={SPLIT} onClick={() => setVisual(v.ROW4,'SPLIT')}/>
+          <GameCard sel={mode[v.ROW4] === 'SPLIT'} logo={SPLIT} onClick={() => setVisual(v.ROW4,'SPLIT')}/>
           <GameCard sel={mode[v.ROW4] === 'COD'} logo={COD} onClick={() => setVisual(v.ROW4,'COD')}/>
           <GameCard sel={mode[v.ROW4] === 'FALL'} logo={FALL} onClick={() => setVisual(v.ROW4,'FALL')}/>
           <GameCard sel={mode[v.ROW4] === 'MINE'} logo={MINE} onClick={() => setVisual(v.ROW4,'MINE')}/>

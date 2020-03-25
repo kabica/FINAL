@@ -39,6 +39,8 @@
   flex-direction: column;
   word-break: break-word;
   height: auto;
+  padding: 0em 1em 0em 1em;
+  font-size: 1.5em;
 }
 .show {
   min-width: 1238px;
