@@ -36,7 +36,7 @@ function TabContentOne() {
 
       <main className="container">
         <section className="card">
-          <img src={overwatch} className="overwatch" alt="overwatch" data-aos="fade-right" />
+          <img src={overwatch} id="overwatch" alt="overwatch" data-aos="fade-right" />
           <div data-aos="fade-left"> 
             <img id="tracker" src={tracker} alt="tracker logo" />
             <p>You can Track Games Stats. Find top pros and streamers, and try to follow them on our discovery page! We track R6 Stats on Xbox, Playstation, Steam and Nintendo Switch! you can track Overwatch stats, R6 stats, Borderlands 3 stats, Call of Duty stats and many more. we will are constatnly looking to add more games to become available. Leave your page open to auto-refresh and capture R6 match history. See all your Battlefield 4 season stats, and how you rank in the world. Make sure to check out all our features on your profile.</p>
@@ -44,7 +44,7 @@ function TabContentOne() {
         </section>
 
         <section className="card">
-          <img src={division} className="division" alt="division" data-aos="fade-right" />
+          <img src={division} id="division" alt="division" data-aos="fade-right" />
           <div data-aos="fade-left">
             <img id="spotify" src={spotify} alt="spotify logo" />
             <p>Gametrax isn't only for tracking! It is the only site outthere that would allow user to not only add friends, search games or track stats, but also search for your favourite tracks and save them through our Spotify API</p>
