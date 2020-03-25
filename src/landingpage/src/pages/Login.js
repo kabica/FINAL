@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LoginForm from '../components/login/LoginForm';
-import LoginFooter from '../components/login/LoginFooter';
+// import LoginFooter from '../components/login/LoginFooter';
 import classes from './login.module.css';
 
 class Login extends Component {
@@ -12,7 +12,6 @@ class Login extends Component {
         </div>
         <LoginForm />
       </div>
-      <LoginFooter />
       </div>
       );
   }
