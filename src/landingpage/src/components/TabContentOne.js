@@ -50,7 +50,6 @@ function TabContentOne() {
           </div>
         </section>
 
-
         <section className="card3">
           <img src={rainbow} id="rainbow" alt="rainbow" data-aos="fade-right" />
           <div data-aos="fade-left">
