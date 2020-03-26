@@ -1,88 +1,203 @@
-/* Tab Nav #1 */
-.tab-icon-door {
-  width: 2.8125rem;
-  height: 2.8125rem;
-  fill: var(--main-grey);
-}
-
-/* Media Tab Nav #1 */
-/* @media (max-width: 900px) {
-  .tab-icon-door {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-} */
-
-/* Tab Nav #2  tv logo in the middle*/
-.tab-icon-devices {
-  width: 9.6875rem;
-  height: 9.6875rem;
-  fill: var(--main-grey);
-} 
-
-/* Media Tab Nav #2 */
-@media (max-width: 900px) {
-  .tab-icon-devices {
-    width: 8rem;
-    height: 8rem;
-  }
-}
-
-
-
-/* Tabs */
-.tabs {
-  padding-top: 1rem;
-}
-
-.tab-nav-container {
+.main-section{
+  height: 35vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
   text-align: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  list-style: none;
-  color: var(--main-grey);
-  margin: 0 12%;
+  margin: 2rem 10rem;
+  padding: 10rem 10rem;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  background: #1a1919;
 }
 
-/* Tabs Nav Hover Effect */
-ul li:hover {
-  color: rgb(86, 28, 245);
-  cursor: pointer;
+
+#gamexxx{
+  margin-top: 70px;
 }
 
-ul li:hover svg path {
-  fill: rgb(86, 28, 245);
+
+.main-section p{
+  font-size: 2rem;
+  color: #f9f9f9;
+  margin-bottom: 120px;
 }
 
-/* The Active Tab */
-.active {
-  border-bottom: 4px solid var(--main-red);
-}
-
-.tab-selected {
-  color: #fff;
-}
-
-.tab-selected svg path {
-  fill: rgb(250, 250, 250);
-}
-
-/* Media  */
-@media (min-width: 900px) {
-  .mdScreen {
-    display: none;
-  }
-}
-
-/* @media (max-width: 900px) {
-  .lgScreen {
-    display: none;
-  }
-  .mdScreen {
-    display: block;
-    margin-bottom: 0.4rem;
-  }
+/* .pc, .ps4, .nintendo, .xbox{
+  width: 500px;
 } */
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #1a1919;
+  margin: 2rem 10rem;
+  padding: 20px 20px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  color: #f9f9f9;
+  font-size: 25px;
+}
+
+.card img{
+  height: 400px;
+}
+
+.card > div{
+  padding: 10px;
+}
+
+.card:nth-child(even){
+  order: 2;
+}
+
+
+@media(max-width:600px){
+  .card{
+    display: block;
+  }
+}
+
+.zuQcu .container{
+  margin: 0 !important;
+}
+.droOkG .container{
+  margin: 0 !important;
+}
+
+#tracker{
+  height: 100px;
+  width: 160px;
+  margin-left: 270px;
+}
+
+#youtube{
+  height: 160px;
+  width: 290px;
+  margin-left: 220px;
+}
+
+#spotify{
+  height: 230px;
+  width: 290px;
+  margin-left: 220px;
+}
+
+#rainbow{
+  margin-left: 170px
+}
+
+@media (min-width :769px) and (max-width: 1800px){
+  body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+
+
+
+
+
+@media (min-width :361px) and (max-width: 768px){
+
+   body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+@media (max-width: 360px){
+   body{
+    background-color: rgba(0, 0, 0, 0.918);
+   
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    /* width: 1px; */
+    flex-wrap: wrap;
+  }
+
+  .main-section{
+  height: 10px;
+  width: 3px;
+  margin: 100px 900px;
+  padding: 200px 200px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  background: #1a1919;
+  word-wrap: break-word !important;
+  
+}
+
+#gamexxx{
+  margin-top: 300px !important;
+  margin-bottom: 10px;
+  width: 200px;
+
+}
+
+
+.main-section p{
+  font-size: 1rem;
+  color: #f9f9f9;
+  margin-bottom: 500px;
+  height: 100000px;
+  width: 1000px;
+  margin-left: 500px;
+  word-wrap: normal;
+  
+}
+
+img{
+  width: 300px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  background: #1a1919;
+  margin: 100px 900px;
+  padding: 200px 200px;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+  color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.card img{
+  height: 400px;
+}
+
+.card > div{
+  padding: 10px;
+}
+
+.card:nth-child(even){
+  order: 2;
+}
+
+
+}
+

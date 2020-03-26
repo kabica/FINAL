@@ -1,0 +1,5 @@
+canvas{
+  z-index: -1;
+  top: 0.5; left: 1;
+  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
