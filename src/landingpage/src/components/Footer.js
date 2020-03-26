@@ -83,8 +83,7 @@ class Footer extends Component {
         <span
           style={{ marginLeft: '15%', fontSize: '0.9rem', marginTop: '2rem' }}
         >
-          <span>Created with ❤️ by Moe, Quinton and Alex</span>
-          Gametrax Canada
+          <span>Created with ❤️ by Moe, Quinton and Alex </span>
         </span>
       </FooterContainer>
     );

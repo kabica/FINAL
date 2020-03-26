@@ -127,3 +127,112 @@
 .fdCmlv {
   background-color: black !important;
 }
+
+@media (max-width: 360px){
+
+  .mainhome {
+    max-width: 100vw;
+  }
+
+  .BackgroundVideo_Container__2OGYJ {
+    height: 100%;
+    width: 100%; 
+  }
+
+  .ApKpt {
+    font-size: 1rem !important;
+  }
+
+  .BackgroundVideo_icons_moe__jFNlS img {
+    height: 20px;
+    margin: 0 !important;
+    width: auto;
+  }
+
+  #gamexxx {
+    float: none;
+    padding: 0px;
+    margin-left: 23px;
+    height: 60px;
+  }
+
+  .maininfo {
+    font-size: 1rem;
+  }
+
+  #tracker {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 4rem;
+    height: 70px;
+    margin-top: -27%;
+  }
+
+  #overwatch {
+    padding: 0px;
+    height: 280px;
+    margin-left: -1rem;
+  }
+
+  .info {
+    margin: 0px;
+    font-size: 1rem;
+    margin-top: 9%;
+  }
+
+  #division {
+    height: 345px;
+    float: none;
+    margin-left: -1rem;
+    margin-top: 8%;
+  }
+
+  #spotify {
+    height: 270px;
+    margin-top: -60%;
+  }
+
+  .info2 {
+    margin: 0px;
+    font-size: 1rem;
+    margin-top: 9%;
+    width: 100%;
+    padding: 0px;
+    margin-top: -28%;
+  }
+
+  #rainbow {
+    height: 250px;
+    float: none;
+    margin: 0px;
+    margin-left: -1rem;
+  }
+
+  #youtube {
+    height: 80px;
+    margin: 0px;
+    float: none;
+    margin-left: 17%;
+    margin-top: -25%;
+  }
+
+  .info3 {
+    margin: 0px;
+    font-size: 1rem;
+    margin-top: 9%;
+    width: 100%;
+    padding: 0px;
+    float: none;
+  }
+
+  .fdCmlv .footer-columns {
+    width: 100% !important;
+    grid-gap: 0px !important;
+    margin: 0px;
+  }
+
+  .fdCmlv .lang-btn {
+    margin-left: 53%;
+  }
+
+}
