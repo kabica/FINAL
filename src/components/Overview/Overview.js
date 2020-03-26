@@ -62,9 +62,9 @@ function Overview(props) {
         <img id='wide'src={images[props.game]} alt="logo"/>
       </div>
       <div id='notes' >
-        <div id='section'>CHARACTERS: {props.game}</div>
+        <div id='section'>CHARACTERS</div>
         <Characters game={props.game}/>
-        <div id='section'>PATCH NOTES: {props.game}</div>
+        <div id='section'>PATCH NOTES</div>
           {<PatchNote title={notes[props.game].DESC1} text={notes[props.game].PATCH1}/>}
           {<PatchNote title={notes[props.game].DESC} text={notes[props.game].PATCH}/>}
       </div>

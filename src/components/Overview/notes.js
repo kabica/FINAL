@@ -2,8 +2,8 @@ import React from 'react';
 const notes = {
 
   FORT: {
-    DESC: 'Gameplay + Item Changes',
-    DESC1: 'ART + ANIMATION:',
+    DESC: 'Gameplay + Item Changes:',
+    DESC1: 'Artwork +  Animation:',
     PATCH1:
     <div>
       GENERAL
@@ -46,7 +46,7 @@ const notes = {
     </ul>
   },
   PUBG: {
-    DESC: 'GENERAL GAMEPLAY',
+    DESC: 'General Gameplay:',
     PATCH: 
     <ul>
       <li>
@@ -85,7 +85,7 @@ const notes = {
     </ul>
   },
   DEST_2: {
-    DESC: 'POWER CHARACTERS',
+    DESC: 'Power Characters:',
     DESC1: 'SPECIALTY CHARACTERS',
     PATCH: 
     <div>
@@ -131,7 +131,7 @@ const notes = {
     </div>,
   },
   BL3: {
-    DESC: 'CHARACTERS:',
+    DESC: 'Characters + More:',
     PATCH: 
     <div>
       <div id='patch_category'>VAULT HUNTERS</div>
@@ -150,7 +150,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'WEAPONS + GAMEPLAY',
+    DESC1: 'Weapons + Gameplay:',
     PATCH1: 
     <div>
       <div id='patch_category'>THE ARSENAL</div>
@@ -171,7 +171,7 @@ const notes = {
     </div>
   },
   APEX: {
-    DESC: 'WEAPONS + GAMEPLAY',
+    DESC: 'Weapons Fix + Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>SYSTEM OVERRIDE</div>
@@ -190,7 +190,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'BUG FIXES',
+    DESC1: 'General Bug Fix:',
     PATCH1: 
     <div>
       <div id='patch_category'>BANGALORE + MORE:</div>
@@ -211,7 +211,7 @@ const notes = {
     </div>
   },
   DOTA: {
-    DESC: 'GENERAL GAMEPLAY',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>DATA + MORE:</div>
@@ -227,7 +227,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'BUG FIXES',
+    DESC1: 'General Bug Fix:',
     PATCH1: 
     <div>
       <div id='patch_category'>META BALANCE:</div>
@@ -248,7 +248,7 @@ const notes = {
     </div>
   },
   ROCKET: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>CONTROLLER SETTINGS:</div>
@@ -261,7 +261,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'BUG FIXES:',
+    DESC1: 'General Bug Fix:',
     PATCH1: 
     <div>
       <div id='patch_category'>VISUAL DETAILS:</div>
@@ -273,7 +273,7 @@ const notes = {
     </div>
   },
   R6: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>OREGON REWORK:</div>
@@ -289,7 +289,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'META BALANCE:',
+    DESC1: 'Meta Balance + Shift:',
     PATCH1: 
     <div>
       <div id='patch_category'>PLAYER CHANGES:</div>
@@ -307,7 +307,7 @@ const notes = {
     </div>
   },
   OW: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>SHARE PLAY:</div>
@@ -323,7 +323,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'BUG FIXES:',
+    DESC1: 'General Bug Fix:',
     PATCH1: 
     <div>
       <div id='patch_category'>WORKSHOP: </div>
@@ -350,7 +350,7 @@ const notes = {
     </div>
   },
   BF1: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>ZEEBRUGGE: </div>
@@ -369,7 +369,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'MATCH EXPERIENCE:',
+    DESC1: 'Match Experience:',
     PATCH1: 
     <div>
       <div id='patch_category'>ALL PLATFORMS: </div>
@@ -390,7 +390,7 @@ const notes = {
     </div>
   },
   LoL: {
-    DESC: 'MATCH EXPERIENCE',
+    DESC: 'Match Experience',
     PATCH: 
     <div>
       <div id='patch_category'>AUTOFILL BALANCE: </div>
@@ -403,7 +403,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'HERO REWORK',
+    DESC1: 'Hero Rework + More:',
     PATCH1: 
     <div>
       <div id='patch_category'>SUPPORT SENNA: </div>
@@ -418,7 +418,7 @@ const notes = {
     </div>
   },
   COD: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>BUG FIXES: </div>
@@ -435,7 +435,7 @@ const notes = {
     PATCH1:''
   },
   FALL: {
-    DESC: 'MATCH EXPERIENCE',
+    DESC: 'Match Experience',
     PATCH: 
     <div>
       <div id='patch_category'>AUTOFILL BALANCE: </div>
@@ -448,10 +448,10 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'HERO REWORK',
+    DESC1: 'Hero Rework + More:',
     PATCH1: 
     <div>
-      <div id='patch_category'>SUPPORT SENNA: </div>
+      <div id='patch_category'>Support Senna: </div>
       <ul>
       <li>
       PASSIVE - ABSOLUTION - ATTACK DAMAGE PER SOUL 1 ⇒ 0.75, INNATE - WEAKENED SOUL COOLDOWN 4 seconds ⇒ 6/5/4 (levels 1/6/11) seconds
@@ -463,10 +463,10 @@ const notes = {
     </div>
   },
   MINE: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
-      <div id='patch_category'>BUG FIXES: </div>
+      <div id='patch_category'>Bug Fixes + More: </div>
       <ul>
       <li>
       Players seeing a rank reset prompt screen after yesterday's update. Fix for the Quick Fix Perk not functioning as intended while used as a Specialist Perk. Fix for killstreaks still functioning in CDL playlists. Fixes for Regiment invites
@@ -480,7 +480,7 @@ const notes = {
     PATCH1:''
   },
   DIV2: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
       <div id='patch_category'>Seasonal Levels: </div>
@@ -493,7 +493,7 @@ const notes = {
       </li>
       </ul>
     </div>,
-    DESC1: 'EVENT REWORK:',
+    DESC1: 'Event Rework + More:',
     PATCH1: 
     <div>
       <div id='patch_category'>Global Events: </div>
@@ -508,10 +508,10 @@ const notes = {
     </div>
   },
   SPLIT: {
-    DESC: 'GENERAL GAMEPLAY:',
+    DESC: 'General Gameplay:',
     PATCH: 
     <div>
-      <div id='patch_category'>HOT FIXES: </div>
+      <div id='patch_category'>Hot Fixes: </div>
       <ul>
       <li>
       After a game is completed, players will see a new Post Game UI screen, which will contain various stats with medals to indicate how you did compared to the other players on your team. Players will then be auto queued into another match. Fixed bug where plasma rifle wouldn’t cooldown if you fired or closed a portal after it overheated
