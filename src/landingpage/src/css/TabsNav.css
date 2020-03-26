@@ -25,9 +25,9 @@
   margin-bottom: 120px;
 }
 
-img{
+/* .pc, .ps4, .nintendo, .xbox{
   width: 500px;
-}
+} */
 
 .card{
   display: grid;

@@ -10,6 +10,7 @@ import pc from '../images/pc.png'
 import ps4 from '../images/ps4.png'
 import nintendo from '../images/nintendo.png'
 import xbox from '../images/xbox.png'
+import './BackgroundVideo.module.css';
 
 
 
@@ -38,7 +39,7 @@ const BackgroundVideo = () => {
                     </a>
             
                 </div>
-                <span id="icons">
+                <span  className={classes.icons_moe}>
                   <img className="pc" src={pc} alt="pc"/>
                   <img className="nintendo" src={nintendo} alt="nintendo" />
                   <img className="ps4" src={ps4} alt="ps4" />

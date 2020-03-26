@@ -24,6 +24,7 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -70,15 +71,15 @@
     background-color: rgba(0, 0, 0, 0.918);
   }
 
-  h2{
+  /* h2{
     animation-name: moveToRight;
     animation-duration: 2s;
     overflow: hidden;
     position: relative;
-  }
+  } */
 
 
- span img{
+ .icons_moe img{
    height: 30px;
    width: 100px;
    filter: invert(1000%) sepia(2200%) saturate(10%) hue-rotate(-1700deg) brightness(1000%) contrast(120%);
@@ -91,10 +92,11 @@
   position: relative;
  }
  
- span{
+   /* #icons {
     position: absolute;
    margin-top: 300px;
- }
+   margin-left: 1000px;
+ } */
 
  @keyframes moveToLeft {
   0% {
