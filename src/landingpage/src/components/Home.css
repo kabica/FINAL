@@ -7,7 +7,9 @@
 }
 
 #gamexxx {
-  margin-left: 40%;
+  /* margin-left: 40%; */
+  float: right;
+  padding: 70px 60px 60px 60px
 }
 
 .maininfo {
@@ -15,6 +17,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Play', sans-serif;
 }
 
 .info {
@@ -22,6 +25,7 @@
   font-size: 1.3rem;
   text-align: center;
   margin-left: 490px;
+  font-family: 'Play', sans-serif;
 }
 
 .info2 {
@@ -30,35 +34,39 @@
   text-align: center;
   margin-top: -40px;
   padding-bottom: 30px;
+  width: 60%;
+  padding-left: 8%;
+  font-family: 'Play', sans-serif;
 }
 
 .info3 {
   color: white;
   font-size: 1.3rem;
   text-align: center;
-  margin-top: -235px;
+  margin-top: -14%;
   float: right;
-  margin-left: 600px;
+  margin-left: 50%;
+  margin-right: 10%;
+  font-family: 'Play', sans-serif;
 }
 
 #youtube {
   display: block;
   margin: 15px auto;
-  /* animation-name: moveToRight;
-  animation-duration: 2s; */
+  animation-name: moveToRight;
+  animation-duration: 2s;
   overflow: hidden;
   position: relative;
-  height: 200px;
+  height: 110px;
   float: right;
-  margin-top: -420px;
-  margin-right: 300px;
+  margin-right: 21%;
 }
 
 #tracker {
   display: block;
   margin: 15px auto;
-  /* animation-name: moveToRight;
-  animation-duration: 2s; */
+  animation-name: moveToRight;
+  animation-duration: 2s;
   overflow: hidden;
   position: relative;
   height: 100px;
@@ -69,8 +77,8 @@
 #spotify {
   display: block;
   margin: auto;
-  /* animation-name: moveToRight;
-  animation-duration: 2s; */
+  animation-name: moveToRight;
+  animation-duration: 2s;
   overflow: hidden;
   position: relative;
   height: 300px;
@@ -80,19 +88,22 @@
   height: 400px;
 }
 
-.card, .main-section {
-  background-color: rgba(68, 68, 68, 0.3);
+.main-section {
+  background-color: black;
+}
+
+.card {
+  background-color: black;
 }
 
 .card2 {
-  background-color: rgba(68, 68, 68, 0.3);
-  /* margin-top: 110px; */
-  /* height: 239.8px; */
+  /* background-color: rgba(68, 68, 68, 0.3); */
+  background-color: black;
 }
 
 .card3 {
-  background-color: rgba(68, 68, 68, 0.3);
-  height: 259px;
+  background-color: black;
+  margin-top: 10%;
 }
 
 .main-section {
@@ -101,7 +112,7 @@
 
 #division {
   float: right;
-  margin-top: -38px;
+  margin-top: 3%;
 }
 
 #overwatch {
@@ -109,7 +120,8 @@
 }
 
 #rainbow {
-  /* margin-top: -172px; */
+  float: left;
+  margin-right: 3%;
 }
 
 .fdCmlv {

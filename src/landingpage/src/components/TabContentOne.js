@@ -9,28 +9,28 @@ import './tabcomponent.css';
 import '../css/TabsNav.css';
 import gamexxx from '../images/gamexxx.png';
 import spotify from '../images/spotify.png';
-import youtube from '../images/youtube.png';
+import youtube from '../images/newwhiteyoutube.png';
 import tracker from '../images/tracker.png';
 import './Home.css'
 
 
 // import Particles from 'react-particles-js'
 // import '../pages/particles.css';
-// import AOS from 'aos';
+import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
-// AOS.init({
-//   offset: 100,
-//   duration: 1000
-// })
+AOS.init({
+  offset: 100,
+  duration: 1000
+})
 
 function TabContentOne() {
   return (
     <TabContentContainer className="page">
 
       <section className="main-section" data-aos="fade-up">
-        <img id="gamexxx" src={gamexxx} alt="gametrax" />
-        <p className='maininfo'>Gametrax is the newest network of community run gaming stats sites in the world. We're a small team that loves building applications for the gaming community, and we realized that we can serve the community better by opening up our knowledge and capability through a well thought out gaming stats API. Some of the hardest work we do is getting access to stats in the first place, and we recognize this is a significant barrier for many developers. It's only through our determination that we're able to get the data when others cannot. We don't believe in hoarding that knowledge, and this API allows us to provide the community with safe and reliable APIs so we can all enjoy stats and continue creating. Our game support currently includes stats for Splitgate, CS:GO, Division 2 and Overwatch. We're working hard to expand this list as fast as we can, and you can expect many more titles to be supported in the near future.</p>
+        <img id="gamexxx" src={gamexxx} alt="gametrax" data-aos="fade-left"/>
+        <p className='maininfo' data-aos="fade-right">Gametrax is the newest network of community run gaming stats sites in the world. We're a small team that loves building applications for the gaming community, and we realized that we can serve the community better by opening up our knowledge and capability through a well thought out gaming stats API. Some of the hardest work we do is getting access to stats in the first place, and we recognize this is a significant barrier for many developers. It's only through our determination that we're able to get the data when others cannot. We don't believe in hoarding that knowledge, and this API allows us to provide the community with safe and reliable APIs so we can all enjoy stats and continue creating. Our game support currently includes stats for Splitgate, CS:GO, Division 2 and Overwatch. We're working hard to expand this list as fast as we can, and you can expect many more titles to be supported in the near future.</p>
       </section>
 
       <main className="container">
@@ -43,8 +43,8 @@ function TabContentOne() {
         </section>
 
         <section className="card2">
-          <img src={division} id="division" alt="division" data-aos="fade-right" />
-          <div data-aos="fade-left">
+          <img src={division} id="division" alt="division" data-aos="fade-left" />
+          <div data-aos="fade-right">
             <img id="spotify" src={spotify} alt="spotify logo" />
             <p className='info2'>Gametrax isn't only for tracking! It is the only site out there that allows users to not only add friends, search games or track stats, but also search for your favourite Spotify albums and playlists and showcase them on your profile for your friends to see.</p>
           </div>
@@ -52,9 +52,9 @@ function TabContentOne() {
 
 
         <section className="card3">
-          <img src={rainbow} id="rainbow" alt="rainbow" data-aos="fade-left" />
-          <div data-aos="fade-right">
-            <img id="youtube" src={youtube} alt="youtube logo" />
+          <img src={rainbow} id="rainbow" alt="rainbow" data-aos="fade-right" />
+          <div data-aos="fade-left">
+            <img id="youtube" src={youtube} alt="youtube logo"/>
             <p className='info3'>Gametrax also allows you to search for your favourite videos and tutorials from some of your favourite youtube content creators and add it to your profile to share it with your friends.</p>
           </div>
         </section>
