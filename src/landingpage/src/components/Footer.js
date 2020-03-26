@@ -22,9 +22,6 @@ class Footer extends Component {
   render() {
     return (
       <FooterContainer>
-        <span style={{ marginLeft: '15%', fontSize: '1.125rem' }}>
-          Questions?<Link to="/">Call 1-811-111-1111</Link>
-        </span>
         <div className="footer-columns">
           <ul>
             <li>
@@ -86,6 +83,7 @@ class Footer extends Component {
         <span
           style={{ marginLeft: '15%', fontSize: '0.9rem', marginTop: '2rem' }}
         >
+          <span>Created with ❤️ by Moe, Quinton and Alex</span>
           Gametrax Canada
         </span>
       </FooterContainer>

@@ -1,0 +1,114 @@
+.mainhome {
+  background-color: black;
+}
+
+.BackgroundVideo_Container__2OGYJ {
+  margin-bottom: 50px !important;
+}
+
+#gamexxx {
+  margin-left: 40%;
+}
+
+.maininfo {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.info {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: 490px;
+}
+
+.info2 {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.info3 {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: -25px;
+  float: right;
+  margin-left: 600px;
+}
+
+#youtube {
+  display: block;
+  margin: 15px auto;
+  /* animation-name: moveToRight;
+  animation-duration: 2s; */
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  float: right;
+}
+
+#tracker {
+  display: block;
+  margin: 15px auto;
+  /* animation-name: moveToRight;
+  animation-duration: 2s; */
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+  margin-right: 25rem;
+  margin-top: -24rem;
+}
+
+#spotify {
+  display: block;
+  margin: 15px auto;
+  /* animation-name: moveToRight;
+  animation-duration: 2s; */
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+
+#division, #rainbow, #overwatch {
+  height: 400px;
+}
+
+.card, .main-section {
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
+.card2 {
+  background-color: rgba(68, 68, 68, 0.3);
+  margin-top: 110px;
+  /* height: 239.8px; */
+}
+
+.card3 {
+  background-color: rgba(68, 68, 68, 0.3);
+  /* height: 239.8px; */
+}
+
+.main-section {
+ margin: 0 10%;
+}
+
+#division {
+  float: right;
+  margin-top: -60px;
+}
+
+#overwatch {
+  /* padding-bottom: 140px; */
+}
+
+#rainbow {
+  margin-top: -172px;
+}
+
+.fdCmlv {
+  background-color: black !important;
+}
