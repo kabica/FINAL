@@ -184,7 +184,7 @@ position: relative;
 }
 }
 
-@media (min-width :769px) and (max-width: 1800px){
+/* @media (min-width :769px) and (max-width: 1800px){
 body{
   background-color: rgba(0, 0, 0, 0.918);
  
@@ -196,13 +196,13 @@ body{
 }
 
 
-}
+} */
 
 
 
 
 
-
+/* 
 @media (min-width :361px) and (max-width: 768px){
 
  body{
@@ -216,16 +216,15 @@ body{
 }
 
 
-}
+} */
 
-@media (max-width: 360px){
+/* @media (max-width: 360px){
  body{
   background-color: rgba(0, 0, 0, 0.918);
  
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  /* width: 1px; */
   flex-wrap: wrap;
 }
 
@@ -242,7 +241,6 @@ body{
 
 .SubContent button {
   font-weight: bold;
-  /* margin-top: 30px; */
   margin: 10px;
   color: #f1f1f1;
   border: #f1f1f1 1px solid;
@@ -289,4 +287,4 @@ span{
 }
 
 
-}
+} */
