@@ -14,7 +14,6 @@ import Spotify from './Spotify';
 import Avatar from './Avatar';
 
 import { connect } from 'react-redux';
-const bcrypt = require('bcryptjs');
 
 
 function Edit(props) {

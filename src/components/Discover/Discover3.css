@@ -51,6 +51,7 @@
     overflow: auto;
     width: 100%;
     flex-wrap: nowrap;
+    margin-right: 1em;
   }
   #row2 {
     display: flex;
@@ -58,6 +59,7 @@
     overflow: auto;
     width: 100%;
     flex-wrap: nowrap;
+    margin-right: 1em;
   }
   #row3 {
     display: flex;
@@ -65,6 +67,7 @@
     overflow: auto;
     width: 100%;
     flex-wrap: nowrap;
+    margin-right: 1em;
   }
   #row4 {
     display: flex;
@@ -72,6 +75,7 @@
     overflow: auto;
     width: 100%;
     flex-wrap: nowrap;
+    margin-right: 1em;
   }
 }
 
