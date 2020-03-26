@@ -10,6 +10,7 @@ import ps4 from '../images/ps4.png'
 import nintendo from '../images/nintendo.png'
 import xbox from '../images/xbox.png';
 import './BackgroundVideo.module.css';
+import './Home.css'
 
 
 
@@ -27,7 +28,7 @@ const BackgroundVideo = () => {
             <div className={classes.Content}>
                 <div className={classes.SubContent} >
                     <img src={images} alt="gametrax logo" />
-                    <SubTitle>Connect with Everyone. Track Anyone</SubTitle>
+                    <SubTitle className='subtitle'>Connect with Everyone. Track Anyone</SubTitle>
 
                     <a href="/signup">
                         <button type="button" className="btn btn-outline-dark">Signup Now!</button>
