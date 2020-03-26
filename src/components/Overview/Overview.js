@@ -65,12 +65,12 @@ function Overview(props) {
         <img id='wide'src={images[props.game]} alt="logo"/>
       </div>
       <div id='notes' >
-        <div id='section'>CHARACTERS: {props.game}</div>
+        <div id='section'>CHARACTERS:</div>
         {props.game === 'OW' && (<HeroBanner game={props.game}/>)}
         {props.game === 'APEX' && (<Characters game={props.game}/>)}
         {props.game === 'R6' && (<Operators game={props.game}/>)}
         {props.game === 'BL3' && (<VaultOps game={props.game}/>)}
-        <div id='section'>PATCH NOTES: {props.game}</div>
+        <div id='section'>PATCH NOTES:</div>
           {<PatchNote title={notes[props.game].DESC1} text={notes[props.game].PATCH1}/>}
           {<PatchNote title={notes[props.game].DESC} text={notes[props.game].PATCH}/>}
       </div>
