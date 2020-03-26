@@ -7,10 +7,10 @@ class Signup extends Component {
   render() {
     return (
       <div>
-      <div className={classes.Background}>
-        <div className="header-top">
-        </div>
-        <SignupForm />
+        <div className={classes.Background}>
+          <div className="header-top">
+          </div>
+          <SignupForm />
         </div>
       </div>
     );
