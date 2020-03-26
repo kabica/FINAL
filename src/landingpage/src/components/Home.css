@@ -28,14 +28,15 @@
   color: white;
   font-size: 1.3rem;
   text-align: center;
-  margin-top: -70px;
+  margin-top: -40px;
+  padding-bottom: 30px;
 }
 
 .info3 {
   color: white;
   font-size: 1.3rem;
   text-align: center;
-  margin-top: -25px;
+  margin-top: -235px;
   float: right;
   margin-left: 600px;
 }
@@ -49,6 +50,8 @@
   position: relative;
   height: 200px;
   float: right;
+  margin-top: -420px;
+  margin-right: 300px;
 }
 
 #tracker {
@@ -60,12 +63,12 @@
   position: relative;
   height: 100px;
   margin-right: 25rem;
-  margin-top: -24rem;
+  margin-top: -25rem;
 }
 
 #spotify {
   display: block;
-  margin: 15px auto;
+  margin: auto;
   /* animation-name: moveToRight;
   animation-duration: 2s; */
   overflow: hidden;
@@ -83,13 +86,13 @@
 
 .card2 {
   background-color: rgba(68, 68, 68, 0.3);
-  margin-top: 110px;
+  /* margin-top: 110px; */
   /* height: 239.8px; */
 }
 
 .card3 {
   background-color: rgba(68, 68, 68, 0.3);
-  /* height: 239.8px; */
+  height: 259px;
 }
 
 .main-section {
@@ -98,15 +101,15 @@
 
 #division {
   float: right;
-  margin-top: -60px;
+  margin-top: -38px;
 }
 
 #overwatch {
-  /* padding-bottom: 140px; */
+  padding-bottom: 80px;
 }
 
 #rainbow {
-  margin-top: -172px;
+  /* margin-top: -172px; */
 }
 
 .fdCmlv {

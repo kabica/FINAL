@@ -30,7 +30,7 @@ function TabContentOne() {
 
       <section className="main-section" data-aos="fade-up">
         <img id="gamexxx" src={gamexxx} alt="gametrax" />
-        <p className='maininfo'>Gametrax is the newest network of community run gaming stats sites in the world. We're a very small team that loves building stuff for the gaming community, and we realized that we can serve the community better by opening up our knowledge and capability through a well thought out gaming stats API for developers. Some of the hardest work we do is getting access to stats in the first place, and we recognize this is a significant barrier for many developers. It's only through our determination that we're able to get the data when others cannot. We don't believe in hoarding that knowledge, and this API allows us to provide the community with safe and reliable APIs so we can all enjoy stats and continue creating. Our game support currently includes stats for Splitgate, CS:GO, Division 2 and Overwatch. We're working hard to expand this list as fast as we can, and you can expect many more of the titles we support across Tracker Network to land in this API soon..</p>
+        <p className='maininfo'>Gametrax is the newest network of community run gaming stats sites in the world. We're a small team that loves building applications for the gaming community, and we realized that we can serve the community better by opening up our knowledge and capability through a well thought out gaming stats API. Some of the hardest work we do is getting access to stats in the first place, and we recognize this is a significant barrier for many developers. It's only through our determination that we're able to get the data when others cannot. We don't believe in hoarding that knowledge, and this API allows us to provide the community with safe and reliable APIs so we can all enjoy stats and continue creating. Our game support currently includes stats for Splitgate, CS:GO, Division 2 and Overwatch. We're working hard to expand this list as fast as we can, and you can expect many more titles to be supported in the near future.</p>
       </section>
 
       <main className="container">
@@ -38,7 +38,7 @@ function TabContentOne() {
           <img src={overwatch} id="overwatch" alt="overwatch" data-aos="fade-right" />
           <div data-aos="fade-left">
             <img id="tracker" src={tracker} alt="tracker logo" />
-            <p className='info'>You can Track Games Stats. Find top pros and streamers, and try to follow them on our discovery page! We track R6 Stats on Xbox, Playstation, Steam and Nintendo Switch! you can track Overwatch stats, R6 stats, Borderlands 3 stats, Call of Duty stats and many more. we will are constatnly looking to add more games to become available. Leave your page open to auto-refresh and capture R6 match history. See all your Battlefield 4 season stats, and how you rank in the world. Make sure to check out all our features on your profile.</p>
+            <p className='info'>You can track your games stats, find professional players and streamers, and follow new games on our discovery page! We track your stats on Xbox, Playstation, Steam, Nintendo Switch, Origin, Uplay, Battle.net, and Epic Games! We are constantly looking to add more games and platforms to our selection. You'll be able to see live updates of your match history, see all your season stats, and how you rank in the world. Make sure to check out all our features on your profile page.</p>
           </div>
         </section>
 
@@ -46,17 +46,17 @@ function TabContentOne() {
           <img src={division} id="division" alt="division" data-aos="fade-right" />
           <div data-aos="fade-left">
             <img id="spotify" src={spotify} alt="spotify logo" />
-            <p className='info2'>Gametrax isn't only for tracking! It is the only site outthere that would allow user to not only add friends, search games or track stats, but also search for your favourite tracks and save them through our Spotify API</p>
+            <p className='info2'>Gametrax isn't only for tracking! It is the only site out there that allows users to not only add friends, search games or track stats, but also search for your favourite Spotify albums and playlists and showcase them on your profile for your friends to see.</p>
           </div>
         </section>
 
 
         <section className="card3">
+          <img src={rainbow} id="rainbow" alt="rainbow" data-aos="fade-left" />
           <div data-aos="fade-right">
             <img id="youtube" src={youtube} alt="youtube logo" />
-            <p className='info3'>Gametrax also allows you to search for your favourite gameplays from your favourite youtube channels using our Youtube API and share it with your friends.</p>
+            <p className='info3'>Gametrax also allows you to search for your favourite videos and tutorials from some of your favourite youtube content creators and add it to your profile to share it with your friends.</p>
           </div>
-          <img src={rainbow} id="rainbow" alt="rainbow" data-aos="fade-left" />
         </section>
       </main>
 
