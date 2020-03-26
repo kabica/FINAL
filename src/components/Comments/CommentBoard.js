@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommentBoard.css';
 import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Comment from './Comment'
 import { useState, useEffect} from "react";
 const axios = require('axios');
@@ -40,15 +40,18 @@ function CommentBoard(props) {
 
 
   return (
-    <div id='container'>
+    <div id='comment_container'>
       <div id='scroll'>{state.comments.map(post => <Comment author={'alex'} time={post.created_at}text={post.text || 'no'}/>)}</div>
       <div id='chatInput'>
-        <form noValidate autoComplete="off">
-          <TextField value={mode} id="outlined-secondary"label="Let the world know!"variant="outlined"color="primary"onChange={(event) => setMode(event.target.value)}/>
-        </form>
-        <Button id='button'variant="outlined" color="primary" onClick={() => {postComment(mode);}}>
+        <input 
+          id='comment_board'
+          value={mode || ''}
+          placeholder='Post a comment!'
+          onChange={(event) => setMode(event.target.value)}
+        />
+        <div id='comment_button' onClick={() => {postComment(mode);}}>
           Post!
-        </Button>
+        </div>
       </div>
     </div>
   );

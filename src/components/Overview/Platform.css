@@ -21,7 +21,8 @@
   width: 60px;
   justify-content: center;
   align-items: center;
-  font-family: 'Bungee';
+  /* font-family: 'Bungee'; */
+  font-family: 'Source Code Pro', monospace;
   color: white;
   font-size: 24px;
   border-left: 1px solid grey;

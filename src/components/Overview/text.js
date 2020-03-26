@@ -1,6 +1,6 @@
 const text = {
   FORT: 
-  "Fortnite Battle Royale is a game of survival, which means in order to win, you must defeat the other 99 online players in the game. This competitive element adds a touch of urgency to the game, gamers also need to avoid being caught in the eye of the storm to remain in the game, there are regular countdowns to when the storm is approaching.",
+  "Fortnite Battle Royale is a game of survival, which means in order to win, you must defeat the other 99 online players in the game. This competitive element adds a touch of urgency to the game, gamers also need to avoid being caught in the eye of the storm to remain in the game.",
 
   PUBG: "PLAYERUNKNOWN'S BATTLEGROUNDS is a battle royale shooter that pits 100 players against each other in a struggle for survival. Gather supplies and outwit your opponents to become the last person standing.",
 
@@ -24,7 +24,15 @@ const text = {
 
   LoL: "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
 
-  COD: "Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare® series from the ground up. In the visceral and dramatic single-player story campaign, Call of Duty: Modern Warfare pushes boundaries and breaks rules the way only Modern Warfare can."
+  COD: "Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare® series from the ground up. In the visceral and dramatic single-player story campaign, Call of Duty: Modern Warfare pushes boundaries and breaks rules the way only Modern Warfare can.",
+
+  FALL: 'Bethesda Game Studios, the award-winning creators of Skyrim and Fallout 4, welcome you to the evolving world of Fallout 76. Work together with other players, or not, to survive. Experience the largest and most dynamic world ever created in the Fallout universe with major free updates which grow and evolve the game with new and different ways to play. ',
+
+  MINE: 'Minecraft is a game about placing blocks and going on adventures. Build anything you can imagine with unlimited resources in Creative mode, or go on grand expeditions in Survival, journeying across mysterious lands and into the depths of your own infinite worlds. Will you hide from monsters or craft tools, armor and weapons to fight back?',
+
+  DIV2: "With three Dark Zone across Washington D.C., you'll be able to explore unique areas of the city that have been untouched for months. These mysterious, walled-off sections of D.C. offer a fair and intense Player vs. Environment vs. Player experience where anything can happen, and no one can be trusted. Prove your skills against other Division agents in a variety of different player versus player experiences.",
+
+  SPLIT: 'Splitgate: Arena Warfare is a fast-paced multiplayer shooter that uses player-controlled portals to create a new dimension of arena combat. Evoking memories of the most revered shooters of the past two decades, Splitgate: Arena Warfare embraces the classic and familiar feel of close-quarters combat while adding a multi-dimensional twist that adds a never-before-seen spatial wrinkle.'
 }
 
 module.exports = { text }

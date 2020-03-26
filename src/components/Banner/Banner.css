@@ -21,7 +21,7 @@
 .container-banner h1 {
   color: white;
   float: left;
-  margin-top: 10%;
+  margin-top: 170px;
   font-size: 50px;
   padding-bottom: 9%;
   z-index: 1000;
@@ -58,10 +58,11 @@
 
 @media (max-width:360px) {
   #profilePic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 0%;
-    margin-top: 7%;
+    margin-top: 30%;
+    margin-left: 25px;
   }
 
   .container-banner {
@@ -69,15 +70,79 @@
   }
 
   .container-banner h1 {
-    font-size: 25px;
-    margin-right: 30px;
-    margin-left: 40px;
-    margin-top: 60px;
+    font-size: 35px;
+    margin-right: 49px;
+    margin-left: -90px;
+    margin-top: 27px;
+    margin-bottom: -20px;
   }
 
   .logo {
     width: 15px;
     height: 15px;
   }
+
+  .MuiListItemText-root {
+    margin-left: 181px;
+  }
+
+  .profbutton {
+    height: 22px;
+    font-size: 9px !important;
+    margin-right: 230px !important;
+    margin-top: -40px !important;
+  }
+
+}
+
+@media (max-width:768px) and (min-width:361px) {
+  #profilePic {
+    width: 150px;
+    height: 150px;
+    margin: 0%;
+    margin-left: 3%;
+    margin-top: 7%;
+  }
+
+  .container-banner {
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+  }
+
+  .container-banner span {
+    font-size: 30px;
+    margin-left: 3%;
+  }
+
+  .container-banner h1 {
+    font-size: 55px;
+    margin-right: 10%;
+    margin-left: 90px;
+    margin-top: 90px;
+  }
+
+  .logo {
+    width: 15px;
+    height: 15px;
+  }
+
+  .MuiButton-contained {
+    height: 50px;
+    width: 200px;
+  }
+
+  .MuiButton-label {
+    font-size: 20px !important;
+  } 
+
+}
+
+@media (min-width:769px) and (max-width:1048px){
+
+  .container-banner h1 {
+    margin-right: 10vw;
+  }
+
 
 }

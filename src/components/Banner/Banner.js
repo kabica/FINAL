@@ -26,7 +26,7 @@ function Banner( {stickyRef, aliases}) {
         <ListItemText><img className="logo" src={uplay} alt="logo"/>{aliases.Uplay}</ListItemText>
       </List>
       <a href='/edit'>
-        <Button variant="contained">
+        <Button className='profbutton'variant="contained">
         Edit Profile
         </Button>
       </a>

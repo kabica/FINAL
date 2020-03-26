@@ -16,6 +16,8 @@ import BL3_W from '../img/BL3_W.png'
 import COD_W from '../img/COD_W.png'
 import FALLOUT from '../img/FALLOUT_W.png'
 import MINE_W from '../img/MINE_W.png'
+import DIV2 from '../img/DIV2_WIDE.png'
+import SPLIT from '../img/SPLIT_WIDE.png'
 import { useState, useEffect} from "react";
 import notes  from './notes';
 import Platforms from './Platforms'
@@ -23,6 +25,9 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import CommentBoard from '../Comments/CommentBoard'
 import Characters from '../Overview/Characters'
+import HeroBanner from '../Heros/OWBanner'
+import Operators from '../Heros/Operators'
+import VaultOps from '../Heros/VaultOps';
 const axios = require('axios');
 
 
@@ -46,28 +51,32 @@ const images = {
   BL3: BL3_W,
   COD: COD_W,
   FALL: FALLOUT,
-  MINE: MINE_W
-}
+  MINE: MINE_W,
+  DIV2: DIV2,
+  SPLIT: SPLIT
+};
 
 
 
 function Overview(props) {
   return (
     <div id='game'>
-      <div id='banner'>
+      <div id='banner1'>
         <img id='wide'src={images[props.game]} alt="logo"/>
-        {/* {<Platforms game={props.game}/>} */}
       </div>
       <div id='notes' >
         <div id='section'>CHARACTERS: {props.game}</div>
-        <Characters />
+        {props.game === 'OW' && (<HeroBanner game={props.game}/>)}
+        {props.game === 'APEX' && (<Characters game={props.game}/>)}
+        {props.game === 'R6' && (<Operators game={props.game}/>)}
+        {props.game === 'BL3' && (<VaultOps game={props.game}/>)}
         <div id='section'>PATCH NOTES: {props.game}</div>
-          {<PatchNote title={'BARRICADE DEBRIS CONSISTENCY'} text={note}/>}
-          {<PatchNote title={attack} text={notes.FORT.PATCH}/>}
+          {<PatchNote title={notes[props.game].DESC1} text={notes[props.game].PATCH1}/>}
+          {<PatchNote title={notes[props.game].DESC} text={notes[props.game].PATCH}/>}
       </div>
       {<CommentBoard />}
     </div>
-  );
+  ); 
 }
 
 export default Overview;
