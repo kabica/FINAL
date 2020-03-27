@@ -118,13 +118,15 @@ class SignupForm extends Component {
               </span>
             </div>
             <div className="input-container">
+              <Link to="/discover">
                 <Btn type="submit">
                   Sign Up
                 </Btn>
+              </Link>
             </div>
 
             <label className="checkbox-container">
-              Remember me
+              Remember Me
               <input
                 type="checkbox"
                 defaultChecked={this.state.checked}
@@ -144,9 +146,9 @@ class SignupForm extends Component {
                 <br />
                 <br />
                 <React.Fragment>
-                  <span style={{ color: '#999' }}> New to Gametrax? </span>&nbsp;
-                  <Link to="/" className="sign-up-text">
-                    Sign Up Now
+                  <span style={{ color: '#999' }}> Have An Account? </span>&nbsp;
+                  <Link to="/login" className="sign-up-text">
+                    Sign In
                   </Link>
                 </React.Fragment>
               </React.Fragment>

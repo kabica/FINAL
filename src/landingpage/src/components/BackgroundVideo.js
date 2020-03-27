@@ -31,7 +31,7 @@ const BackgroundVideo = () => {
                     <SubTitle className='subtitle'>Connect with Everyone. Track Anyone</SubTitle>
 
                     <a href="/signup">
-                        <button type="button" className="btn btn-outline-dark">Signup Now!</button>
+                        <button type="button" className="btn btn-outline-dark">Sign Up</button>
                     </a>
 
                     <a href="/login">

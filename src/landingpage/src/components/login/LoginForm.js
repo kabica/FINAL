@@ -43,7 +43,7 @@ class LoginForm extends Component {
 
     if (!this.state.email) {
       inputError = true;
-      errors.emailError = 'Please enter a valid email or phone number.';
+      errors.emailError = 'Please enter a valid email.';
     } else if (!this.state.email.match(regExp)) {
       inputError = true;
       errors.emailError = (
@@ -97,7 +97,7 @@ class LoginForm extends Component {
                 onChange={this.handleEmailChange}
                 value={this.state.email}
               />
-              <label>Email or Phone number</label>
+              <label>Email</label>
               <span style={{ color: '#db7302' }}>{this.state.emailError}</span>
             </div>
             <div className="input-container">
@@ -118,9 +118,11 @@ class LoginForm extends Component {
               </span>
             </div>
             <div className="input-container">
-              <Btn type="submit" onClick={e => this.onSubmit(e)}>
-                Sign In
-              </Btn>
+              <Link to="/discover">
+                <Btn type="submit">
+                  Sign In
+                </Btn>
+              </Link>
             </div>
 
             <label className="checkbox-container">
@@ -145,7 +147,7 @@ class LoginForm extends Component {
                 <br />
                 <React.Fragment>
                   <span style={{ color: '#999' }}> New to Gametrax? </span>&nbsp;
-                  <Link to="/" className="sign-up-text">
+                  <Link to="/signup" className="sign-up-text">
                     Sign Up Now
                   </Link>
                 </React.Fragment>
