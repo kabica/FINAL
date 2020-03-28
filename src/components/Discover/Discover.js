@@ -67,13 +67,14 @@ function Discover() {
     Battlenet: "TheChief#59071",
     Uplay: "MasterChef",
   }
+  
 
 
   return ( 
     <main class='container'>
-        <Fragment>
-          <Navbar nickname={aliases.Nickname}/>
-        </Fragment>
+      <Fragment>
+        <Navbar nickname={aliases.Nickname}/>
+      </Fragment>
       <div id='body'>
         <div id='row1'>
           <GameCard sel={mode[v.ROW1] === 'FORT'} logo={FORT_S} onClick={() => setVisual(v.ROW1,'FORT')}/>
