@@ -9,6 +9,7 @@ import Particles from 'react-particles-js';
 import Spotify from './components/Spotify/Spotify'
 import Button from '@material-ui/core/Button';
 import EditIcon from '@material-ui/icons/Edit';
+import Edit from './components/Edit/Edit'
 
 
 
@@ -96,13 +97,35 @@ const albums = {
   uri2: "spotify:album:1yqMOYhq6ZCTCsPkU85yER",
   uri3: "spotify:album:73TmwDD6mBOZh6sF9sKXZo"
 }
+const getID = function(URL) {
+  return URL ? URL.split('v=')[1] : null;
+}
 
-  function App() {
+function App() {
+  // START OF WHAT I ADDED
+  const initial = {
+    display: 'profile',
+    id1: getID(sessionStorage.id1) || 'PmXNkp96g-Q',
+    id2: getID(sessionStorage.id2) || 'MNrQ-pHg9f8',
+    id3: getID(sessionStorage.id3) || 'CnyyNuYewdw',
+    uri1: sessionStorage.uri1 || "spotify:album:08HXwwR6WTHdR1VGnZtYm5",
+    uri2: sessionStorage.uri2 || "spotify:album:1yqMOYhq6ZCTCsPkU85yER",
+    uri3: sessionStorage.uri3 || "spotify:album:73TmwDD6mBOZh6sF9sKXZo"
+  };
+  const [state, setState] = useState({...initial});
+  const toggleState = function () {
+    state.display === 'profile' ? setState({...state, display: 'edit'}) : setState({...state, display: 'profile'});
+  };
+  // END OF WHAT I ADDED 
+
+
   useEffect(() => {
     return () => {
       window.removeEventListener("scroll", () => handleScroll)
     }
-  }, [])
+  }, []);
+
+  
 
   const [isSticky, setSticky] = useState(false)
 
@@ -136,7 +159,10 @@ const albums = {
           <Navbar sticky={isSticky} nickname={aliases.Nickname}/>
         </Fragment>
         <Banner stickyRef={stickyRef} aliases={aliases}/>
-        <h1 className="gamesSlider">Featured Games
+        {state.display === 'edit' && (<Edit data={state} toggle={toggleState}/>)}
+        {state.display === 'profile' && (
+        <div>
+        <h1 className="gamesSlider" onClick={toggleState}>Featured Games
           <a href='/edit'>
             <EditIcon color="secondary" fontSize="large"/>
           </a>
@@ -165,13 +191,15 @@ const albums = {
             <EditIcon color="secondary" fontSize="large"/>
           </a>
         </h1>
-        <YouTube videos={videos}/>
+        <YouTube videos={state}/>
         <h1 className="albums">Gaming Playlists
           <a href='/edit'>
             <EditIcon color="secondary" fontSize="large"/>
           </a>
         </h1>
-        <Spotify albums={albums}/>
+        <Spotify albums={state}/>
+        </div>
+        )}
       </div>
     );
   }

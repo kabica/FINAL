@@ -185,3 +185,61 @@ input {
   flex-direction: row;
   justify-content: space-around;
 }
+
+
+@media (max-width: 360px) {
+  #youtube_card {
+    height: auto;
+  }
+  #videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #vid {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  #video_col {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+  }
+  #vid_input3 {
+    margin-bottom: 1em;
+  }
+
+  #spotify_card {
+    height: auto;
+  }
+  .SpotifyPlayer {
+    padding: 0px;
+  }
+
+
+  #alias_card {
+    height: auto;
+  }
+  #alias_card_row {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  #avatar_card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #avatar_options {
+    align-items: center;
+    padding-left: 2.5em;
+  }
+  #current_img {
+    width: 80%;
+    margin: 1em 0em 0em 0em;
+  }
+}

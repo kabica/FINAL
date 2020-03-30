@@ -32,41 +32,16 @@ function Edit(props) {
   };
   const [state, setState] = useState({initial});
 
-  const updateProfile = function(text) {
-    return axios.post('http://localhost:8000/alex', {
-      user: 1,
-      video1: state.YT1 || '',
-      video2: state.YT2 || '',
-      video3: state.YT3 || '',
-      song1: state.SPOT1 || '',
-      song2: state.SPOT2 || '',
-      song3: state.SPOT3 || '',
-      DISCORD: state.DISCORD || '',
-      STEAM: state.STEAM || '',
-      UPLAY: state.UPLAY || '',
-      BATTLE: state.BATTLE || '',
-      EPIC: state.EPIC || '',
-      ORIGIN: state.ORIGIN || '',
-      status: 'invalidUser'
-    })
-    .then(() => setState({...state, MODE: 'done'}))
-    .catch(err => console.log(err))
-  };
   const updateState = function(key,test) {
     setState({...state, [key]: test})
   }
-  
+
   useEffect(() => {
     setState({...state, avatar: STAR})
-    axios.post('http://localhost:8000/auth', {
-      email: sessionStorage.Encryption
-    })
-    .then(result => setState({...state, status: result.data.verified, avatar: STAR, em: result.data.em}))
   },[]);
 
   return (
     <div>
-    {state.status === 'true' && (
     <div id='edit_page'>
       
       <div class='page_header' onClick={''}>Profile Edit</div>
@@ -78,18 +53,17 @@ function Edit(props) {
       <AliasCard state={state} alias={state.DISCORD} updateAlias={updateState}/>
 
       <div class='category_header'>Youtube Feed</div>
-      <Youtube opts={v.opts} state={state} updateVid={updateState}/>
+      <Youtube opts={v.opts} state={state} updateVid={updateState} data={props.data}/>
       
       <div class='category_header'>Spotify Feed</div>
-      <Spotify size={v.size} view={v.theme} theme={v.theme} state={state} updateSpotify={updateState}/>
+      <Spotify size={v.size} view={v.theme} theme={v.theme} data={props.data} updateSpotify={updateState}/>
 
       <div id='confirm_button'>
         <a href='/profile'>
-          <button class='edit_button'onClick={updateProfile}>Confirm</button>
+          <button class='edit_button' onClick={props.toggle}>Confirm</button>
         </a>
       </div>
     </div>
-    )}
     </div>
   );
 }
