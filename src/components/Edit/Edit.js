@@ -58,15 +58,9 @@ function Edit(props) {
   
   useEffect(() => {
     setState({...state, avatar: STAR})
-    axios.post('http://localhost:8000/auth', {
-      email: sessionStorage.Encryption
-    })
-    .then(result => setState({...state, status: result.data.verified, avatar: STAR, em: result.data.em}))
   },[]);
 
   return (
-    <div>
-    {state.status !== 'true' && (
     <div id='edit_page'>
       
       <div class='page_header' onClick={''}>Profile Edit</div>
@@ -88,8 +82,6 @@ function Edit(props) {
           <button class='edit_button'onClick={updateProfile}>Confirm</button>
         </a>
       </div>
-    </div>
-    )}
     </div>
   );
 }
