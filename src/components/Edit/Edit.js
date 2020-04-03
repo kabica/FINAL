@@ -66,7 +66,7 @@ function Edit(props) {
 
   return (
     <div>
-    {state.status === 'true' && (
+    {state.status !== 'true' && (
     <div id='edit_page'>
       
       <div class='page_header' onClick={''}>Profile Edit</div>
