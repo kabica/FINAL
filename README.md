@@ -1,6 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gametrax
 
-## Available Scripts
+A social platform for gamers to connect and share their favorite games and stats with others.
+
+## Screenshots
+
+### Home Page
+!["Home Page"](https://github.com/kabica/FINAL/blob/master/docs/title-page.png?raw=true)
+
+### About
+!["About"](https://github.com/kabica/FINAL/blob/master/docs/about.png?raw=true)
+
+### Sign In
+!["Sign In"](https://github.com/kabica/FINAL/blob/master/docs/sign-in.png?raw=true)
+
+### Discover
+!["Discover"](https://github.com/kabica/FINAL/blob/master/docs/discover.png?raw=true)
+
+### Game Details
+!["Game Details"](https://github.com/kabica/FINAL/blob/master/docs/game-details.png?raw=true)
+
+### Profile
+!["Profile"](https://github.com/kabica/FINAL/blob/master/docs/profile.png?raw=true)
+
+### Stats
+!["Stats"](https://github.com/kabica/FINAL/blob/master/docs/game-stats.png?raw=true)
+
+### Friends
+!["Friends"](https://github.com/kabica/FINAL/blob/master/docs/friends.png?raw=true)
+
+# Getting Started
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
